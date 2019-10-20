@@ -1,5 +1,3 @@
-
-
 const contentContainer = document.querySelector("#content-container");
 
 function setContent(sender) {
