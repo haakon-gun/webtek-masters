@@ -10,7 +10,7 @@
 
     <body>
         <header id="main-header">
-            <img id="logo" alt="Ibsen Tannlegesenter" src="resources/logo_x128.png">
+            <img id="logo" alt="Ibsen Tannlegesenter" src="resources/logo_x128.png" onclick="setContent(this);" data-url="front.html">
 
             <nav>
                 <button type="button" class="header-button" onclick="setContent(this);" data-url="about.html">Om oss</button>
@@ -21,7 +21,7 @@
         </header>
 
         <!-- Each page gets loaded into here-->
-        <iframe id="content-container">
+        <iframe id="content-container" src="front.html" height="100%" width="100%">
 
         </iframe>
 
