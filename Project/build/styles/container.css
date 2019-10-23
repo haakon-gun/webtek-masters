@@ -1,6 +1,6 @@
 
 html {
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(250, 250, 250);
 }
 
 body {
@@ -23,7 +23,31 @@ body {
     padding: 0;
     margin: 0 0 0 0;
 
-    background-color: rgb(255, 80, 40);
+    background-color: rgb(240, 240, 240);
+
+    box-shadow: 0 0 0.6em rgba(0, 0, 0, 0.2);
+}
+
+#main-header > nav {
+    width: 80%;
+    height: inherit;
+
+    margin: auto;
+}
+
+#main-header > nav > * {
+    /*
+    float: left;
+    margin: 10px 10% 10px 10%;
+    */
+}
+
+#main-header > nav > button {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+
+    height: inherit;
 }
 
 #content-container {
@@ -44,6 +68,7 @@ body {
     margin: 0;
 }
 
+/* ERROR: blank line between the footer and the content container. */
 #main-footer {
     width: 100%;
     height: 80px;
@@ -51,5 +76,5 @@ body {
     margin: 0;
     padding: 0;
 
-    background-color: rgb(128, 128, 128);
+    background-color: rgb(111, 151, 181);
 }
