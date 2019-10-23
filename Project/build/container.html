@@ -11,18 +11,18 @@
 
     <body>
         <header id="main-header">
-            <img id="logo" alt="Forside" src="resources/logo_x128.png" onclick="setContent(this);" data-url="front.html">
+            <img id="logo" class="header-button" alt="Forside" src="resources/logo_x128.png" data-url="front.html">
 
-            <nav>
-                <button type="button" class="header-button" onclick="setContent(this);" data-url="about.html">Om oss</button>
-                <button type="button" class="header-button" onclick="setContent(this);" data-url="treatments.html">Behandlinger</button>
-                <button type="button" class="header-button" onclick="setContent(this);" data-url="prices.html">Priser</button>
-                <button type="button" class="header-button" onclick="setContent(this);" data-url="contact.html">Kontaktinformasjon</button>
+            <nav id="">
+                <button type="button" class="header-button" data-url="about.html">Om oss</button>
+                <button type="button" class="header-button" data-url="treatments.html">Behandlinger</button>
+                <button type="button" class="header-button" data-url="prices.html">Priser</button>
+                <button type="button" class="header-button" data-url="contact.html">Kontaktinformasjon</button>
             </nav>
         </header>
 
         <!-- Each page gets loaded into here-->
-        <iframe id="content-container" src="front.html" height="100%" width="100%" onload="contentDidLoad();" style="height:200px;width:100%;border:none;overflow:hidden;">
+        <iframe id="content-container" src="front.html">
 
         </iframe>
 
@@ -31,6 +31,6 @@
         </footer>
 
 
-        <script src="scripts/container.js"></script>
+        <script type="module" src="scripts/container.js"></script>
     </body>
 </html>
