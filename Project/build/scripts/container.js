@@ -7,10 +7,14 @@ function waste(milliseconds){
 
 const contentContainer = document.querySelector("#content-container");
 const header = document.querySelector("#main-header");
+const footer = document.querySelector("#main-footer");
 
 /// requires same-origin of the IFrame content. Local file access is considered cross-origin. Deactivate local file restrictions for debugging purposes.
 function scaleIFrame() {
-    contentContainer.style.height = contentContainer.contentWindow.document.documentElement.offsetHeight + "px";
+    height = contentContainer.contentWindow.document.documentElement.offsetHeight
+    height = Math.max(height, window.innerHeight - header.offsetHeight - footer.offsetHeight);
+
+    contentContainer.style.height = height + "px";
 
     /*
     const cssLink = document.createElement("link");
@@ -42,13 +46,14 @@ function contentDidLoad() {
     scaleIFrame();
 }
 
+/*
+function setFooterOffset() {
+    footer.style.paddingTop = Math.min() + "px";
+}
+*/
+
 function setContentContainerOffset() {
-    console.log("CC top padding = " + contentContainer.style.paddingTop);
-    console.log("Header height = " + header.offsetHeight);
-
     contentContainer.style.paddingTop = header.offsetHeight + "px";
-
-    console.log("CC top padding = " + contentContainer.style.paddingTop);
 }
 
 fragmentID = window.location.hash;
