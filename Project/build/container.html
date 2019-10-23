@@ -11,23 +11,46 @@
 
     <body>
         <header id="main-header">
-            <nav id="">
-                <img id="logo" class="header-button" alt="Forside" src="resources/logo_x128.png" data-url="front.html">
-                
-                <button type="button" class="header-button" data-url="about.html">Om oss</button>
-                <button type="button" class="header-button" data-url="treatments.html">Behandlinger</button>
-                <button type="button" class="header-button" data-url="prices.html">Priser</button>
-                <button type="button" class="header-button" data-url="contact.html">Kontaktinformasjon</button>
+            <nav class="h-centered">
+                <a class="header-link" href="front.html" target="content-container" title="Forside">
+                    <img id="logo" alt="Forside" src="resources/logo_x128.png">
+                </a>
+
+                <a class="header-link" href="about.html" target="content-container">
+                    <span>
+                        <p>Om oss</p>
+                    </span>
+                </a>
+
+                <a class="header-link" href="treatments.html" target="content-container">
+                    <span>
+                        <p>Behandlinger</p>
+                    </span>
+                </a>
+
+                <a class="header-link" href="prices.html" target="content-container">
+                    <span>
+                        <p>Priser</p>
+                    </span>
+                </a>
+
+                <a class="header-link" href="contact.html" target="content-container">
+                    <span>
+                        <p>Kontaktinformasjon</p>
+                    </span>
+                </a>
             </nav>
         </header>
 
         <!-- Each page gets loaded into here-->
-        <iframe id="content-container" src="front.html">
+        <iframe name="content-container" id="content-container" src="front.html">
 
         </iframe>
 
         <footer id="main-footer">
+            <div class="h-centered">
 
+            </div>
         </footer>
 
 

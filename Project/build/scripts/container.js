@@ -1,5 +1,5 @@
 
-import { elementExists, withFragmentID } from "./utilities.js";
+import { elementExists, withFragmentID, filename } from "./utilities.js";
 
 const contentContainer = document.querySelector("#content-container");
 const header = document.querySelector("#main-header");
@@ -34,21 +34,17 @@ function scaleIFrame() {
 }
 
 function setContentSource(url) {
-    if (elementExists(window.location.hash)) {
-        const url = withFragmentID(url, "");
-    }
-
-    document.body.scrollTo(0, 0);
     contentContainer.src = url;
 
-    setURLQueryParameter("content", url);
+    setURLQueryParameter("content", filename(url));
 }
 
 function setContent() {
-    setContentSource(this.dataset.url);
+    setContentSource(this.href);
 }
 
 function contentDidLoad() {
+    document.body.scrollTo(0, 0);
     scaleIFrame();
 }
 
@@ -62,9 +58,10 @@ function setContentContainerOffset() {
     contentContainer.style.paddingTop = header.offsetHeight + "px";
 }
 
+
 contentContainer.addEventListener("load", contentDidLoad);
 
-document.querySelectorAll(".header-button").forEach(button => {
+document.querySelectorAll(".header-link").forEach(button => {
     button.addEventListener("click", setContent);
 });
 
