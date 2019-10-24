@@ -30,7 +30,7 @@ body {
     padding: 0;
     margin: 0 0 0 0;
 
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(248, 248, 248);
 
     box-shadow: 0 0 0.6em rgba(0, 0, 0, 0.2);
 }
@@ -47,22 +47,6 @@ body {
 
     padding: 0 2em 0 2em;
     margin: 0;
-}
-
-#main-header > nav > button {
-    -webkit-appearance: none;
-    appearance: none;
-    border: none;
-
-    height: inherit;
-
-    background-color: transparent;
-    color: rgb(16, 20, 24);
-
-    font-family: "Open Sans", Helvetica, sans-serif;
-    font-size: 0.96em;
-
-    padding-bottom: 0.2em;
 }
 
 a.header-link {
@@ -100,10 +84,6 @@ a.header-link > span > * {
     text-decoration: none;
 }
 
-#main-header > nav > button > * {
-    vertical-align: bottom;
-}
-
 #content-container {
     /* padding-top: 100px; */
 
@@ -125,10 +105,21 @@ a.header-link > span > * {
 /* ERROR: blank line between the footer and the content container. */
 #main-footer {
     width: 100%;
-    height: 80px;
 
     margin: 0;
     padding: 0;
 
     background-color: rgb(111, 151, 181);
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main-footer > div > section, #main-footer > div > div {
+    
+}
+
+#main-footer > div > section > div {
+    /* display: flex; */
+    float: left;
 }
