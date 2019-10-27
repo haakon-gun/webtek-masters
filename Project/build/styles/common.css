@@ -1,0 +1,26 @@
+  
+*{
+	font-family:'Open Sans', sans-serif;
+	position: relative;
+
+}
+
+body{
+  	margin: auto;
+  }
+ #frontPageTitle{
+ 	font-size: 72px;
+ 	font-weight: lighter;
+ }
+
+.box{
+    background-color: #537188;
+    width: 100%;
+    }
+
+
+#titlebox{
+	margin-top: 290px;
+	height: 230px;
+}
+
