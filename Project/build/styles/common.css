@@ -1,13 +1,13 @@
 
-*{
+* {
 	font-family:'Open Sans', sans-serif;
 	position: relative;
 
 }
 
-body{
+body {
   	margin: auto;
-  }
+}
 
 .grid-container {
   display: grid;

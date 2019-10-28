@@ -37,5 +37,5 @@ export function elementExists(selector) {
 export function filename(url) {
     const components = url.split("#")[0].split("?")[0].split("/");
 
-    return components[components.length - 1];
+    return components[components.length() - 1];
 }

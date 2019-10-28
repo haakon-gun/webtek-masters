@@ -1,6 +1,8 @@
 
 import { elementExists, withFragmentID, filename } from "./utilities.js";
 
+import * as namespace from "./utilities.js";
+
 const contentContainer = document.querySelector("#content-container");
 const header = document.querySelector("#main-header");
 const footer = document.querySelector("#main-footer");
@@ -19,7 +21,7 @@ function setURLQueryParameter(name, value) {
 /// requires same-origin of the IFrame content. Local file access is considered cross-origin. Deactivate local file restrictions for debugging purposes.
 function scaleIFrame() {
     var height = contentContainer.contentWindow.document.documentElement.offsetHeight
-    height = Math.max(height, window.innerHeight - header.offsetHeight - footer.offsetHeight);
+    //height = Math.max(height, window.innerHeight - header.offsetHeight - footer.offsetHeight);
 
     contentContainer.style.height = height + "px";
 
@@ -31,6 +33,8 @@ function scaleIFrame() {
     cssLink.media = "screen"
     contentContainer.contentWindow.document.head.appendChild(cssLink);
     */
+
+    setFooterOffset();
 }
 
 function setContentSource(url) {
@@ -48,11 +52,12 @@ function contentDidLoad() {
     scaleIFrame();
 }
 
-/*
+
 function setFooterOffset() {
-    footer.style.paddingTop = Math.min() + "px";
+    //footer.style.paddingTop = Math.min() + "px";
+    // TODO: add code...
+    document.body.style.height = Math.max(footer.offsetHeight + contentContainer.offsetHeight, window.innerHeight) + "px";
 }
-*/
 
 function setContentContainerOffset() {
     contentContainer.style.paddingTop = header.offsetHeight + "px";
@@ -69,6 +74,10 @@ const contentSpecifier = new URLSearchParams(window.location.search).get("conten
 
 if (contentSpecifier) {
     setContentSource(contentSpecifier);
+} else {
+    setContentSource("front.html");
 }
 
 setContentContainerOffset();
+
+window.addEventListener('resize', setFooterOffset, true);
