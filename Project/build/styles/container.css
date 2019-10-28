@@ -10,6 +10,16 @@ body {
     margin: 0;
 
     overflow: auto;
+
+    position: relative;
+
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-size: 1.04em;
+}
+
+p {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-size: 1.04em;
 }
 
 .h-centered {
@@ -102,6 +112,10 @@ a.header-link > span > * {
     margin: 0;
 }
 
+.stack {
+
+}
+
 /* ERROR: blank line between the footer and the content container. */
 #main-footer {
     width: 100%;
@@ -110,16 +124,36 @@ a.header-link > span > * {
     padding: 0;
 
     background-color: rgb(111, 151, 181);
+    color: rgb(242, 242, 242);
 
     margin-left: auto;
     margin-right: auto;
+
+    position: absolute;
+    bottom: 0;
 }
 
-#main-footer > div > section, #main-footer > div > div {
-
+#main-footer > div > section > div {
+    padding: 0;
+    margin: 0;
 }
 
 #main-footer > div > section > div {
     /* display: flex; */
     float: left;
+    margin: 0.4em 1em 0.4em 1em;
+}
+
+#main-footer > div > section > div > a {
+    color: inherit;
+
+    font-family: inherit;
+    font-size: inherit;
+
+    text-decoration: inherit;
+}
+
+h5 {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-size: 1.1em;
 }
