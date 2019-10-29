@@ -17,13 +17,13 @@
   font-size: 30px;
 }
 
-.marginLeft{
+.marginLeft {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 6;
 }
-.marginRight{
+.marginRight {
   grid-column-start: 5;
   grid-column-end: 6;
   grid-row-start: 2;
@@ -35,7 +35,7 @@ p{
   margin-bottom: 0;
 }
 
-#aboutTitle{
+#aboutTitle {
   color: white;
   font-size: 24px;
   font-weight: 400;
@@ -44,17 +44,17 @@ p{
   margin-right: 220px;
 }
 
-.name{
+.name {
   font-size: 22px;
   font-weight: 300;
 }
 
-.title{
+.title {
   font-size: 16px;
   font-weight: 300px;
 }
 
-.img{
+.img {
   width: 150px;
   border-style: solid;
   border-radius: 2px;
@@ -76,12 +76,12 @@ p{
   grid-row-end: 4;
 }
 
-#titlebox{
+#titlebox {
   height: 130px;
   margin-top: 0;
 }
 
-#verticalLineAbout{
+#verticalLineAbout {
   height: 90%;
   margin-top: 40px;
   left: 50px;
