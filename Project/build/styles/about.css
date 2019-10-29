@@ -1,0 +1,88 @@
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 1fr 80px;
+  grid-template-rows: 196px 300px 300px 300px 300px;
+  background-color: rgba(155, 255, 255, 0.2);
+	width: 1022px;
+	height: 1400px;
+	left: 50%;
+ 	margin-left: -511px;
+	grid-gap: 1px;
+}
+
+.grid-container > div {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 30px;
+}
+
+.marginLeft{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 6;
+}
+.marginRight{
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 6;
+}
+
+p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#aboutTitle{
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 25px;
+  margin-left: 220px;
+  margin-right: 220px;
+}
+
+.name{
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.title{
+  font-size: 16px;
+  font-weight: 300px;
+}
+
+.img{
+  width: 150px;
+  border-style: solid;
+  border-radius: 2px;
+  border-width: 1px;
+  border-color: #252424;
+}
+
+
+.item1 {
+	grid-column-start: 1;
+	grid-column-end: 6;
+  font-size: 24px;
+  text-align: center;
+}
+.item2 {
+	grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#titlebox{
+  height: 130px;
+  margin-top: 0;
+}
+
+#verticalLineAbout{
+  height: 90%;
+  margin-top: 40px;
+  left: 50px;
+}
