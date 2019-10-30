@@ -174,7 +174,7 @@ async function f() {
             console.log(json);
         })
 
-        txt = await load("txt", "file.txt")
+        txt = await load("txt", "file.txt");
         console.log(txt);
 
         dom = await load("DOM", "file.html", (result) => {
