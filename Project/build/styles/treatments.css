@@ -5,12 +5,10 @@ p{
   font-weight: 300;
 }
 
-
 h2{
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
 }
-
 
 .grid-container {
   position: relative;
@@ -47,8 +45,15 @@ h2{
   grid-row-end: 6;
 }
 
+.button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  display: inline-block;
+}
+
 #titlebox{
-	margin-top: 0px; /* Må vite høyde ifra toppen mtp. header*/
+	margin-top: 0px;
   padding: 0px;
 	height: 130px;
   text-align: center;
@@ -58,9 +63,9 @@ h2{
 }
 
 #verticalLine {
-  height: 300px;
+  height: 335px;
   position: absolute;
-  left: 33%;
+  left: 32.5%;
   top: 196px;
 }
 
