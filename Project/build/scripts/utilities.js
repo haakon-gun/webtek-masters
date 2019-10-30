@@ -23,7 +23,7 @@ export function argProvided(argument) {
 }
 
 export function argHasValue(argument) {
-    return typeof argument !== "undefined" || argument !== null;
+    return typeof argument !== "undefined" || argument === null;
 }
 
 
