@@ -162,6 +162,9 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
+modal.onclick = function() {
+  modal.style.display = "none";
+}
 
 /*
 // Import error?
