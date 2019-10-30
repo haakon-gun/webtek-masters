@@ -1,7 +1,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: 108px 112px 1fr 1fr 1fr 1fr;
-    grid-template-rows: 136px;
+    grid-template-rows: 136px 136px 136px 136px;
     background-color: rgba(155, 255, 255, 0.4);
     width: 1022px;
     height: 100%;
@@ -44,15 +44,12 @@
 #tlfTider {
     grid-column-start: 3;
     grid-column-end: 6;
-    height: 136px;
 }
 #adresse{
     grid-column-start: 3;
     grid-column-end: 6;
-    height: 136px;
 }
 #mail{
     grid-column-start: 3;
     grid-column-end: 6;
-    height: 136px;
 }
