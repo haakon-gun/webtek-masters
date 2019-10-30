@@ -1,4 +1,16 @@
 
 #website-header, #website-footer {
     background-color: rgb(128, 128, 128);
+
+    width: 100%;
+}
+
+#website-header {
+    background-color: rgb(248, 248, 248);
+
+    box-shadow: 0 0 0.6em rgba(0, 0, 0, 0.2);
+}
+
+#website-footer {
+    background-color: rgb(111, 151, 181);
 }

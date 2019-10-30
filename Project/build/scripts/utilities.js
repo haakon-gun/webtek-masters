@@ -103,7 +103,7 @@ export class RequestError extends Error {
 const documentOMParser = new DOMParser();
 
 /**
- * @param {string} urlString - "DOM" or "JSON"
+ * @param {string} urlString - "DOM", "JSON" or "txt"
  * @param {string} urlString - URL string to the given location
  * @param {(DOM) => ()} receiver
  * @param {string} sendingMethod - "GET" or "POST" or more?
