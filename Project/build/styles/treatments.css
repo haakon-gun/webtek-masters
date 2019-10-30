@@ -1,38 +1,45 @@
 .grid-container {
-  display: inline-grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  background-color: rgba(155, 255, 255, 0.4);
-  width: 100%;
-  height: 100%;
-  left: 0;;
-  margin-left: 0;
-  grid-gap: 1px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr/*1fr 1fr 80px*/;
+  grid-template-rows: 196px 300px 300px 300px /*150px 150px 150px*/;
+  background-color: rgba(155, 255, 255, 0.2);
+	width: 1022px;
+	height: 1400px;
+	left: 50%;
+ 	margin-left: -511px;
+	grid-column-gap: 5px;
 }
 
 .grid-container > div {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: lightgreen;
   text-align: center;
   font-size: 30px;
 }
 
-.item1 {
-	grid-column-start: 1;
-	grid-column-end: 4;
+.differentTopics {
+  border: 1px solid black;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
 }
 
-.item2{
-	grid-column-start: 1;
-	grid-column-end:	2;
+.differentInfo {
+  border: 1px solid black;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 6;
 }
 
 #titlebox{
-	margin-top: 290px;
+	margin-top: 0px; /* Må vite høyde ifra toppen mtp. header*/
   padding: 0px;
 	height: 130px;
   text-align: center;
   line-height: 120px;
-  font-size: 50px;
+  font-size: 40px;
   color: white;
 }
 
