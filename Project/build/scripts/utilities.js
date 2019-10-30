@@ -18,6 +18,15 @@ if (!String.prototype.format) {
 }
 
 
+export function argProvided(argument) {
+    return typeof argument !== "undefined";
+}
+
+export function argHasValue(argument) {
+    return typeof argument !== "undefined" || argument !== null;
+}
+
+
 export function withFragmentID(url, id) {
     if (id === null) {
         return url;
@@ -137,5 +146,40 @@ export async function load(type, urlString, receiver, sendingMethod) {
             throw new UnexpectedArgumentError("type", type);
     }
 
-    receiver(object);
+    if (argHasValue(receiver)) {
+        return receiver(object);
+    }
+
+    return object;
 }
+
+
+// ––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+// ––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+// EXAMPLES:
+// ––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+/*
+load("txt", "outer.html", (txt) => {
+    console.log(txt);
+}).catch((error) => {
+    console.error(error);
+});
+*/
+// ––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+/*
+async function f() {
+    try {
+        await load("JSON", "file.json", (json) => {
+            console.log(json);
+        })
+
+        txt = await load("JSON", "file.txt")
+        console.log(txt);
+
+    } catch (error) {
+        console.error(error);
+    }
+}
+*/
+// ––––––––––––––––––––––––––––––––––––––––––––––––––––––––
