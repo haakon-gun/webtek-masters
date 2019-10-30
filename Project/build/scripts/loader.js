@@ -56,13 +56,7 @@ async function insertHeaderAndFooter() {
     document.body.prepend(header);
     document.body.appendChild(dom.querySelector("#website-footer"));
 
-    document.addEventListener("DOMContentLoaded", (event) => {
-        console.log("The DOM has loaded!");
-        //headerSpacer.style.height = header.offsetHeight + "px";
-    });
-
-    console.log("FUCK!");
-    console.log(header.style.height + "px");
+    headerSpacer.style.height = 80/*header.offsetHeight*/ + "px";
 }
 
 insertHeaderAndFooter();
