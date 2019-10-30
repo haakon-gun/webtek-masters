@@ -14,6 +14,11 @@ body {
   	margin: 0;
 }
 
+p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
 .box {
     background-color: #6F97B5;
     width: 100%;
