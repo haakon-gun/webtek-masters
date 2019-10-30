@@ -65,3 +65,17 @@ function createEmployeDiv(employe){
   node.appendChild(title);
   gridContainer.appendChild(node);
 }
+
+
+
+/*
+import { load } from "../scripts/utilities.js";
+
+try {
+    load("JSON", "../dev/employees.json", (json) => {
+        console.log(json);
+    });
+} catch (error) {
+    console.warn(error);
+}
+*/
