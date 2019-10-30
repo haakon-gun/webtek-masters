@@ -69,6 +69,9 @@ function createEmployeDiv(employe){
 
 
 /*
+// Import error?
+// HTML: <script type="module" src="scripts/about.js"></script>
+
 import { load } from "../scripts/utilities.js";
 
 try {
