@@ -6,6 +6,27 @@ export function waste(milliseconds) {
 }
 
 
+// https://stackoverflow.com/a/4673436
+if (!String.prototype.format) {
+    String.prototype.format = function() {
+        var args = arguments;
+
+        return this.replace(/{(\d+)}/g, (match, number) => {
+            return typeof args[number] != 'undefined' ? args[number] : match;
+        });
+    };
+}
+
+
+export function argProvided(argument) {
+    return typeof argument !== "undefined";
+}
+
+export function argHasValue(argument) {
+    return typeof argument !== "undefined" || argument === null;
+}
+
+
 export function withFragmentID(url, id) {
     if (id === null) {
         return url;
@@ -57,21 +78,55 @@ export class Bounds {
 }
 
 
+export class UnexpectedArgumentError extends Error {
+
+    constructor(argument, value, message) {
+        super((message || "Unexpected argument value: '{0}' = '{1}'").format(argument, value));
+
+        this.name = "UnexpectedArgumentError";
+        this.argument = argument;
+        this.value = value;
+    }
+
+    toString() {
+        return this.message
+    }
+}
+
+
+export class RequestError extends Error {
+
+    constructor(code, message) {
+        super((message || "An error has occured during a data request: {0}").format(code));
+
+        this.name = "RequestError";
+        this.code = code;
+    }
+
+    toString() {
+        return this.message
+    }
+}
+
+
 const documentOMParser = new DOMParser();
 
 /**
- * @param {string} urlString - "DOM" or "JSON"
+ * @param {string} urlString - "DOM", "JSON" or "txt"
  * @param {string} urlString - URL string to the given location
  * @param {(DOM) => ()} receiver
- * @param {} errorResponse
+ * @param {string} sendingMethod - "GET" or "POST" or more?
  */
-export async function load(type, urlString, receiver) {
+export async function load(type, urlString, receiver, sendingMethod) {
     load.requestECBounds = load.requestECBounds || new Bounds(400, 599);
 
-    const response = await fetch(urlString, {method: "GET"});
+    const response = await fetch(urlString, {
+        method: sendingMethod || "GET",
+        credentials: "omit"
+    });
 
-    if (load.requestECBounds.contains(response.status)) {
-        throw new Error(response.status);
+    if (/*!response.ok || */load.requestECBounds.contains(response.status)) {
+        throw new RequestError(response.status);
     }
 
     let object = null;
@@ -82,14 +137,54 @@ export async function load(type, urlString, receiver) {
             object = await response.text();
             /* Fallthrough */
         case "DOM":
-            object = documentOMParser.parseFromString(object, 'text/html');
+            object = documentOMParser.parseFromString(object, "text/html");
             break;
         case "JSON":
             object = await response.json();
             break;
         default:
-            throw new Error("Unexpected argument value: type = " + type);
+            throw new UnexpectedArgumentError("type", type);
     }
 
-    receiver(object);
+    if (argHasValue(receiver)) {
+        return receiver(object);
+    }
+
+    return object;
 }
+
+
+// ––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+// ––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+// EXAMPLES:
+// ––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+/*
+load("txt", "outer.html", (txt) => {
+    console.log(txt);
+}).catch((error) => {
+    console.error(error);
+});
+*/
+// ––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+/*
+async function f() {
+    try {
+        await load("JSON", "file.json", (json) => {
+            console.log(json);
+        })
+
+        txt = await load("txt", "file.txt")
+        console.log(txt);
+
+        dom = await load("DOM", "file.html", (result) => {
+            return result;
+        })
+        console.log(dom);
+
+    } catch (error) {
+        console.error(error);
+    }
+}
+*/
+// ––––––––––––––––––––––––––––––––––––––––––––––––––––––––
