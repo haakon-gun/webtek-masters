@@ -22,11 +22,11 @@ h2 {
 }
 
 .grid-container {
+  z-index: -1;
   position: relative;
   display: grid;
   grid-template-columns: 50px 1fr 1fr 1fr 80px;
   grid-template-rows: 196px 300px 300px 300px 300px;
-  background-color: rgba(155, 255, 255, 0.2);
 	width: 1022px;
 	height: 1400px;
 	left: 50%;
@@ -36,7 +36,6 @@ h2 {
 
 .grid-container > div {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.1);
   font-size: 30px;
 }
 
@@ -99,8 +98,9 @@ h2 {
 }
 
 #titlebox {
+  position: absolute;
+  z-index: -1;
   height: 130px;
-  margin-top: 0;
 }
 
 #verticalLineAbout {
