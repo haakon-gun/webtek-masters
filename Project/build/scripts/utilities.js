@@ -39,3 +39,57 @@ export function filename(url) {
 
     return components[components.length() - 1];
 }
+
+
+export class Bounds {
+
+    constructor(x, y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    contains(...values) {
+        for (const value of values) {
+            if (value < this.x || value > this.y) { return false; }
+        }
+        return true;
+    }
+}
+
+
+const documentOMParser = new DOMParser();
+
+/**
+ * @param {string} urlString - "DOM" or "JSON"
+ * @param {string} urlString - URL string to the given location
+ * @param {(DOM) => ()} receiver
+ * @param {} errorResponse
+ */
+export async function load(type, urlString, receiver) {
+    load.requestECBounds = load.requestECBounds || new Bounds(400, 599);
+
+    const response = await fetch(urlString, {method: "GET"});
+
+    if (load.requestECBounds.contains(response.status)) {
+        throw new Error(response.status);
+    }
+
+    let object = null;
+
+    switch (type) {
+        case "DOM":
+        case "txt":
+            object = await response.text();
+            /* Fallthrough */
+        case "DOM":
+            object = documentOMParser.parseFromString(object, 'text/html');
+            break;
+        case "JSON":
+            object = await response.json();
+            break;
+        default:
+            throw new Error("Unexpected argument value: type = " + type);
+    }
+
+    receiver(object);
+}

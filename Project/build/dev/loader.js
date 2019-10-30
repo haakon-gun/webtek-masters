@@ -1,3 +1,5 @@
+import { load } from "../scripts/utilities.js";
+
 console.log("Loading...");
 
 
@@ -11,43 +13,60 @@ document.head.append(template);
 
 const header = document.querySelector("#header");
 
-const documentOMParser = new DOMParser();
 
-function load() {
-
-    fetch("outer.html").then((response) => response.text()).then((html) => {
-        const parsedDocument = documentOMParser.parseFromString(html, 'text/html');
-        //template.content.append(parsedDocument.querySelector("#header"));
-
-        document.head.appendChild(parsedDocument.querySelector("#css-link"));
-        //document.styleSheets.prepend(parsedDocument.styleSheets[0]);
-        //document.querySelector('head').innerHTML += '<link rel="stylesheet" href="context.css" type="text/css"/>';
-
-        document.body.prepend(parsedDocument.querySelector("#website-header"));
-        document.body.appendChild(parsedDocument.querySelector("#website-footer"));
-
-    }).catch((error) => {
-        console.warn(error);
-    });
-}
-/*
-console.log("WHAT?! 2");
-function load2() {
+function insertHeaderAndFooter() {
     try {
-        const fetchResult = await fetch("context.html");
-        const contextHTML = await fetchResult.text();
+        load("DOM", "outer.html", (dom) => {
+            document.head.appendChild(dom.querySelector("#css-link"));
 
-        const parsedDocument = new DOMParser().parseFromString(html, 'text/html');
-
-        document.querySelector("#header").replaceWith(parsedDocument.querySelector("#header"));
-        document.querySelector("#footer").replaceWith(parsedDocument.querySelector("#footer"));
+            document.body.prepend(dom.querySelector("#website-header"));
+            document.body.appendChild(dom.querySelector("#website-footer"));
+        });
     } catch (error) {
-        return error.message;
+        console.warn(error);
     }
-}*/
+}
 
-load();
-
+insertHeaderAndFooter();
 
 
 console.log("Loaded");
+
+
+
+
+
+
+
+/*
+gridContainer = document.querySelector(".grid-container");
+console.log("hei")
+
+for (employe in employees) {
+  createEmployeDiv(employees[employe]);
+  console.log("hei2");
+}
+
+function createEmployeDiv(employe){
+  let node = document.createElement("div");
+  node.className = "employees";
+
+  let img = document.createElement("img");
+  img.src = employe.image;
+  img.className = "img";
+
+  let name = document.createElement("p");
+  name.className = "name";
+  name.appendChild(document.createTextNode(employe.name));
+
+  let title = document.createElement("p");
+  title.className = "title";
+  title.appendChild(document.createTextNode(employe.title))
+
+  node.appendChild(img);
+  node.appendChild(name);
+  node.appendChild(title);
+
+  gridContainer.appendChild(node);
+}
+*/

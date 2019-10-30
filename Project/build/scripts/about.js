@@ -135,15 +135,6 @@ function createEmployeDiv(employee){
   node.appendChild(title);
   gridContainer.appendChild(node);
 }
-
-
-let employeesExperienceImg = document.querySelector("#employeesExperienceImg");
-let employeesExperienceName = document.querySelector("#employeesExperienceName");
-let employeesExperienceTitle = document.querySelector("#employeesExperienceTitle");
-let employeesExperienceList = document.querySelector("#employeesExperienceList");
-console.log(employeesExperienceName);
-
-
 function populateEmployeeContent(employee){
   modal.style.display = "block";
   employeesExperienceImg.src = employee.image;
@@ -171,9 +162,17 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+
+/*
+// Import error?
+// HTML: <script type="module" src="scripts/about.js"></script>
+
+
+try {
+    load("JSON", "../dev/employees.json", (json) => {
+        console.log(json);
+    });
+} catch (error) {
+    console.warn(error);
 }
+*/
