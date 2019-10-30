@@ -1,5 +1,6 @@
 
 /* WARNING: tag attributes in page-specific CSS */
+/* WARNING: Text tag with font-size/font-weight */
 p {
   font-size: 16px;
   margin-top: 0;
@@ -8,11 +9,13 @@ p {
 }
 
 /* WARNING: tag attributes in page-specific CSS */
+/* WARNING: Text tag with font-size */
 li {
   font-size: 14px;
 }
 
 /* WARNING: tag attributes in page-specific CSS */
+/* WARNING: Text tag with font-size/font-weight */
 h2 {
   font-size: 22px;
   font-weight: 300;
