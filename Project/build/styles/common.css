@@ -5,8 +5,7 @@ html {
     margin: 0;
     padding: 0;
 
-	font-family:'Open Sans', sans-serif;
-	position: relative;
+	font-family: "Open Sans", Helvetica, sans-serif;
 	color: #252424;
 }
 
@@ -14,10 +13,20 @@ body {
   	margin: 0;
 }
 
+/*
 p {
   font-size: 16px;
   font-weight: 300;
 }
+*/
+
+h1 { /* TODO: nothing */ }
+h2 { /* TODO: nothing */ }
+h3 { /* TODO: nothing */ }
+h4 { /* TODO: nothing */ }
+h5 { /* TODO: nothing */ }
+h6 { /* TODO: nothing */ }
+
 
 .box {
     background-color: #6F97B5;

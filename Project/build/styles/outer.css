@@ -87,8 +87,50 @@ a.header-link > span > * {
     font-size: 1.04em;
     font-weight: 100;
 }
-
+/*
+.header-link-name {
+    font-weight: 300;
+}
+*/
 #website-footer {
     background-color: rgb(111, 151, 181);
     box-shadow: 0 0 0.6em rgba(0, 0, 0, 0.2);
+
+    color: rgb(242, 242, 242);
+}
+
+.website-footer-list {
+    display: flex;
+
+    justify-content: center;
+}
+
+.website-footer-horizontal-stack {
+    margin-left: 1.4em;
+    margin-right: 1.4em;
+}
+
+.footer-bad-class-name > * {
+    color: inherit;
+
+    font-size: 0.86em;
+}
+
+.website-footer-list > *, .website-footer-list > p {
+    color: inherit;
+
+    font-size: 0.86em;
+}
+
+.website-footer-heading {
+    font-size: 1em;
+}
+
+.website-footer-list a {
+    color: inherit;
+
+    font-family: inherit;
+    font-size: inherit;
+
+    text-decoration: inherit;
 }
