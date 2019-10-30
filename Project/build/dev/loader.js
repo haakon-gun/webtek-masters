@@ -1,4 +1,4 @@
-import { load } from "../scripts/utilities.js";
+import { load, UnexpectedArgumentError } from "../scripts/utilities.js";
 
 console.log("Loading...");
 
@@ -29,44 +29,4 @@ function insertHeaderAndFooter() {
 
 insertHeaderAndFooter();
 
-
 console.log("Loaded");
-
-
-
-
-
-
-
-/*
-gridContainer = document.querySelector(".grid-container");
-console.log("hei")
-
-for (employe in employees) {
-  createEmployeDiv(employees[employe]);
-  console.log("hei2");
-}
-
-function createEmployeDiv(employe){
-  let node = document.createElement("div");
-  node.className = "employees";
-
-  let img = document.createElement("img");
-  img.src = employe.image;
-  img.className = "img";
-
-  let name = document.createElement("p");
-  name.className = "name";
-  name.appendChild(document.createTextNode(employe.name));
-
-  let title = document.createElement("p");
-  title.className = "title";
-  title.appendChild(document.createTextNode(employe.title))
-
-  node.appendChild(img);
-  node.appendChild(name);
-  node.appendChild(title);
-
-  gridContainer.appendChild(node);
-}
-*/
