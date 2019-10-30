@@ -31,7 +31,7 @@ h6 { /* TODO: nothing */ }
 .box {
     background-color: #6F97B5;
     width: 100%;
-	position: absolute;
+	/*position: absolute;*/
 	box-shadow: inset 0px 0px 6px 0px rgba(0,0,0,0.25);
 }
 
