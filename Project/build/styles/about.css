@@ -1,16 +1,19 @@
 
-p{
+/* WARNING: tag attributes in page-specific CSS */
+p {
   font-size: 16px;
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 300;
 }
 
-li{
+/* WARNING: tag attributes in page-specific CSS */
+li {
   font-size: 14px;
 }
 
-h2{
+/* WARNING: tag attributes in page-specific CSS */
+h2 {
   font-size: 22px;
   font-weight: 300;
 }
@@ -40,13 +43,13 @@ h2{
   grid-row-start: 2;
   grid-row-end: 6;
 }
+
 .marginRight {
   grid-column-start: 5;
   grid-column-end: 6;
   grid-row-start: 2;
   grid-row-end: 6;
 }
-
 
 #aboutTitle {
   color: white;
@@ -78,13 +81,13 @@ h2{
   cursor: pointer;
 }
 
-
 .item1 {
 	grid-column-start: 1;
 	grid-column-end: 6;
   font-size: 24px;
   text-align: center;
 }
+
 .item2 {
 	grid-column-start: 4;
   grid-column-end: 5;
@@ -103,7 +106,6 @@ h2{
   margin-top: 40px;
   left: 50px;
 }
-
 
 /* The Modal (background) */
 .modal {
@@ -133,40 +135,42 @@ h2{
   width: 981px;
 }
 
-
 .employeesExperience > div {
   background-color: rgba(0, 0, 0, 0.1);
   font-size: 30px;
 }
 
-#XPId1{
+#XPId1 {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 4;
 }
-#XPId5{
+
+#XPId5 {
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 4;
 }
 
-#employeesExperienceName{
+#employeesExperienceName {
   margin-left: 20px;
 }
-#employeesExperienceTitle{
+
+#employeesExperienceTitle {
   margin-left: 20px;
   margin-top: 0;
 }
 
-#employeesExperienceImg{
+#employeesExperienceImg {
   width: 250px;
   border-style: solid;
   border-radius: 2px;
   border-width: 1px;
   border-color: #252424;
 }
+
 /* The Close Button */
 .close {
   color: #aaaaaa;
