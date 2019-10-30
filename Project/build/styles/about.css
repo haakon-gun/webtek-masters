@@ -101,10 +101,8 @@ h2 {
 }
 
 #verticalLineAbout {
-  position: absolute;
   height: 90%;
   margin-top: 40px;
-  left: 50px;
 }
 
 /* The Modal (background) */
