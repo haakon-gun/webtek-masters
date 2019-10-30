@@ -121,14 +121,14 @@ function createEmployeDiv(employee){
   let img = document.createElement("img");
   img.src = employee.image;
   img.className = "img";
-  img.onclick = function() {populateEmployeeContent(employee); modal.style.display = "block";}
+  img.onclick = function() {populateEmployeeContent(employee);}
   let name = document.createElement("p");
   name.className = "name";
-  name.onclick = function() {modal.style.display = "block";}
+  name.onclick = function() {populateEmployeeContent(employee);}
   name.appendChild(document.createTextNode(employee.name));
   let title = document.createElement("p");
   title.className = "title";
-  title.onclick = function() {modal.style.display = "block";}
+  title.onclick = function() {populateEmployeeContent(employee);}
   title.appendChild(document.createTextNode(employee.title))
   node.appendChild(img);
   node.appendChild(name);
@@ -145,6 +145,7 @@ console.log(employeesExperienceName);
 
 
 function populateEmployeeContent(employee){
+  modal.style.display = "block";
   employeesExperienceImg.src = employee.image;
   employeesExperienceName.innerHTML = employee.name;
   employeesExperienceTitle.innerHTML = employee.title;
