@@ -177,6 +177,11 @@ async function f() {
         txt = await load("txt", "file.txt")
         console.log(txt);
 
+        dom = await load("DOM", "file.html", (result) => {
+            return result;
+        })
+        console.log(dom);
+
     } catch (error) {
         console.error(error);
     }
