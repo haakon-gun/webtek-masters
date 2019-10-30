@@ -109,12 +109,14 @@ const documentOMParser = new DOMParser();
  * @param {string} sendingMethod - "GET" or "POST" or more?
  */
 export async function load(type, urlString, receiver, sendingMethod) {
+    load.requestECBounds = load.requestECBounds || new Bounds(400, 599);
+
     const response = await fetch(urlString, {
         method: sendingMethod || "GET",
         credentials: "omit"
     });
 
-    if (!response.ok) {
+    if (/*!response.ok || */load.requestECBounds.contains(response.status)) {
         throw new RequestError(response.status);
     }
 
