@@ -16,6 +16,7 @@ h2{
 }
 
 .grid-container {
+  position: relative;
   display: grid;
   grid-template-columns: 50px 1fr 1fr 1fr 80px;
   grid-template-rows: 196px 300px 300px 300px 300px;
@@ -97,6 +98,7 @@ h2{
 }
 
 #verticalLineAbout {
+  position: absolute;
   height: 90%;
   margin-top: 40px;
   left: 50px;

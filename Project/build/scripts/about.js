@@ -121,28 +121,55 @@ function createEmployeDiv(employee){
   let img = document.createElement("img");
   img.src = employee.image;
   img.className = "img";
-  img.onclick = function() {populateEmployeeContent(employee); modal.style.display = "block";}
+  img.onclick = function() {populateEmployeeContent(employee);}
   let name = document.createElement("p");
   name.className = "name";
-  name.onclick = function() {modal.style.display = "block";}
+  name.onclick = function() {populateEmployeeContent(employee);}
   name.appendChild(document.createTextNode(employee.name));
   let title = document.createElement("p");
   title.className = "title";
-  title.onclick = function() {modal.style.display = "block";}
+  title.onclick = function() {populateEmployeeContent(employee);}
   title.appendChild(document.createTextNode(employee.title))
   node.appendChild(img);
   node.appendChild(name);
   node.appendChild(title);
   gridContainer.appendChild(node);
 }
+function populateEmployeeContent(employee){
+  modal.style.display = "block";
+  employeesExperienceImg.src = employee.image;
+  employeesExperienceName.innerHTML = employee.name;
+  employeesExperienceTitle.innerHTML = employee.title;
+  while(employeesExperienceList.firstChild){
+  employeesExperienceList.removeChild(employeesExperienceList.firstChild );
+  }
+  for (var i = 0; i<employee["experiences"].length; i++) {
+      console.log("hei")
+      let li = document.createElement("li");
+      li.appendChild(document.createTextNode(employee.experiences[i]));
+      employeesExperienceList.appendChild(li);
+    }
+}
 
+// Get the modal
+var modal = document.getElementById("myModal");
 
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+modal.onclick = function() {
+  modal.style.display = "none";
+}
 
 /*
 // Import error?
 // HTML: <script type="module" src="scripts/about.js"></script>
 
-import { load } from "../scripts/utilities.js";
 
 try {
     load("JSON", "../dev/employees.json", (json) => {
