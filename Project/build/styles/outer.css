@@ -12,8 +12,6 @@
 
 
 #website-header, #website-footer {
-    background-color: rgb(128, 128, 128);
-
     width: 100%;
 
     z-index: 9999999;
@@ -65,6 +63,14 @@ a.header-link {
     text-decoration: none;
 
     /* background-color: #445566 */
+    transition: color 0.2s, background-color 0.6s, box-shadow 1s;
+}
+
+a.header-link:hover {
+    background-color: rgb(54, 92, 142);
+    box-shadow: 0 0 1.4em rgba(0, 0, 0, 0.4);
+
+    color: rgb(232, 232, 232);
 }
 
 a.header-link > span {
