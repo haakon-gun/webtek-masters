@@ -11,6 +11,13 @@ async function loadContent() {
 
         console.log(json)
 
+        console.log(json[0]);
+        console.log(json[1]);
+        console.log(json[2]);
+
+        console.log(json[1]["title"]);
+        console.log(json[1]["text"]);
+
     } catch (error) {
         console.error(error);
     }
@@ -21,15 +28,17 @@ loadContent();
 
 
 /*
-for (x in treatments) {
-  createTitleDiv(treatments[x]);
+for (const x of treatments) {
+    createTitleDiv(treatments[x]);
 }
+
 function createTitleDiv (x) {
-  var titleText = document.createElement("h2");
-  titleText.className = "button";
-  populateTreatmentTitle (treatments[x]);
-  document.getElementById("titleName").appendChild(titleText);
+    var titleText = document.createElement("h2");
+    titleText.className = "button";
+    populateTreatmentTitle(treatments[x]);
+    document.getElementById("titleName").appendChild(titleText);
 }
+
 function populateTreatmentTitle(x) {
   //treatmentsTitle.innerHTML = treatments.title;
 }
