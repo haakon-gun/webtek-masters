@@ -9,20 +9,22 @@
 			"Man graderer hullene inn i fem grader der grad 1 er starten på hullet og 5 er hull helt inn til nerven av tannen. Grad 1-2 er det mange kaller for «begynnende hull» og er et hull i emaljen av tannen. Emaljen er 1-2mm tykk. Er hullet lokalisert her kan man stoppe hullet ved å være flink med munnhygiene som tannpuss og tanntråd. Ved grad 3-5 har hullet gått inn til dentin eller tannbenet under emaljen og man må borre bort hullet (den ødelagte delen av tannen) for å stoppe det.",
 
 			"Etter man har borret er det et hulrom i tannen. Ut ifra hvor mye tann som er igjen etter dette kan man erstatte tapt del av tann med enten en fylling, en krone eller innlegg. Oftest bruker man ulike fyllingsmaterialer til å fylle igjen tannen slik at den blir hel igjen. Før brukte man amalgam til dette, men det er nå erstattet med ulike hvite plastmaterialer. Plastmaterialene kommer i mange ulike hvite fargenyanser som gjør det mulig å lage pene fyllinger som ikke syntes. Det finnes mange ulike fyllingsmaterialer på markedet. Vi på Ibsen tannlegesenter benytter kun anerkjente og godt dokumenterte materialer."
-		]
+		],
+		"text" : "Etter man har borret er det et hulrom i tannen. Ut ifra hvor mye tann som er igjen etter dette kan man erstatte tapt del av tann med enten en fylling, en krone eller innlegg. Oftest bruker man ulike fyllingsmaterialer til å fylle igjen tannen slik at den blir hel igjen. Før brukte man amalgam til dette, men det er nå erstattet med ulike hvite plastmaterialer. Plastmaterialene kommer i mange ulike hvite fargenyanser som gjør det mulig å lage pene fyllinger som ikke syntes. Det finnes mange ulike fyllingsmaterialer på markedet. Vi på Ibsen tannlegesenter benytter kun anerkjente og godt dokumenterte materialer."
+		],
 	},
 	"1": {
 		"title": "Kirurgi og tanntrekking",
-		"tiss": {
+		"textContent": {
 
-			"undertittel": "Fjerning av visdomstenner",
+			"subTitle": "Fjerning av visdomstenner",
 			"text": "Visdomstennene er det tredje og siste sett av jeksler som bryter frem i munnen, vanligvis i slutten av tenårene eller tidlig i tyveårene. Mange lever hele livet med friske, fullt frembrudte visdomstenner uten symptomer eller smerter. Men ofte er det ikke nok plass til visdomstannen, og den kommer derfor bare delvis frem i munnen. Slike tenner kan gi opphav til smerter og betennelse, og av den grunn er det nødvendig å fjerne dem.",
 
-			"undertittel2":"Rotspissamputasjon:",
-			"text2":"Alle tenner har en rotkanal som forsyner tannen med nerver og blodkar. Om bakterier kommer inn i rotkanalen, eller tannen skades slik at blodforsyningen til tannen skades, må tannen rotfylles. Noen ganger er ikke en rotfylling tilstrekkelig for at tannen skal bli bra, og da kan det være behov for kirurgisk behandling. Den vanligste kirurgiske behandling for å redde tannen kalles for rotspissamputasjon. Ved denne operasjonen blir betennelses-vev rundt roten fjernes, og rotkanalen forsegles med en fylling slik at ny infeksjon i roten ikke skal oppstå. Når området rundt er tilhelet med nytt kjeveben, kan tannen opprettholder sin normale funksjon.",
+			"subTitle":"Rotspissamputasjon:",
+			"text":"Alle tenner har en rotkanal som forsyner tannen med nerver og blodkar. Om bakterier kommer inn i rotkanalen, eller tannen skades slik at blodforsyningen til tannen skades, må tannen rotfylles. Noen ganger er ikke en rotfylling tilstrekkelig for at tannen skal bli bra, og da kan det være behov for kirurgisk behandling. Den vanligste kirurgiske behandling for å redde tannen kalles for rotspissamputasjon. Ved denne operasjonen blir betennelses-vev rundt roten fjernes, og rotkanalen forsegles med en fylling slik at ny infeksjon i roten ikke skal oppstå. Når området rundt er tilhelet med nytt kjeveben, kan tannen opprettholder sin normale funksjon.",
 
-			"undertittel3":"Etter kirurgi og tanntrekking",
-			"text3": [
+			"subTitle":"Etter kirurgi og tanntrekking",
+			"text": [
 			"Kroppen oppfatter alle kirurgiske behandlinger som en skade som må repareres. Det er viktig at området får mest mulig ro når tilhelingen starter. Etter 20 minutter fjernes bittkompressen (hvis du har fått en). Så snart som mulig tas smertestillende tablett(er) med litt vann (slik begynner dette å virke mens bedøvelsen ennå sitter).",
 			"under",
 

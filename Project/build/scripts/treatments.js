@@ -1,4 +1,4 @@
-
+/*
 import { load } from "../scripts/utilities.js";
 
 
@@ -25,7 +25,10 @@ async function loadContent() {
 
 
 loadContent();
+*/
 
+
+wfewef
 
 /*
 for (const x of treatments) {
