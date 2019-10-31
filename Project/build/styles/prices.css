@@ -1,0 +1,66 @@
+
+
+.grid-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-rows: 196px 300px 300px 300px;
+	width: 1022px;
+	height: 1400px;
+	left: 50%;
+ 	margin-left: -511px;
+	grid-column-gap: 5px;
+}
+
+
+#titlebox {
+    margin-top: 0px;
+    padding: 0px;
+    height: 130px;
+    text-align: center;
+    line-height: 120px;
+    font-size: 40px;
+    color: white;
+}
+
+#text {
+    text-align: left;
+    margin-top: 30px;
+    padding: 5px;
+    font-size: 16px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#prices {
+    text-align: left;
+    padding: 5px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+table {
+  padding: 10px;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+td, th {
+  padding: 5px;
+  padding-left: 10px;
+}
+
+th {
+  background-color: #6F97B5;
+  color: white;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
