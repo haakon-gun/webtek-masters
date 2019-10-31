@@ -51,6 +51,7 @@ h2 {
     grid-row-start: 2;
     grid-row-end: 6;
     background-color: lightgreen;
+    font-size: 15px;
 }
 
 .button {
@@ -58,6 +59,14 @@ h2 {
     background-color: inherit;
     cursor: pointer;
     display: inline-block;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+#treatmentInfo {
+  text-align: left;
+  padding: 7px;
+  font-size: 15px;
 }
 
 #titlebox {

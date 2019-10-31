@@ -22,14 +22,36 @@ treatments = {
       "Du skal ikke spise, drikke eller skylle munnen på de første to til tre timene etter kirurgisk behandling. Unngå trening og tunge løft de første to dagene etter operasjonen og røyking bør unngås operasjonsdagen. På denne måten forebygges smertene som kommer når virkningen av lokalbedøvelsen går ut (oftest en til to timer etter inngrepet), og muligheten for å få betennelse i kjevebeinet reduseres vesentlig. Etter enkelte behandlinger vil det være en fordel å kjøle ned operasjonsstedet med en ispose. Dette vil redusere hevelsen og dermed også smerter og gapebesvær. Sett i gang så raskt som mulig etter behandlingen! ISPOSE: En plastpose med isbiter og litt kaldt vann pakkes inn i et fuktig håndkle. Hold posen over operasjonsstedet med litt press i 15 minutter, deretter hvile i 15 minutter. Gjenta 3 til 4 ganger."
     ]
   },
+  treatment2: {
+    title: "Kroner / Bro / Fasett",
+    text: [
+      "Fjerning av visdomstenner",
+      "Visdomstennene er det tredje og siste sett av jeksler som bryter frem i munnen, vanligvis i slutten av tenårene eller tidlig i tyveårene. Mange lever hele livet med friske, fullt frembrudte visdomstenner uten symptomer eller smerter. Men ofte er det ikke nok plass til visdomstannen, og den kommer derfor bare delvis frem i munnen. Slike tenner kan gi opphav til smerter og betennelse, og av den grunn er det nødvendig å fjerne dem.",
+      "Rotspissamputasjon:",
+      "Alle tenner har en rotkanal som forsyner tannen med nerver og blodkar. Om bakterier kommer inn i rotkanalen, eller tannen skades slik at blodforsyningen til tannen skades, må tannen rotfylles. Noen ganger er ikke en rotfylling tilstrekkelig for at tannen skal bli bra, og da kan det være behov for kirurgisk behandling. Den vanligste kirurgiske behandling for å redde tannen kalles for rotspissamputasjon. Ved denne operasjonen blir betennelses-vev rundt roten fjernes, og rotkanalen forsegles med en fylling slik at ny infeksjon i roten ikke skal oppstå. Når området rundt er tilhelet med nytt kjeveben, kan tannen opprettholder sin normale funksjon.",
+      "Etter kirurgi og tanntrekking",
+      "Kroppen oppfatter alle kirurgiske behandlinger som en skade som må repareres. Det er viktig at området får mest mulig ro når tilhelingen starter. Etter 20 minutter fjernes bittkompressen (hvis du har fått en). Så snart som mulig tas smertestillende tablett(er) med litt vann (slik begynner dette å virke mens bedøvelsen ennå sitter).",
+      "Du skal ikke spise, drikke eller skylle munnen på de første to til tre timene etter kirurgisk behandling. Unngå trening og tunge løft de første to dagene etter operasjonen og røyking bør unngås operasjonsdagen. På denne måten forebygges smertene som kommer når virkningen av lokalbedøvelsen går ut (oftest en til to timer etter inngrepet), og muligheten for å få betennelse i kjevebeinet reduseres vesentlig. Etter enkelte behandlinger vil det være en fordel å kjøle ned operasjonsstedet med en ispose. Dette vil redusere hevelsen og dermed også smerter og gapebesvær. Sett i gang så raskt som mulig etter behandlingen! ISPOSE: En plastpose med isbiter og litt kaldt vann pakkes inn i et fuktig håndkle. Hold posen over operasjonsstedet med litt press i 15 minutter, deretter hvile i 15 minutter. Gjenta 3 til 4 ganger."
+    ]
+  },
 }
 
 //x = treatments.treatment0.title;
 //document.getElementById("demo").innerHTML = x;
+/*
 for (x in treatments) {
-  document.getElementById("demo").innerHTML += treatments[x] + "<br><br><br><br><br>";
-}
+  document.getElementById("demo").innerHTML += treatments.treatment0["title"] + "<br><br><br><br><br>";
+  document.getElementById("demo").innerHTML += treatments.treatment1["title"] + "<br><br><br><br><br>";
+  document.getElementById("demo").innerHTML += treatments.treatment2["title"] + "<br><br><br><br><br>";
+  break;
+}*/
+document.getElementById("en").innerHTML += treatments.treatment0["title"] + "<br><br><br><br><br>";
+document.getElementById("to").innerHTML += treatments.treatment1["title"] + "<br><br><br><br><br>";
+document.getElementById("tre").innerHTML += treatments.treatment2["title"] + "<br><br><br><br><br>";
 
+document.getElementById("treatmentInfo").innerHTML += treatments.treatment0["text"] + "<br><br><br><br><br>";
+
+//document.getElementById("demo").innerHTML += myObj.cars["car2"];
 
 
 /*
