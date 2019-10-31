@@ -36,11 +36,13 @@ h6 { /* TODO: nothing */ }
     margin-right: auto;
 }
 
-.box {
+.page-header-box {
     background-color: #6F97B5;
     width: 100%;
 	/*position: absolute;*/
 	box-shadow: inset 0px 0px 6px 0px rgba(0,0,0,0.25);
+
+    padding-top: 2em;
 }
 
 .verticalLine {
