@@ -25,6 +25,7 @@ async function insertHeaderAndFooter() {
     }
 
     document.head.appendChild(dom.querySelector("#css-link"));
+    document.head.appendChild(dom.querySelector("#favicon"));
 
     const header = dom.querySelector("#website-header");
 

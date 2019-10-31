@@ -35,6 +35,12 @@ h6 { /* TODO: nothing */ }
     margin-right: auto;
 }
 
+.v-centered {
+    display: table;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 .page-header-box {
     background-color: #6F97B5;
     width: 100%;
@@ -42,6 +48,10 @@ h6 { /* TODO: nothing */ }
 	box-shadow: inset 0px 0px 6px 0px rgba(0,0,0,0.25);
 
     margin-top: 6em;
+}
+
+.page-header-title {
+
 }
 
 .verticalLine {
