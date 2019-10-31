@@ -1,8 +1,8 @@
 .grid-container {
     position: relative;
     display: grid;
-    grid-template-columns: 108px 112px 1fr 1fr 1fr 1fr;
-    grid-template-rows: 130px 136px 136px 136px 136px;
+    grid-template-columns: 1fr 1fr 3fr 1fr;
+    grid-template-rows: 70px 136px 136px 136px 136px;
     background-color: rgba(155, 255, 255, 0.4);
     width: 1022px;
     height: 100%;
@@ -14,6 +14,7 @@
     text-align: center;
     font-size: 30px;
 }
+
 #icon1{
     grid-column-start: 2;
     grid-column-end: 3;
@@ -38,17 +39,20 @@
     grid-row-start: 5;
     grid-row-end: 6;
 }
-#tlfNummer {
+.contentinfo.tlfNummer {
     grid-column-start: 3;
     grid-column-end: 6;
     grid-row-start: 2;
     grid-row-end: 3;
 }
-#tlfTider {
+.contentinfo.tlfTider {
     grid-column-start: 3;
     grid-column-end: 6;
     grid-row-start: 3;
     grid-row-end: 4;
+}
+.contentinfo{
+    
 }
 #adresse{
     grid-column-start: 3;
@@ -64,10 +68,10 @@
 }
 #titlebox{
 	margin-top: 0px;
-  padding: 0px;
+    padding: 0px;
 	height: 130px;
-  text-align: center;
-  line-height: 120px;
-  font-size: 40px;
-  color: white;
+    text-align: center;
+    line-height: 120px;
+    font-size: 40px;
+    color: white;
 }
