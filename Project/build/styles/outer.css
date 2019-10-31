@@ -96,6 +96,7 @@ a.header-link > span > * {
     color: rgb(242, 242, 242);
 }
 
+/* WARNING: <tag> attributes in page-specific CSS */
 iframe {
   margin-top: 30px;
   margin-bottom: 30px;

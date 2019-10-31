@@ -43,6 +43,7 @@
     grid-row-end: 5;
 }
 
+/* WARNING: <tag> attributes in page-specific CSS */
 table {
   padding: 10px;
   border-collapse: collapse;
@@ -50,17 +51,20 @@ table {
   overflow: hidden;
 }
 
+/* WARNING: <tag> attributes in page-specific CSS */
 td, th {
   padding: 10px;
   padding-left: 10px;
 }
 
+/* WARNING: <tag> attributes in page-specific CSS */
 th {
   background-color: #6F97B5;
   color: white;
   text-align: left;
 }
 
+/* WARNING: <tag> attributes in page-specific CSS */
 tr:nth-child(even) {
   background-color: #f0f0f0;
 }
