@@ -16,11 +16,10 @@ h2 {
 }
 
 .grid-container {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 196px 300px 300px 300px;
-    /*background-color: rgba(155, 255, 255, 0.2);    !!!!!*/
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 196px 300px 300px 300px;
 	width: 1022px;
 	height: 1400px;
 	left: 50%;
@@ -35,7 +34,7 @@ h2 {
 .differentTopics {
     text-align: right;
     padding-right: 20px;
-    line-height: 20%;
+    line-height: 85%;
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 2;
@@ -51,7 +50,7 @@ h2 {
     grid-row-start: 2;
     grid-row-end: 6;
     background-color: lightgreen;
-    font-size: 15px;
+    font-size: 10px;
 }
 
 .button {
@@ -61,12 +60,6 @@ h2 {
     display: inline-block;
     font-size: 20px;
     padding-top: 10px;
-}
-
-#treatmentInfo {
-  text-align: left;
-  padding: 7px;
-  font-size: 15px;
 }
 
 #titlebox {
