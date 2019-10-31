@@ -118,6 +118,8 @@ for (employee in employees) {
 function createEmployeDiv(employee){
   let node = document.createElement("div");
   node.className = "employees";
+  let border = document.createElement("div");
+  border.className = "border";
   let img = document.createElement("img");
   img.src = employee.image;
   img.className = "img";
@@ -130,9 +132,10 @@ function createEmployeDiv(employee){
   title.className = "title";
   title.onclick = function() {populateEmployeeContent(employee);}
   title.appendChild(document.createTextNode(employee.title))
-  node.appendChild(img);
-  node.appendChild(name);
-  node.appendChild(title);
+  border.appendChild(img);
+  border.appendChild(name);
+  border.appendChild(title);
+  node.appendChild(border);
   gridContainer.appendChild(node);
 }
 function populateEmployeeContent(employee){
