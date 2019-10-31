@@ -36,22 +36,67 @@ treatments = {
   },
 }
 
-//x = treatments.treatment0.title;
-//document.getElementById("demo").innerHTML = x;
-/*
 for (x in treatments) {
-  document.getElementById("demo").innerHTML += treatments.treatment0["title"] + "<br><br><br><br><br>";
-  document.getElementById("demo").innerHTML += treatments.treatment1["title"] + "<br><br><br><br><br>";
-  document.getElementById("demo").innerHTML += treatments.treatment2["title"] + "<br><br><br><br><br>";
-  break;
-}*/
-document.getElementById("en").innerHTML += treatments.treatment0["title"] + "<br><br><br><br><br>";
-document.getElementById("to").innerHTML += treatments.treatment1["title"] + "<br><br><br><br><br>";
-document.getElementById("tre").innerHTML += treatments.treatment2["title"] + "<br><br><br><br><br>";
+  createTitleDiv(treatments[x]);
+}
+function createTitleDiv (x) {
+  var titleText = document.createElement("h2");
+  titleText.className = "button";
+  populateTreatmentTitle (treatments[x]);
+  document.getElementById("titleName").appendChild(titleText);
+}
+function populateTreatmentTitle(x) {
+  //treatmentsTitle.innerHTML = treatments.title;
+}
 
-document.getElementById("treatmentInfo").innerHTML += treatments.treatment0["text"] + "<br><br><br><br><br>";
 
-//document.getElementById("demo").innerHTML += myObj.cars["car2"];
+
+
+/* FUNKE DÅRLIG:
+
+gridContainer = document.querySelector(".grid-container");
+
+function createTitleDiv(title) {
+  let node = document.createElement("div");
+  node.className = "button";
+
+  let titleText = document.createElement("h2");
+  titleName.classname = "title";
+  titleName.onclick = function() {populateTreatmentTitle(title);}
+  titleName.appendChild(document.createTextNode(title.titleName));
+
+  node.appendChild(titleName);
+  gridContainer.appendChild(node);
+}
+
+function populateTreatmentTitle(title) {
+
+  console.log("får ikke til detta her");
+}
+
+
+
+
+
+
+document.getElementById("en").addEventListener("click", function(){
+  if (document.getElementById("infoEn").style.display = "none") {
+    document.getElementById("infoEn").style.display = "block";
+  }
+}
+);
+document.getElementById("to").addEventListener("click", function(){
+  document.getElementById("infoTo").style.display = "block";
+  document.getElementById("infoTo").innerHTML += treatments.treatment1["text"];
+}
+);
+
+document.getElementById("en").innerHTML += treatments.treatment0["title"];
+document.getElementById("to").innerHTML += treatments.treatment1["title"];
+document.getElementById("tre").innerHTML += treatments.treatment2["title"];
+
+document.getElementById("infoEn").innerHTML += treatments.treatment0["text"];
+*/
 
 
 /*
