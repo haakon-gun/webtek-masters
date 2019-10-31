@@ -120,17 +120,15 @@ function createEmployeDiv(employee){
   node.className = "employees";
   let border = document.createElement("div");
   border.className = "border";
+  border.onclick = function() {populateEmployeeContent(employee);}
   let img = document.createElement("img");
   img.src = employee.image;
   img.className = "img";
-  img.onclick = function() {populateEmployeeContent(employee);}
   let name = document.createElement("p");
   name.className = "name";
-  name.onclick = function() {populateEmployeeContent(employee);}
   name.appendChild(document.createTextNode(employee.name));
   let title = document.createElement("p");
   title.className = "title";
-  title.onclick = function() {populateEmployeeContent(employee);}
   title.appendChild(document.createTextNode(employee.title))
   border.appendChild(img);
   border.appendChild(name);
