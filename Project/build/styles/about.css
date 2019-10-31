@@ -22,7 +22,6 @@ h2 {
 }
 
 .grid-container {
-  z-index: -1;
   position: relative;
   display: grid;
   grid-template-columns: 50px 1fr 1fr 1fr 80px;
@@ -99,13 +98,13 @@ h2 {
 
 #titlebox {
   position: absolute;
-  z-index: -1;
   height: 130px;
 }
 
 #verticalLineAbout {
   height: 90%;
-  margin-top: 40px;
+  margin-top: 50px;
+  margin-left: 50px;
 }
 
 /* The Modal (background) */
