@@ -4,7 +4,7 @@
     display: flex;
 
     padding: 0;
-    margin: 0 calc(1em + 10%) 0 calc(1em + 10%);
+    margin: 1.2em calc(1em + 10%) 1.2em calc(1em + 10%);
 
     width: auto;
     height: auto;
@@ -27,6 +27,7 @@
     border-right: 4px solid rgb(16, 48, 128);
 
     width: auto;
+    height: auto;
 
 
     /* DEBUG */
@@ -34,11 +35,21 @@
 }
 
 #navigation-list {
-    margin: 0;
+    margin: 0.8em 0.8em 0.8em 0;
     padding: 0;
 
     text-align: right;
     list-style-type: none;
+
+    width: auto;
+    height: auto;
+
+    /* DEBUG */
+    background-color: rgb(255, 100, 0);
+}
+
+#navigation-list > li {
+    
 }
 
 #navigation-list > li, #navigation-list > li > a {
@@ -50,9 +61,27 @@
     width: auto;
     height: auto;
 
-    margin: 0;
+    margin: 0 0 0 0.8em;
     padding: 0;
 
     /* DEBUG */
     background-color: rgb(150, 200, 250);
+}
+
+
+
+@media all and (max-width: 826px) {
+
+    #container, #container > * {
+        display: block;
+    }
+
+    #navigator {
+        border-right: none;
+        border-bottom: 4px solid rgb(16, 48, 128);
+    }
+
+    #navigation-list {
+        text-align: center;
+    }
 }
