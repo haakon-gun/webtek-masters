@@ -96,6 +96,11 @@ a.header-link > span > * {
     color: rgb(242, 242, 242);
 }
 
+iframe {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .website-footer-list {
     display: flex;
 
