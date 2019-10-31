@@ -32,7 +32,6 @@ h6 { /* TODO: nothing */ }
 /* Fint om denne får ligge i fred. Bruk den gjerne. */
 .h-centered {
     display: table;
-
     margin-left: auto;
     margin-right: auto;
 }
