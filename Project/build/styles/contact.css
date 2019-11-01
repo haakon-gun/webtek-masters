@@ -101,7 +101,6 @@ p{
         display: grid;
         grid-template-columns: 1fr 1fr 320px 1fr 1fr;
         grid-template-rows: 10px 1fr 1fr 1fr 1fr;
-        width: 1022px;
         height: auto
         left: 50%;
         margin-left: -511px;
