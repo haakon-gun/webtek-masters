@@ -44,8 +44,9 @@
     margin: 0;
 }
 
-#logo{
-  width: 200px;
+#logo {
+    height: 54%;
+    width: auto;
 }
 
 a.header-link {
