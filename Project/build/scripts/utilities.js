@@ -168,7 +168,15 @@ function rgbString(...values) {
 }
 
 function rgbaString(...values) {
-    assert(values.length == 4);
+    let alpha = null;
+
+    if (values.length == 4) {
+        alpha = values[3];
+    } else {
+        assert(values.length == 3);
+
+        alpha = 1;
+    }
 
     return "rgb(" + values[0] + ", " + values[1] + ", " + values[2] + ", " + values[3] + ")";
 }
