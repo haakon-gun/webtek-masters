@@ -18,10 +18,53 @@ if (!String.prototype.format) {
 }
 
 
+export class UnexpectedArgumentError extends Error {
+
+    constructor(argument, value, message) {
+        super((message || "Unexpected argument value: '{0}' = '{1}'").format(argument, value));
+
+        this.name = "UnexpectedArgumentError";
+        this.argument = argument;
+        this.value = value;
+    }
+
+    toString() {
+        return this.message;
+    }
+}
+
+export class RequestError extends Error {
+
+    constructor(code, message) {
+        super((message || "An error has occured during a data request: {0}").format(code));
+
+        this.name = "RequestError";
+        this.code = code;
+    }
+
+    toString() {
+        return this.message;
+    }
+}
+
+export class AssertionError extends Error {
+
+    constructor(message) {
+        super((message || "AssertionError");
+
+        this.name = "AssertionError";
+    }
+
+    toString() {
+        return this.message;
+    }
+}
+
+
 var assert = (test, message) => {
     if (test) { return; }
 
-    throw Error(message || "AssertionError");
+    throw AssertionError(message);
 }
 
 
@@ -81,37 +124,6 @@ export class Bounds {
             if (value < this.x || value > this.y) { return false; }
         }
         return true;
-    }
-}
-
-
-export class UnexpectedArgumentError extends Error {
-
-    constructor(argument, value, message) {
-        super((message || "Unexpected argument value: '{0}' = '{1}'").format(argument, value));
-
-        this.name = "UnexpectedArgumentError";
-        this.argument = argument;
-        this.value = value;
-    }
-
-    toString() {
-        return this.message
-    }
-}
-
-
-export class RequestError extends Error {
-
-    constructor(code, message) {
-        super((message || "An error has occured during a data request: {0}").format(code));
-
-        this.name = "RequestError";
-        this.code = code;
-    }
-
-    toString() {
-        return this.message
     }
 }
 
@@ -191,7 +203,7 @@ function colorString(...values) {
         case 3: return rgbString(...values);
         case 4: return rgbaString(...values);
         default:
-            throw Error("Incorrect function arguments for 'setColor(values...)'.");
+            throw UnexpectedArgumentError("values", values);
     }
 }
 
