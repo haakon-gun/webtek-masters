@@ -1,5 +1,4 @@
 
-
 .grid-container {
   position: relative;
   display: grid;
@@ -67,4 +66,76 @@ th {
 /* WARNING: <tag> attributes in page-specific CSS */
 tr:nth-child(odd) {
   background-color: #D4E2EC;
+}
+
+
+@media only screen and (max-width: 1022px) {
+
+  .grid-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 196px 1fr 1fr 1fr;
+  	width: 100%;
+    height: auto
+    left: 50%;
+    margin-left: -511px;
+  }
+
+  #titlebox {
+      margin-top: 0px;
+      padding: 0px;
+      height: 130px;
+      text-align: center;
+      line-height: 120px;
+      font-size: 40px;
+      color: white;
+  }
+
+  #text {
+      text-align: left;
+      margin-top: 30px;
+      padding: 5px;
+      width: 100%;
+      font-size: 16px;
+      grid-column-start: 3;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 1;
+  }
+
+  #prices {
+      text-align: left;
+      padding: 5px;
+      grid-column-start: 3;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+  }
+
+  /* WARNING: <tag> attributes in page-specific CSS */
+  table {
+    padding: 10px;
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  /* WARNING: <tag> attributes in page-specific CSS */
+  td, th {
+    padding: 10px;
+    padding-left: 10px;
+  }
+
+  /* WARNING: <tag> attributes in page-specific CSS */
+  th {
+    background-color: #6F97B5;
+    color: white;
+    text-align: left;
+  }
+
+  /* WARNING: <tag> attributes in page-specific CSS */
+  tr:nth-child(odd) {
+    background-color: #D4E2EC;
+  }
 }
