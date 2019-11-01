@@ -18,6 +18,13 @@ if (!String.prototype.format) {
 }
 
 
+var assert = (test, message) => {
+    if (test) { return; }
+
+    throw Error(message || "AssertionError");
+}
+
+
 export function argProvided(argument) {
     return typeof argument !== "undefined";
 }
@@ -151,6 +158,33 @@ export async function load(type, urlString, receiver, sendingMethod) {
     }
 
     return object;
+}
+
+
+function rgbString(...values) {
+    assert(values.length == 3);
+
+    return "rgb(" + values[0] + ", " + values[1] + ", " + values[2] + ")";
+}
+
+function rgbaString(...values) {
+    assert(values.length == 4);
+
+    return "rgb(" + values[0] + ", " + values[1] + ", " + values[2] + ", " + values[3] + ")";
+}
+
+function colorString(...values) {
+    if (values.length == 1) {
+        return values[0];
+    }
+
+    switch (values.length) {
+        case 1: return values[0];
+        case 3: return rgbString(...values);
+        case 4: return rgbaString(...values);
+        default:
+            throw Error("Incorrect function arguments for 'setColor(values...)'.");
+    }
 }
 
 
