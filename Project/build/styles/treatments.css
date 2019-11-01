@@ -33,7 +33,7 @@
     width: auto;
     height: auto;
 
-    /* Experimental; not supported by Microsoft Edge. Those users can live with this */
+    /* Experimental; not supported by Microsoft Edge. Those users can live without it */
     height: max-content;
 
     /* DEBUG */
@@ -51,7 +51,7 @@
     width: auto;
     height: auto;
 
-    /* Experimental; not supported by Microsoft Edge. Those users can live with this */
+    /* Experimental; not supported by Microsoft Edge. Those users can live without it */
     height: max-content;
 
     /* DEBUG */

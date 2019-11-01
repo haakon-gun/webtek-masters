@@ -99,12 +99,32 @@ a.header-link > span > * {
     box-shadow: 0 0 0.6em rgba(0, 0, 0, 0.2);
 
     color: rgb(242, 242, 242);
+
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
 }
 
-/* WARNING: <tag> attributes in page-specific CSS */
-iframe {
-  margin-top: 30px;
-  margin-bottom: 30px;
+#map-container {
+    display: flex;
+
+    height: 12em;
+}
+
+#map {
+    border: none;
+
+    width: 100%;
+    height: 100%;
+}
+
+.website-footer-section {
+    width: auto;
+
+    margin-left: 2em;
+    margin-right: 2em;
+
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .website-footer-list {
