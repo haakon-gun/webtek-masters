@@ -2,7 +2,7 @@
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 580px 1fr 1fr;
-    grid-template-rows: 70px 136px 136px 136px 136px;
+    grid-template-rows: 10px 136px 136px 136px 136px;
     width: 1022px;
     height: 1400px;
     left: 50%;
