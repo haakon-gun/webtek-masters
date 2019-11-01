@@ -24,6 +24,8 @@ async function insertHeaderAndFooter() {
         return;
     }
 
+    document.title = dom.title + "s " + document.title.toLowerCase();
+
     document.head.appendChild(dom.querySelector("#css-link"));
     document.head.appendChild(dom.querySelector("#favicon"));
 
