@@ -12,7 +12,7 @@
     overflow: scroll;
 
     /* DEBUG */
-    background-color: rgb(200, 200, 0);
+    /* background-color: rgb(200, 200, 0); */
 }
 
 #container > * {
@@ -24,18 +24,25 @@
 }
 
 #navigator {
-    border-right: 4px solid rgb(16, 48, 128);
+    border-right: 4px solid var(--accent-background-color-5);
+    /*box-shadow: 0 4px 6px -6px #222; /* Bottom */
+    /*box-shadow: -15px 0 15px -15px inset, 12px 0px 2px 1px rgba(0, 0, 255, .2);*/
+    box-shadow: 0.4em 0 0.3em -0.32em rgba(20, 40, 80, 0.5),
+         inset -0.4em 0 0.3em -0.32em rgba(20, 40, 80, 0.5);
 
     width: auto;
     height: auto;
 
+    /* Experimental; not supported by Microsoft Edge. Those users can live with this */
+    height: max-content;
 
     /* DEBUG */
-    background-color: rgb(0, 100, 255);
+    /* background-color: rgb(0, 100, 255); */
 }
 
 #navigation-list {
     margin: 0.8em 0.8em 0.8em 0;
+    margin: 0 0.8em 0 0;
     padding: 0;
 
     text-align: right;
@@ -44,17 +51,23 @@
     width: auto;
     height: auto;
 
-    /* DEBUG */
-    background-color: rgb(255, 100, 0);
-}
+    /* Experimental; not supported by Microsoft Edge. Those users can live with this */
+    height: max-content;
 
-#navigation-list > li {
-    
+    /* DEBUG */
+    /* background-color: rgb(255, 100, 0); */
 }
 
 #navigation-list > li, #navigation-list > li > a {
     margin: 0;
     padding: 0;
+
+    color: rgb(64, 64, 64);
+}
+
+#navigation-list > li {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 #content {
@@ -65,7 +78,7 @@
     padding: 0;
 
     /* DEBUG */
-    background-color: rgb(150, 200, 250);
+    /* background-color: rgb(150, 200, 250); */
 }
 
 
@@ -78,10 +91,18 @@
 
     #navigator {
         border-right: none;
-        border-bottom: 4px solid rgb(16, 48, 128);
+        border-bottom: 4px solid var(--accent-background-color-5);
+
+        box-shadow: none;
     }
 
     #navigation-list {
+        margin: 0 0 0.8em 0;
+
         text-align: center;
+    }
+
+    #content {
+        margin: 0.8em 0 0 0;
     }
 }

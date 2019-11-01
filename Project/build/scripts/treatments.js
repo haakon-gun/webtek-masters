@@ -28,19 +28,17 @@ async function loadContent() {
 loadContent();
 
 const titles = [
-    "Deilig, deilig, deilig",
-    "Deilig, deilig, deilig",
-    "Nammmmmmmmm",
-    "Shit, ass; dritkult!",
-    "Wow, altså.",
-    "Dette er en overskrift",
-    "Kunne aldri tenkt det",
-    "Bææææææææææææææ",
-    "Møøøøø, sa kuen",
-    "Dette er den siste"
+    "Hva er karies/hull i tannen?",
+    "Kirurgi og tanntrekking",
+    "Kroner/Bro/Fasett",
+    "Rotfylling",
+    "Søvnapnéskinner/snorkeskinner",
+    "Tannimplantater",
+    "Tannkjøttbetennelse",
+    "Tannproteser",
 ];
 
-for (let i = 0; i < 10; ++i) {
+for (let i = 0; i < titles.length; ++i) {
     const entry = document.createElement("li");
 
     const link = document.createElement("a");
