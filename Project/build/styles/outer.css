@@ -44,6 +44,10 @@
     margin: 0;
 }
 
+#logo{
+  width: 200px;
+}
+
 a.header-link {
     -webkit-appearance: none;
     appearance: none;

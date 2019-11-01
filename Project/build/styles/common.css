@@ -20,14 +20,8 @@ html {
 
 body {
   	margin: 0;
+    font-size: 100%;
 }
-
-/*
-p {
-  font-size: 16px;
-  font-weight: 300;
-}
-*/
 
 h1 { /* TODO: nothing */ }
 h2 { /* TODO: nothing */ }
@@ -72,5 +66,9 @@ h6 { /* TODO: nothing */ }
 }
 
 .verticalLine {
-	border-left: 2px solid #252424;
+	border-left: 1px solid #252424;
+}
+
+.horisontalLine{
+  border-top: 1px solid #252424;
 }
