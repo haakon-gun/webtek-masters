@@ -1,50 +1,73 @@
-{
-	"0": {
-		"title": "Hva er karies/hull i tannen?",
-		"text": [
-			"Karies (hull i tannen) er en sykdom som oppstår når tannsubstans brytes ned av biprodukter (syrer) fra bakteriekolonier som lever på tannoverflaten. Disse koloniene er det man kaller plakk.",
+[{
+	"title": "Hva er karies/hull i tannen?",
+	"content": [
+        {"paragraph": "Karies (hull i tannen) er en sykdom som oppstår når tannsubstans brytes ned av biprodukter (syrer) fra bakteriekolonier som lever på tannoverflaten. Disse koloniene er det man kaller plakk."},
 
-			"Hvorfor man får hull i tennene har en multifaktoriell årsak. Til å forklare hvorfor bruker en ofte Keys triade. Denne består av enkeltfaktorene plakk på tennene, kosten og tannflaten. Hver for seg er ikke nok til å danne et hull i tannen, men fletter man dem sammen og legger på tid vil det oppstå et hull. ",
+		{"paragraph": "Hvorfor man får hull i tennene har en multifaktoriell årsak. Til å forklare hvorfor bruker en ofte Keys triade. Denne består av enkeltfaktorene plakk på tennene, kosten og tannflaten. Hver for seg er ikke nok til å danne et hull i tannen, men fletter man dem sammen og legger på tid vil det oppstå et hull."},
 
-			"Man graderer hullene inn i fem grader der grad 1 er starten på hullet og 5 er hull helt inn til nerven av tannen. Grad 1-2 er det mange kaller for «begynnende hull» og er et hull i emaljen av tannen. Emaljen er 1-2mm tykk. Er hullet lokalisert her kan man stoppe hullet ved å være flink med munnhygiene som tannpuss og tanntråd. Ved grad 3-5 har hullet gått inn til dentin eller tannbenet under emaljen og man må borre bort hullet (den ødelagte delen av tannen) for å stoppe det.",
+		{"paragraph": "Man graderer hullene inn i fem grader der grad 1 er starten på hullet og 5 er hull helt inn til nerven av tannen. Grad 1-2 er det mange kaller for «begynnende hull» og er et hull i emaljen av tannen. Emaljen er 1-2mm tykk. Er hullet lokalisert her kan man stoppe hullet ved å være flink med munnhygiene som tannpuss og tanntråd. Ved grad 3-5 har hullet gått inn til dentin eller tannbenet under emaljen og man må borre bort hullet (den ødelagte delen av tannen) for å stoppe det."},
 
-			"Etter man har borret er det et hulrom i tannen. Ut ifra hvor mye tann som er igjen etter dette kan man erstatte tapt del av tann med enten en fylling, en krone eller innlegg. Oftest bruker man ulike fyllingsmaterialer til å fylle igjen tannen slik at den blir hel igjen. Før brukte man amalgam til dette, men det er nå erstattet med ulike hvite plastmaterialer. Plastmaterialene kommer i mange ulike hvite fargenyanser som gjør det mulig å lage pene fyllinger som ikke syntes. Det finnes mange ulike fyllingsmaterialer på markedet. Vi på Ibsen tannlegesenter benytter kun anerkjente og godt dokumenterte materialer."
-		]
-	},
-	"1": {
-		"title": "Kirurgi og tanntrekking",
-		"text": [
-			"Fjerning av visdomstenner",
+        {"image": {
+            "source": "...",
+            "style": null
+        }},
 
-			"Visdomstennene er det tredje og siste sett av jeksler som bryter frem i munnen, vanligvis i slutten av tenårene eller tidlig i tyveårene. Mange lever hele livet med friske, fullt frembrudte visdomstenner uten symptomer eller smerter. Men ofte er det ikke nok plass til visdomstannen, og den kommer derfor bare delvis frem i munnen. Slike tenner kan gi opphav til smerter og betennelse, og av den grunn er det nødvendig å fjerne dem.",
+		{"paragraph": "Etter man har borret er det et hulrom i tannen. Ut ifra hvor mye tann som er igjen etter dette kan man erstatte tapt del av tann med enten en fylling, en krone eller innlegg. Oftest bruker man ulike fyllingsmaterialer til å fylle igjen tannen slik at den blir hel igjen. Før brukte man amalgam til dette, men det er nå erstattet med ulike hvite plastmaterialer. Plastmaterialene kommer i mange ulike hvite fargenyanser som gjør det mulig å lage pene fyllinger som ikke syntes. Det finnes mange ulike fyllingsmaterialer på markedet. Vi på Ibsen tannlegesenter benytter kun anerkjente og godt dokumenterte materialer."}
+    ]
+}, {
+	"title": "Kirurgi og tanntrekking",
+	"content": [
+		{"header": "Fjerning av visdomstenner"},
 
-			"Rotspissamputasjon:",
+		{"paragraph": "Visdomstennene er det tredje og siste sett av jeksler som bryter frem i munnen, vanligvis i slutten av tenårene eller tidlig i tyveårene. Mange lever hele livet med friske, fullt frembrudte visdomstenner uten symptomer eller smerter. Men ofte er det ikke nok plass til visdomstannen, og den kommer derfor bare delvis frem i munnen. Slike tenner kan gi opphav til smerter og betennelse, og av den grunn er det nødvendig å fjerne dem."},
 
-			"Alle tenner har en rotkanal som forsyner tannen med nerver og blodkar. Om bakterier kommer inn i rotkanalen, eller tannen skades slik at blodforsyningen til tannen skades, må tannen rotfylles. Noen ganger er ikke en rotfylling tilstrekkelig for at tannen skal bli bra, og da kan det være behov for kirurgisk behandling. Den vanligste kirurgiske behandling for å redde tannen kalles for rotspissamputasjon. Ved denne operasjonen blir betennelses-vev rundt roten fjernes, og rotkanalen forsegles med en fylling slik at ny infeksjon i roten ikke skal oppstå. Når området rundt er tilhelet med nytt kjeveben, kan tannen opprettholder sin normale funksjon.",
+		{"header": "Rotspissamputasjon:"},
 
-			"Etter kirurgi og tanntrekking",
+		{"paragraph": "Alle tenner har en rotkanal som forsyner tannen med nerver og blodkar. Om bakterier kommer inn i rotkanalen, eller tannen skades slik at blodforsyningen til tannen skades, må tannen rotfylles. Noen ganger er ikke en rotfylling tilstrekkelig for at tannen skal bli bra, og da kan det være behov for kirurgisk behandling. Den vanligste kirurgiske behandling for å redde tannen kalles for rotspissamputasjon. Ved denne operasjonen blir betennelses-vev rundt roten fjernes, og rotkanalen forsegles med en fylling slik at ny infeksjon i roten ikke skal oppstå. Når området rundt er tilhelet med nytt kjeveben, kan tannen opprettholder sin normale funksjon."},
 
-			"Kroppen oppfatter alle kirurgiske behandlinger som en skade som må repareres. Det er viktig at området får mest mulig ro når tilhelingen starter. Etter 20 minutter fjernes bittkompressen (hvis du har fått en). Så snart som mulig tas smertestillende tablett(er) med litt vann (slik begynner dette å virke mens bedøvelsen ennå sitter).",
+		{"header": "Etter kirurgi og tanntrekking"},
 
-			"Du skal ikke spise, drikke eller skylle munnen på de første to til tre timene etter kirurgisk behandling. Unngå trening og tunge løft de første to dagene etter operasjonen og røyking bør unngås operasjonsdagen. På denne måten forebygges smertene som kommer når virkningen av lokalbedøvelsen går ut (oftest en til to timer etter inngrepet), og muligheten for å få betennelse i kjevebeinet reduseres vesentlig. Etter enkelte behandlinger vil det være en fordel å kjøle ned operasjonsstedet med en ispose. Dette vil redusere hevelsen og dermed også smerter og gapebesvær. Sett i gang så raskt som mulig etter behandlingen! ISPOSE: En plastpose med isbiter og litt kaldt vann pakkes inn i et fuktig håndkle. Hold posen over operasjonsstedet med litt press i 15 minutter, deretter hvile i 15 minutter. Gjenta 3 til 4 ganger."
-		]
-	},
-	"2": {
-		"title": "Kroner/Bro/Fasett",
-		"text": [
-			"Fjerning av visdomstenner",
+		{"paragraph": "Kroppen oppfatter alle kirurgiske behandlinger som en skade som må repareres. Det er viktig at området får mest mulig ro når tilhelingen starter. Etter 20 minutter fjernes bittkompressen (hvis du har fått en). Så snart som mulig tas smertestillende tablett(er) med litt vann (slik begynner dette å virke mens bedøvelsen ennå sitter)."},
 
-			"Visdomstennene er det tredje og siste sett av jeksler som bryter frem i munnen, vanligvis i slutten av tenårene eller tidlig i tyveårene. Mange lever hele livet med friske, fullt frembrudte visdomstenner uten symptomer eller smerter. Men ofte er det ikke nok plass til visdomstannen, og den kommer derfor bare delvis frem i munnen. Slike tenner kan gi opphav til smerter og betennelse, og av den grunn er det nødvendig å fjerne dem.",
+		{"paragraph": "Du skal ikke spise, drikke eller skylle munnen på de første to til tre timene etter kirurgisk behandling. Unngå trening og tunge løft de første to dagene etter operasjonen og røyking bør unngås operasjonsdagen. På denne måten forebygges smertene som kommer når virkningen av lokalbedøvelsen går ut (oftest en til to timer etter inngrepet), og muligheten for å få betennelse i kjevebeinet reduseres vesentlig. Etter enkelte behandlinger vil det være en fordel å kjøle ned operasjonsstedet med en ispose. Dette vil redusere hevelsen og dermed også smerter og gapebesvær. Sett i gang så raskt som mulig etter behandlingen! ISPOSE: En plastpose med isbiter og litt kaldt vann pakkes inn i et fuktig håndkle. Hold posen over operasjonsstedet med litt press i 15 minutter, deretter hvile i 15 minutter. Gjenta 3 til 4 ganger."}
+	]
+}, {
+	"title": "Kroner/Bro/Fasett",
+	"content": [
+		{"paragraph": "Dersom en fylling skal skiftes ut, det er et nytt hull i en tann, deler av tannen har knekt av eller en fylling som knekker må man alltid gjøre en vurdering på hvilke type restaurering som best erstatter de tapte delene. Valgene står mellom å legge ny fylling, lage et innlegg, en krone eller en fasett i front."},
 
-			"Rotspissamputasjon:",
+		{"header": "Krone"},
 
-			"Alle tenner har en rotkanal som forsyner tannen med nerver og blodkar. Om bakterier kommer inn i rotkanalen, eller tannen skades slik at blodforsyningen til tannen skades, må tannen rotfylles. Noen ganger er ikke en rotfylling tilstrekkelig for at tannen skal bli bra, og da kan det være behov for kirurgisk behandling. Den vanligste kirurgiske behandling for å redde tannen kalles for rotspissamputasjon. Ved denne operasjonen blir betennelses-vev rundt roten fjernes, og rotkanalen forsegles med en fylling slik at ny infeksjon i roten ikke skal oppstå. Når området rundt er tilhelet med nytt kjeveben, kan tannen opprettholder sin normale funksjon.",
+        {"image": {
+            "source": "...",
+            "style": null
+        }},
 
-			"Etter kirurgi og tanntrekking",
+        {"paragraph": "Dersom tannen er veldig redusert, sidevegger enten er veldig svake eller helt borte eller tannen er rotfylt med lite tannsubstans igjen bør en veldige å fremstille en krone for best å gjenskape funksjon og utseende. En krone kan i mange tilfeller være mer holdbar en for eksempel en stor plastfylling."},
 
-			"Kroppen oppfatter alle kirurgiske behandlinger som en skade som må repareres. Det er viktig at området får mest mulig ro når tilhelingen starter. Etter 20 minutter fjernes bittkompressen (hvis du har fått en). Så snart som mulig tas smertestillende tablett(er) med litt vann (slik begynner dette å virke mens bedøvelsen ennå sitter).",
+        {"paragraph": "For å lage en krone må man slipe rundt hele tannen som vist på bildet slik at man får plass til materialet. Videre tar man et avtrykk av tannen, et annet avtrykk av motstående tann som biter over, sender inn til tanntekniker som fremstiller en ny, kunstig tannkrone som en deretter sementerer over den beslipte tannen i munn. Du får laget en midlertidig erstatning frem til kronen er klar. Dette tar vanligvis 2-3 uker."},
 
-			"Du skal ikke spise, drikke eller skylle munnen på de første to til tre timene etter kirurgisk behandling. Unngå trening og tunge løft de første to dagene etter operasjonen og røyking bør unngås operasjonsdagen. På denne måten forebygges smertene som kommer når virkningen av lokalbedøvelsen går ut (oftest en til to timer etter inngrepet), og muligheten for å få betennelse i kjevebeinet reduseres vesentlig. Etter enkelte behandlinger vil det være en fordel å kjøle ned operasjonsstedet med en ispose. Dette vil redusere hevelsen og dermed også smerter og gapebesvær. Sett i gang så raskt som mulig etter behandlingen! ISPOSE: En plastpose med isbiter og litt kaldt vann pakkes inn i et fuktig håndkle. Hold posen over operasjonsstedet med litt press i 15 minutter, deretter hvile i 15 minutter. Gjenta 3 til 4 ganger."
-		]
-	}
-}
+        {"header": "Bro"},
+
+        {"image": {
+            "source": "...",
+            "style": null
+        }},
+
+        {"paragraph": "Hvis en eller flere tenner mangler av ulike årsaker og ønskes erstattet kan man enten fremstille en bro på nabotennene eller sette inn et implantat. En bro er en sammenhengende konstruksjon som erstatter tapte tenner der egne tenner bærer de kunstige erstatningene."},
+
+        {"paragraph": "En bro fremstilles ved å slipe til nabotennene til den tannen (tenner) som ønskes erstattet som vist på bildet. Man tar så et avtrykk av de beslipte tennene, et avtrykk av motstående tenner som biter over og avtrykket sendes til tanntekniker. Tanntekniker fremstiller broen som så sementeres på plass i munn. Du får laget til en midlertidig erstatning frem til broen er klar. Dette tar vanligvis 2-3 uker."},
+
+        {"header": "Fasetter"},
+
+        {"paragraph": "En fasett eller laminater er et tynt skall i porselen som fremstilles av en tanntekniker. Dette er en god erstatning dersom en ønsker et optimalt estetisk resultat.\n
+        Til forskjell fra kroner er det her krav om at det ikke er mye tannsubstans som er borte eller at tannen er svært misfarget. De lages oftest i front og er hva årsak til hvorfor alle Hollywood-kjendiser har hvite og rette tenner. Det må også her beslipes et tynt lag av egen tann, avtrykk av tann/tenner som deretter sendes til tanntekniker. Tanntekniker fremstiller fasetten etter de spesifikasjonene vi gir. Til slutt sementeres fasetten til tannen."},
+
+        {"image": {
+            "source": "...",
+            "style": null
+        }},
+
+        {"paragraph": "Det finnes flere ulike materialer på markedet som brukes av tanntekniker til fremstilling av kroner, broer og fasetter. For kroner og broer er det vanligst å fremstille en kjerne i et hardt materiale som det legges porselen utenpå. Kjernematerialet er gjerne en støpt metallegering, men helkeramiske erstatninger blir mer og mer vanlig. Dette grunnet større krav til estetikk i enkelte tilfeller. Hvilke materialer som velges diskuterer vi med deg slik at du får det beste resultatet både funksjonelt og estetisk. Vi på Ibsen Tannlegesenter bruker kun autoriserte norske tannteknikerfirmaer.}"
+	]
+}]

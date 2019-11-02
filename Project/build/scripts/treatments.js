@@ -47,3 +47,8 @@ for (let i = 0; i < titles.length; ++i) {
     entry.appendChild(link);
     navigationList.appendChild(entry);
 }
+
+
+
+
+// MERK: Jeg la til "\n" i tredje artikkel! Få dette til å virke!
