@@ -50,7 +50,7 @@ export class RequestError extends Error {
 export class AssertionError extends Error {
 
     constructor(message) {
-        super((message || "AssertionError");
+        super(message || "AssertionError");
 
         this.name = "AssertionError";
     }
