@@ -76,6 +76,10 @@ export function argHasValue(argument) {
     return typeof argument !== "undefined" || argument === null;
 }
 
+export function hasValue(variable) {
+    return argHasValue(variable);
+}
+
 
 export function withFragmentID(url, id) {
     if (id === null) {
