@@ -2,8 +2,8 @@
 .grid-container {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 10fr 1fr;
-  grid-template-rows: 196px 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 700px 1fr 1fr;
+  grid-template-rows: 196px 1fr 1fr 1fr 1fr /*300px 300px 300px*/;
 	width: 1022px;
 	height: 1400px;
 	left: 50%;
@@ -11,6 +11,11 @@
 	grid-column-gap: 5px;
 }
 
+.grid-container > div {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+}
 
 #titlebox {
     margin-top: 0px;
@@ -27,8 +32,8 @@
     margin-top: 30px;
     padding: 5px;
     font-size: 16px;
-    grid-column-start: 2;
-    grid-column-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 1;
 }
@@ -36,17 +41,17 @@
 #prices {
     text-align: left;
     padding: 5px;
-    grid-column-start: 2;
-    grid-column-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 3;
     grid-row-start: 2;
-    grid-row-end: 5;
+    grid-row-end: 4;
 }
 
 /* WARNING: <tag> attributes in page-specific CSS */
 table {
   padding: 10px;
   border-collapse: collapse;
-  border-radius: 5px;
+  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -69,17 +74,16 @@ tr:nth-child(odd) {
 }
 
 
-@media only screen and (max-width: 1022px) {
+@media only screen and (max-width: 700px) {
 
   .grid-container {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 196px 1fr 1fr 1fr;
-  	width: 100%;
-    height: auto
+    grid-template-columns: 1fr 1fr 320px 1fr 1fr;
+    grid-template-rows: 196px 1fr 1fr 1fr 1fr;
+  	width: 320px;
     left: 50%;
-    margin-left: -511px;
+    margin-left: -170px;
   }
 
   #titlebox {
@@ -98,32 +102,34 @@ tr:nth-child(odd) {
       padding: 5px;
       width: 100%;
       font-size: 16px;
-      grid-column-start: 2;
-      grid-column-end: 2;
+      grid-column-start: 3;
+      grid-column-end: 3;
       grid-row-start: 1;
       grid-row-end: 1;
   }
 
   #prices {
       text-align: left;
-      padding: 5px;
-      grid-column-start: 2;
-      grid-column-end: 2;
+      margin-top: 20px;
+      grid-column-start: 3;
+      grid-column-end: 3;
       grid-row-start: 2;
-      grid-row-end: 3;
+      grid-row-end: 5;
+      font-size: 14px;
   }
 
   /* WARNING: <tag> attributes in page-specific CSS */
   table {
     padding: 10px;
     border-collapse: collapse;
-    border-radius: 5px;
+    border-radius: 10px;
     overflow: hidden;
   }
 
   /* WARNING: <tag> attributes in page-specific CSS */
   td, th {
-    padding: 10px;
+    padding: 5px;
+    margin: 0px;
     padding-left: 10px;
   }
 

@@ -85,7 +85,7 @@ img{
     margin-top: 15px;
 }
 p{
-    font-size: 20px;    
+    font-size: 20px;
 }
 #tlfnummer{
     font-size: 32px;
@@ -101,7 +101,6 @@ p{
         display: grid;
         grid-template-columns: 1fr 1fr 320px 1fr 1fr;
         grid-template-rows: 10px 1fr 1fr 1fr 1fr;
-        height: auto
         left: 50%;
         margin-left: -511px;
     }
@@ -151,6 +150,6 @@ p{
         border-bottom: none;
     }
     p{
-        font-size: 16px;    
+        font-size: 16px;
     }
 }
