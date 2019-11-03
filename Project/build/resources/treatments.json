@@ -1,11 +1,11 @@
 [{
 	"title": "Hva er karies/hull i tannen?",
 	"content": [
-        {"paragraph": "Karies (hull i tannen) er en sykdom som oppstår når tannsubstans brytes ned av biprodukter (syrer) fra bakteriekolonier som lever på tannoverflaten. Disse koloniene er det man kaller plakk."},
+        {"paragraph": "Karies (hull i tannen), er en sykdom som oppstår når tannsubstans brytes ned av biprodukter (syrer) fra bakteriekolonier som lever på tannoverflaten. Disse koloniene er det man kaller plakk."},
 
         {"linebreak": 1},
 
-		{"paragraph": "Hvorfor man får hull i tennene har en multifaktoriell årsak. Til å forklare hvorfor bruker en ofte Keys triade. Denne består av enkeltfaktorene plakk på tennene, kosten og tannflaten. Hver for seg er ikke nok til å danne et hull i tannen, men fletter man dem sammen og legger på tid vil det oppstå et hull."},
+		{"paragraph": "Hvorfor man får hull i tennene, har en flerfaktoriell årsak. Til å forklare hvorfor, bruker en ofte Keys triade. Denne består av enkeltfaktorene: plakk på tennene, kosten og tannflaten. Hver for seg er ikke disse nok til å danne et hull i tannen, men fletter man dem sammen, og legger på tid, vil det oppstå et hull."},
 
         {"linebreak": 1},
 
@@ -82,5 +82,64 @@
         }},
 
         {"paragraph": "Det finnes flere ulike materialer på markedet som brukes av tanntekniker til fremstilling av kroner, broer og fasetter. For kroner og broer er det vanligst å fremstille en kjerne i et hardt materiale som det legges porselen utenpå. Kjernematerialet er gjerne en støpt metallegering, men helkeramiske erstatninger blir mer og mer vanlig. Dette grunnet større krav til estetikk i enkelte tilfeller. Hvilke materialer som velges diskuterer vi med deg slik at du får det beste resultatet både funksjonelt og estetisk. Vi på Ibsen Tannlegesenter bruker kun autoriserte norske tannteknikerfirmaer."}
+	]
+}, {
+	"title": "Rotfylling",
+	"content": [
+		{"paragraph": "Rotfylling gjør vi når nerven inni en tann er blitt angrepet og syk av bakterier. Årsaken kan være et dypt hull, en sprekk i tannen, sykt tannkjøtt, eller tidligere skade."},
+
+        {"image": {
+            "source": "...",
+            "style": null
+        }},
+
+        {"paragraph": "Nerven må da renses ut av røttene og erstattes av rotfylling med et naturplastmateriale (guttaperka). Rotfylling er en behandling som kan kreve to eller flere besøk. Man vil vanligvis være godt bedøvd og smertefri under behandlingen. Målet er å hindre at bakterier sprer seg i kjeven og i kroppen. Ved hjelp av rotfylling kan man ofte beholde en tann som ellers måtte trekkes."},
+
+        {"image": {
+            "source": "...",
+            "style": null
+        }},
+
+        {"paragraph": "Når tannen er ferdig rotfylt og fri for infeksjon og smerter, må den bygges opp med fyllingsmateriale eller med en krone, som eventuelt må forankres med stift i rotkanalen."},
+
+        {"image": {
+            "source": "...",
+            "style": null
+        }}
+	]
+}, {
+	"title": "Søvnapnéskinner/snorkeskinner",
+	"content": [
+		{"list": {
+            "items": ["Er du eller dine omgivelser plaget med at du snorker?", "Har du mild eller moderat søvnapné?", "Har du problemer med å sove med Cpap?"],
+            "direction": 0,
+            "style": "list-style-type: none"
+        }},
+
+        {"paragraph": "I samarbeid med flere produsenter av snorke/apneskinner kan vi tilby en enkel skinne som plasseres i munnen når du sover. Resultatene er svært gode for de som snorker, og for de med mild eller moderat søvnapné. Søvnapné: Tilstand der man slutter å puste i 10 sekunder eller mer minst 5 ganger per time"},
+
+        {"linebreak": 0},
+
+        {"paragraph": "De som ikke allerede er undersøkt av lege tilbys å låne et enkelt diagnoseapparat med hjem. Ved hjelp av dette kan vi vurdere om det foreligger noen grad av søvnapné. Ved behov vil vi henvise videre til søvnklinikk for videre utredning."},
+
+        {"image": {
+            "source": "...",
+            "style": null
+        }},
+
+        {"paragraph": "Søvnapné er pustestopp mens du sover."},
+
+        {"linebreak": 0},
+
+        {"paragraph": "Søvnapné er en sykdom hvor en sovende person opplever pustestopp som varer over 10 sekunder. Forekomsten av korte pustepauser under søvn er nokså vanlig. Det er varigheten på pustestoppet og antallet i løpet natten, som definerer om det snakk om sykdom. Søvnapné bør behandles om man har mer enn 10 pustestopp per time med en varighet på mer enn 10 sekunder. De vanligste symptomene er snorking, unormal trøtthet om dagen, observerte pustestopp om natten, stadige oppvåkninger, hyppige toalettbesøk, hodepine, konsentrasjonsvansker, irritabilitet, redusert seksuell lyst/evne og vektproblemer."},
+
+        {"paragraph": "Søvnapné er sterkt forbundet med diabetes, høyt blodtrykk, hjerteinfarkt og hjerneslag. Studier viser også at personer med søvnapné har syv ganger forhøyet risiko for å være involvert i en bilulykke. 20-40% har søvnapné eller andre pusteforstyrrelser og pustestans under søvn. 80% av dem går uvitende om sin sykdom og får dermed ingen diagnose og behandling."},
+
+        {"e-paragraph": {
+            "text": "God informasjon på internett finnes her: ",
+            "link": {"href": "https://www.sovnapne.no", "text": "www.sovnapne.no"},
+            "text": " og ",
+            "link": {"href": null, "text": "www.pustestans.no"}
+        }}
 	]
 }]

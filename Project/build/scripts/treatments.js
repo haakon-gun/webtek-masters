@@ -53,13 +53,21 @@ function setArticle(article, allowCustomHTML = false) {
 
             content.appendChild(header);
 
+        } else if (hasValue(element = component["list"])) {
+
+            console.error("'list' not yet implemented for articles");
+
+        } else if (hasValue(element = component["e-paragraph"])) {
+
+            console.error("'e-paragraph' not yet implemented for articles");
+
         } else if (hasValue(element = component["image"])) {
 
             const image = document.createElement("img");
-            image.src = element;
+            image.src = element["source"];
 
             let style = null;
-            if (hasValue(style = component["style"])) {
+            if (hasValue(style = element["style"])) {
                 image.style = style;
             }
 
@@ -145,3 +153,4 @@ for (let i = 0; i < titles.length; ++i) {
 
 
 // MERK: Jeg la til "\n" i tredje artikkel! Få dette til å virke!
+// TODO: revurder om ikke det skal byttes til en 'iframe', og la verdiene i JSON-filen være URLer til til HTML-filer.
