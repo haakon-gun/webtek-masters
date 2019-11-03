@@ -50,7 +50,7 @@ export class RequestError extends Error {
 export class AssertionError extends Error {
 
     constructor(message) {
-        super((message || "AssertionError");
+        super(message || "AssertionError");
 
         this.name = "AssertionError";
     }
@@ -74,6 +74,10 @@ export function argProvided(argument) {
 
 export function argHasValue(argument) {
     return typeof argument !== "undefined" || argument === null;
+}
+
+export function hasValue(variable) {
+    return argHasValue(variable);
 }
 
 
@@ -105,6 +109,10 @@ export function elementExists(selector) {
     return document.querySelector(selector) != null;
 }
 
+export function removeChildren(element) {
+    while (element.firstChild) { element.firstChild.remove(); }
+}
+
 export function filename(url) {
     const components = url.split("#")[0].split("?")[0].split("/");
 
@@ -129,6 +137,10 @@ export class Bounds {
 
 
 const documentOMParser = new DOMParser();
+
+export function objectDOM(string) {
+    return documentOMParser.parseFromString(string, "text/html");
+}
 
 /**
  * @param {string} urlString - "DOM", "JSON" or "txt"
