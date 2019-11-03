@@ -33,6 +33,8 @@
     width: auto;
     height: auto;
 
+    margin-top: 2.6em;
+
     /* Experimental; not supported by Microsoft Edge. Those users can live without it */
     height: max-content;
 
@@ -43,7 +45,7 @@
 #navigation-list {
     margin: 0.8em 0.8em 0.8em 0;
     margin: 0 0.8em 0 0;
-    padding: 0;
+    padding: 0.8em 0 0.8em 0;
 
     text-align: right;
     list-style-type: none;
