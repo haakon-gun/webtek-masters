@@ -18,4 +18,4 @@ function changeImg(){
 
   setTimeout("changeImg()", time);
 }
-wibdow.onload = changeImg;
+window.onload = changeImg;

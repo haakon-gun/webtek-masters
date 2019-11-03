@@ -29,9 +29,14 @@
 	grid-column-end:	4;
 }
 
+.title{
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
 #titlebox{
-	margin-top: 290px;
-	height: 230px;
+  grid-column-start: 1;
+	grid-column-end: 4;
 }
 
 
@@ -63,6 +68,6 @@
 	  grid-column-end:	2;
 	}
   #titlebox{
-		margin-top: 290px;
-		height: 560px;
+    grid-column-start: 1;
+  	grid-column-end: 4;
 	}
