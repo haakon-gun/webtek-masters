@@ -134,6 +134,10 @@ export class Bounds {
 
 const documentOMParser = new DOMParser();
 
+export function objectDOM(string) {
+    return documentOMParser.parseFromString(string, "text/html");
+}
+
 /**
  * @param {string} urlString - "DOM", "JSON" or "txt"
  * @param {string} urlString - URL string to the given location

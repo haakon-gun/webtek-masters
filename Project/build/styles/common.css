@@ -2,9 +2,10 @@
     --accent-background-color-0: rgb(255, 255, 255);
     --accent-background-color-1: rgb(248, 248, 248);
     --accent-background-color-2: rgb(239, 239, 239);
-    --accent-background-color-3: rgb(111, 151, 181);
-    --accent-background-color-4: rgb( 54,  92, 142);
-    --accent-background-color-5: rgb( 24,  52, 104);
+    --accent-background-color-3: none; /* Missing */
+    --accent-background-color-4: rgb(111, 151, 181);
+    --accent-background-color-5: rgb( 54,  92, 142);
+    --accent-background-color-6: rgb( 24,  52, 104);
 
     --accent-light-foreground-color: rgb(232, 232, 232);
 }
@@ -60,7 +61,7 @@ h6 { /* TODO: nothing */ }
 
     font-size: 1.8em;
 
-    background-color: var(--accent-background-color-3);
+    background-color: var(--accent-background-color-4);
 }
 
 .page-header-title {

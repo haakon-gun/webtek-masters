@@ -1,30 +1,83 @@
 
-import { hasValue, load } from "../scripts/utilities.js";
+import { hasValue, load, objectDOM } from "../scripts/utilities.js";
 
 
 const navigationList = document.querySelector("#navigation-list");
 const articleContent = document.querySelector("#content");
 
 
-function setArticle(article) {
+// IMPORTANT: TODO: refactor!
+function setArticle(article, allowCustomHTML = false) {
     console.log(article);
+
+    articleContent.innerText = null;
+
+    const content = document.createElement("div");
 
     for (const component of article["content"]) {
         let element = null;
 
         if (hasValue(element = component["paragraph"])) {
-            console.log("paragraph");
+
+            const paragraph = document.createElement("p");
+            paragraph.appendChild(document.createTextNode(element));
+
+            let style = null;
+            if (hasValue(style = component["style"])) {
+                paragraph.style = style;
+            }
+
+            content.appendChild(paragraph);
+
+        } else if (hasValue(element = component["linebreak"])) {
+
+            for (let i = 0; i < element; ++i) {
+                const linebreak = document.createElement("br");
+
+                let style = null;
+                if (hasValue(style = component["style"])) {
+                    linebreak.style = style;
+                }
+
+                content.appendChild(document.createElement("br"));
+            }
 
         } else if (hasValue(element = component["header"])) {
-            console.log("header");
+
+            const header = document.createElement("h1");
+            header.appendChild(document.createTextNode(element));
+
+            let style = null;
+            if (hasValue(style = component["style"])) {
+                header.style = style;
+            }
+
+            content.appendChild(header);
 
         } else if (hasValue(element = component["image"])) {
-            console.log("image");
+
+            const image = document.createElement("img");
+            image.src = element;
+
+            let style = null;
+            if (hasValue(style = component["style"])) {
+                image.style = style;
+            }
+
+            content.appendChild(image);
+
+        } else if (hasValue(element = component["HTML"])) {
+            if (!allowCustomHTML) { continue; /* Silently ignore it */ }
+
+            content.appendChild(objectDOM(element));
 
         } else {
+            console.warning("Invalid content type encountered while loading an article");
             continue;
         }
     }
+
+    articleContent.appendChild(content);
 }
 
 
@@ -48,7 +101,7 @@ async function loadContent() {
         const button = document.createElement("button");
         button.appendChild(document.createTextNode(article["title"]));
         button.onclick = () => {
-            setArticle(article);
+            setArticle(article, true);
             return false;
         }
 

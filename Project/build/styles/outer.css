@@ -72,7 +72,7 @@ a.header-link {
 }
 
 a.header-link:hover {
-    background-color: var(--accent-background-color-4);
+    background-color: var(--accent-background-color-5);
     box-shadow: 0 0 1.4em rgba(0, 0, 0, 0.4);
 
     color: rgb(232, 232, 232);
@@ -95,7 +95,7 @@ a.header-link > span > * {
 }
 
 #website-footer {
-    background-color: var(--accent-background-color-3);
+    background-color: var(--accent-background-color-4);
     box-shadow: 0 0 0.6em rgba(0, 0, 0, 0.2);
 
     color: rgb(242, 242, 242);
