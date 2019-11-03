@@ -109,6 +109,10 @@ export function elementExists(selector) {
     return document.querySelector(selector) != null;
 }
 
+export function removeChildren(element) {
+    while (element.firstChild) { element.firstChild.remove(); }
+}
+
 export function filename(url) {
     const components = url.split("#")[0].split("?")[0].split("/");
 

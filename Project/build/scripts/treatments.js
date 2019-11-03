@@ -1,5 +1,5 @@
 
-import { hasValue, load, objectDOM } from "../scripts/utilities.js";
+import { hasValue, load, objectDOM, removeChildren } from "../scripts/utilities.js";
 
 
 const navigationList = document.querySelector("#navigation-list");
@@ -7,10 +7,9 @@ const articleContent = document.querySelector("#content");
 
 
 // IMPORTANT: TODO: refactor!
+// TODO: add more validations.
 function setArticle(article, allowCustomHTML = false) {
     console.log(article);
-
-    articleContent.innerText = null;
 
     const content = document.createElement("div");
 
@@ -77,6 +76,7 @@ function setArticle(article, allowCustomHTML = false) {
         }
     }
 
+    removeChildren(articleContent);
     articleContent.appendChild(content);
 }
 
@@ -92,21 +92,27 @@ async function loadContent() {
 
     console.log(articles[0]["shit"]);
 
-    for (let i = 0; i < articles.length; ++i) {
-
-        const article = articles[i];
-
+    for (const article of articles) {
         const entry = document.createElement("li");
 
         const button = document.createElement("button");
         button.appendChild(document.createTextNode(article["title"]));
-        button.onclick = () => {
-            setArticle(article, true);
-            return false;
-        }
+        button.onclick = () => { setArticle(article, true); }
 
         entry.appendChild(button);
         navigationList.appendChild(entry);
+    }
+
+    if (articles.length > 0) {
+        setArticle(articles[0], true);
+    } else {
+        const statement = document.createElement("p");
+        // OFF! Norwegian in source code! UEH!
+        statement.appendChild(document.createTextNode("Det fins ingen artikler"));
+        statement.classList.add("h-centered", "v-centered"); // TODO: add more.
+
+        removeChildren(articleContent);
+        articleContent.appendChild(statement);
     }
 }
 
