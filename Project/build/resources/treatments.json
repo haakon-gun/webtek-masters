@@ -1,7 +1,10 @@
 {
-	"Hva er karies/hull i tannen?": "test.html",
-	"Kirurgi og tanntrekking": "test2.html",
-	"Kroner/Bro/Fasett": "",
-	"Rotfylling": "",
-	"Søvnapnéskinner/snorkeskinner": ""
+	"Hva er karies/hull i tannen?": "karies_hull.html",
+	"Kirurgi og tanntrekking": "kirurgi.html",
+	"Kroner/Bro/Fasett": "kroner_bro_fasett.html",
+	"Rotfylling": "rotfylling.html",
+	"Søvnapnéskinner/snorkeskinner": "soveskinner.html",
+    "Tannimplantater": "tannimplantater.html",
+    "Tannkjøttbetennelse": "tannkjøttbetennelse.html",
+    "Tannproteser": "tannproteser.html"
 }

@@ -7,6 +7,9 @@ const articleContent = document.querySelector("#content");
 
 
 function loadArticle(url) {
+    if (url === articleContent.src) {
+        return; // To the user: rather refresh the whole page.
+    }
     articleContent.src = url;
 }
 
@@ -55,43 +58,41 @@ async function loadContent() {
     }
 }
 
+var iFrameEKS = document.createElement("style");
+iFrameEKS.type = "text/css";
+
+const iFrameEKeyFrames = "@keyframes page-treatments-iframe-expander {\
+    0%   { height: {0}; }\
+    100% { height: {1}; }\
+}";
+
+document.head.appendChild(iFrameEKS);
+
+
 articleContent.addEventListener("load", (event) => {
+    const previousHeight = event.target.scrollHeight;
+
     // Resets this so that the correct height can be gathered below.
     // If not, scrollHeight'll return "max(requiredHeight, previousHeight)".
     event.target.style.height = "0px";
 
     const height = articleContent.contentWindow.document.documentElement.scrollHeight;
 
-    event.target.style.height = height + "px";
+    if (previousHeight == height) {
+        event.target.style.height = height + "px";
+        return;
+    }
+
+    iFrameEKS.innerHTML = iFrameEKeyFrames.format(previousHeight + "px", height + "px");
+    console.log(iFrameEKS.innerHTML);
+
+    event.target.addEventListener("animationend", () => {
+        event.target.style.animation = "";
+        event.target.style.height = height + "px";
+    }, false);
+
+    event.target.style.animation = "page-treatments-iframe-expander 0.4s";
 });
 
 
 loadContent();
-
-/*
-const titles = [
-    "Hva er karies/hull i tannen?",
-    "Kirurgi og tanntrekking",
-    "Kroner/Bro/Fasett",
-    "Rotfylling",
-    "Søvnapnéskinner/snorkeskinner",
-    "Tannimplantater",
-    "Tannkjøttbetennelse",
-    "Tannproteser",
-];
-
-for (let i = 0; i < titles.length; ++i) {
-    const entry = document.createElement("li");
-
-    const link = document.createElement("a");
-    link.appendChild(document.createTextNode(titles[i]));
-
-    entry.appendChild(link);
-    navigationList.appendChild(entry);
-}
-*/
-
-
-
-// MERK: Jeg la til "\n" i tredje artikkel! Få dette til å virke!
-// TODO: revurder om ikke det skal byttes til en 'iframe', og la verdiene i JSON-filen være URLer til til HTML-filer.

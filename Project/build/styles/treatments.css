@@ -113,6 +113,8 @@
 
     /* DEBUG */
     /* background-color: rgb(150, 200, 250); */
+
+    overflow: hidden;
 }
 
 iframe#content {
