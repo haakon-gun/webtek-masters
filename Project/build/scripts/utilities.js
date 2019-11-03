@@ -119,6 +119,21 @@ export function filename(url) {
     return components[components.length() - 1];
 }
 
+export function isAbsolute(url) {
+    // https://stackoverflow.com/a/31991870
+    // https://stackoverflow.com/a/53548065
+    // Also makes sure to filter out an undefined, null or empty URL.
+    return Boolean(url) && (/^(?:[a-z][a-z0-9+.-]*:|\/\/)/i.test(url) || /(\:|\/\\*\/)/i.test(url));
+}
+
+export function isRelative(url) {
+    return Boolean(url) && !isAbsolute(url);
+}
+
+export function isDirectRelative(url) {
+    return isRelative(url) && !url.startsWith("./") && !url.startsWith("../");
+}
+
 
 export class Bounds {
 

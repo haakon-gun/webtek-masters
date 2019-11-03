@@ -1,118 +1,49 @@
 
-import { hasValue, load, objectDOM, removeChildren } from "../scripts/utilities.js";
+import { hasValue, load, objectDOM, removeChildren, isDirectRelative } from "../scripts/utilities.js";
 
 
 const navigationList = document.querySelector("#navigation-list");
 const articleContent = document.querySelector("#content");
 
 
-// IMPORTANT: TODO: refactor!
-// TODO: add more validations.
-function setArticle(article, allowCustomHTML = false) {
-    console.log(article);
-
-    const content = document.createElement("div");
-
-    for (const component of article["content"]) {
-        let element = null;
-
-        if (hasValue(element = component["paragraph"])) {
-
-            const paragraph = document.createElement("p");
-            paragraph.appendChild(document.createTextNode(element));
-
-            let style = null;
-            if (hasValue(style = component["style"])) {
-                paragraph.style = style;
-            }
-
-            content.appendChild(paragraph);
-
-        } else if (hasValue(element = component["linebreak"])) {
-
-            for (let i = 0; i < element; ++i) {
-                const linebreak = document.createElement("br");
-
-                let style = null;
-                if (hasValue(style = component["style"])) {
-                    linebreak.style = style;
-                }
-
-                content.appendChild(linebreak);
-            }
-
-        } else if (hasValue(element = component["header"])) {
-
-            const header = document.createElement("h1");
-            header.appendChild(document.createTextNode(element));
-
-            let style = null;
-            if (hasValue(style = component["style"])) {
-                header.style = style;
-            }
-
-            content.appendChild(header);
-
-        } else if (hasValue(element = component["list"])) {
-
-            console.error("'list' not yet implemented for articles");
-
-        } else if (hasValue(element = component["e-paragraph"])) {
-
-            console.error("'e-paragraph' not yet implemented for articles");
-
-        } else if (hasValue(element = component["image"])) {
-
-            const image = document.createElement("img");
-            image.src = element["source"];
-
-            let style = null;
-            if (hasValue(style = element["style"])) {
-                image.style = style;
-            }
-
-            content.appendChild(image);
-
-        } else if (hasValue(element = component["HTML"])) {
-            if (!allowCustomHTML) { continue; /* Silently ignore it */ }
-
-            content.appendChild(objectDOM(element));
-
-        } else {
-            console.warning("Invalid content type encountered while loading an article");
-            continue;
-        }
-    }
-
-    removeChildren(articleContent);
-    articleContent.appendChild(content);
+function loadArticle(url) {
+    articleContent.src = url;
 }
 
 
 async function loadContent() {
     let articles = null
+
     try {
         articles = await load("JSON", "resources/treatments.json");
-        console.log(articles)
     } catch (error) {
         console.error(error);
+        return;
     }
 
-    console.log(articles[0]["shit"]);
+    articles = Object.entries(articles);
 
-    for (const article of articles) {
+    let firstURL = null;
+
+    for (let [title, url] of articles) {
         const entry = document.createElement("li");
 
+        if (isDirectRelative(url)) {
+            url = "articles/" + url;
+        }
+
+        firstURL = firstURL || url;
+
         const button = document.createElement("button");
-        button.appendChild(document.createTextNode(article["title"]));
-        button.onclick = () => { setArticle(article, true); }
+        button.appendChild(document.createTextNode(title));
+        button.onclick = () => { loadArticle(url); }
 
         entry.appendChild(button);
         navigationList.appendChild(entry);
     }
 
     if (articles.length > 0) {
-        setArticle(articles[0], true);
+        loadArticle(firstURL);
     } else {
         const statement = document.createElement("p");
         // OFF! Norwegian in source code! UEH!
@@ -123,6 +54,16 @@ async function loadContent() {
         articleContent.appendChild(statement);
     }
 }
+
+articleContent.addEventListener("load", (event) => {
+    // Resets this so that the correct height can be gathered below.
+    // If not, scrollHeight'll return "max(requiredHeight, previousHeight)".
+    event.target.style.height = "0px";
+
+    const height = articleContent.contentWindow.document.documentElement.scrollHeight;
+
+    event.target.style.height = height + "px";
+});
 
 
 loadContent();
