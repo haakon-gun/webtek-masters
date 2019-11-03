@@ -84,14 +84,20 @@ img{
     float: left;
     margin-top: 15px;
 }
-p{
-    font-size: 20px;
-}
 #tlfnummer{
     font-size: 32px;
 }
 #e-post{
     font-size: 16px;;
+}
+#telefontider{
+    font-size: 20px;
+}
+#adresse{
+    font-size: 20px;
+}
+#e-post-text{
+    font-size: 20px;
 }
 
 /* Mobil */
