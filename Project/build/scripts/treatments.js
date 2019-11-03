@@ -39,7 +39,7 @@ function setArticle(article, allowCustomHTML = false) {
                     linebreak.style = style;
                 }
 
-                content.appendChild(document.createElement("br"));
+                content.appendChild(linebreak);
             }
 
         } else if (hasValue(element = component["header"])) {
