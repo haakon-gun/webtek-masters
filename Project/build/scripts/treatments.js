@@ -18,7 +18,7 @@ async function loadContent() {
     let articles = null
 
     try {
-        articles = await load("JSON", "resources/treatments.json");
+        articles = await load("JSON", "articles/treatments.json");
     } catch (error) {
         console.error(error);
         return;

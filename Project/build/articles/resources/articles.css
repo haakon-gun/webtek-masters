@@ -1,0 +1,13 @@
+
+/* This is a simplified CSS file, only meant for simple HTML files embedded in an iframe. */
+/* That reason justifies directly styling the HTML tags */
+
+article {
+
+    color: rgb(44, 44, 44);
+}
+
+p, br {
+    margin: 0;
+    padding: 0;
+}
