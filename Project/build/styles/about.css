@@ -121,10 +121,6 @@
   overflow: auto; /* Enable scroll if needed */
 }
 
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
 
 
 /* Modal Content */
