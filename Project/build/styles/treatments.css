@@ -4,11 +4,10 @@
     display: flex;
 
     padding: 0;
-    margin: 1.2em calc(1em + 10%) 1.2em calc(1em + 10%);
+    margin: 1.2em calc(1em + 20%) 1.2em calc(1em + 20%);
 
     width: auto;
     height: auto;
-
     overflow: scroll;
 
     /* DEBUG */
@@ -24,11 +23,10 @@
 }
 
 #navigator {
-    border-right: 4px solid var(--accent-background-color-5);
+    border-right: 2px solid #252424;
     /*box-shadow: 0 4px 6px -6px #222; /* Bottom */
     /*box-shadow: -15px 0 15px -15px inset, 12px 0px 2px 1px rgba(0, 0, 255, .2);*/
-    box-shadow: 0.4em 0 0.3em -0.32em rgba(20, 40, 80, 0.5),
-         inset -0.4em 0 0.3em -0.32em rgba(20, 40, 80, 0.5);
+
 
     width: auto;
     height: auto;
