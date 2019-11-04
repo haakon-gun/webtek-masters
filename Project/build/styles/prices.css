@@ -1,8 +1,9 @@
+
 .grid-container {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 700px 1fr 1fr;
-  grid-template-rows: 196px 1fr 1fr 1fr 1fr;
+  grid-template-rows: 196px 1fr 1fr 1fr 1fr /*300px 300px 300px*/;
 	width: 1022px;
 	height: 1400px;
 	left: 50%;
@@ -17,13 +18,18 @@
 }
 
 #titlebox {
-  position: absolute;
-  height: 130px;
+    margin-top: 0px;
+    padding: 0px;
+    height: 130px;
+    text-align: center;
+    line-height: 120px;
+    font-size: 40px;
+    color: white;
 }
 
 #text {
     text-align: left;
-    margin-top: 220px;
+    margin-top: 30px;
     padding: 5px;
     font-size: 16px;
     grid-column-start: 3;
@@ -33,13 +39,12 @@
 }
 
 #prices {
-    margin-top: 190px;
     text-align: left;
     padding: 5px;
     grid-column-start: 3;
     grid-column-end: 3;
     grid-row-start: 2;
-    grid-row-end: 5;
+    grid-row-end: 4;
 }
 
 /* WARNING: <tag> attributes in page-specific CSS */
@@ -52,7 +57,7 @@ table {
 
 /* WARNING: <tag> attributes in page-specific CSS */
 td, th {
-  padding: 7px;
+  padding: 10px;
   padding-left: 10px;
 }
 
@@ -82,13 +87,18 @@ tr:nth-child(odd) {
   }
 
   #titlebox {
-    position: absolute;
-    height: 130px;
+      margin-top: 0px;
+      padding: 0px;
+      height: 130px;
+      text-align: center;
+      line-height: 120px;
+      font-size: 40px;
+      color: white;
   }
 
   #text {
       text-align: left;
-      margin-top: 220px;
+      margin-top: 30px;
       padding: 5px;
       width: 100%;
       font-size: 16px;
@@ -100,7 +110,7 @@ tr:nth-child(odd) {
 
   #prices {
       text-align: left;
-      margin-top: 225px;
+      margin-top: 20px;
       grid-column-start: 3;
       grid-column-end: 3;
       grid-row-start: 2;
