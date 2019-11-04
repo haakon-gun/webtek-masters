@@ -204,18 +204,18 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 1072px) {
+@media only screen and (max-width: 1022px) {
   .grid-container {
     position: relative;
     display: grid;
     grid-template-columns: 50px 1fr 1fr 1fr 80px;
     grid-template-rows: 330px 330px 330px 530px;
-  	width: 1022px;
-  	left: 50%;
+  	width: 100%;
+    margin: auto;
     margin-top: 300px;
-   	margin-left: -511px;
-  	grid-gap: 20px;
+  	grid-gap: 0;
   }
+}
 
 @media only screen and (max-width: 622px) {
   .grid-container {
