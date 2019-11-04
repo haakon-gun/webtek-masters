@@ -4,8 +4,8 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 219px 508px 255px;
-  background-color: rgba(155, 255, 255, 0.4);
+	grid-template-rows: 300px 500px 550px;
+  /*background-color: rgba(155, 255, 255, 0.4);*/
 	width: 1022px;
 	height: 100%;
 	left: 50%;
@@ -13,8 +13,9 @@
 	grid-gap: 1px;
 }
 
+
 .grid-container > div {
-  background-color: rgba(0, 0, 0, 0.2);
+  /*background-color: rgba(0, 0, 0, 0.2);*/
   text-align: center;
   font-size: 20px;
 }
@@ -22,7 +23,7 @@
 .item1 {
 	grid-column-start: 1;
 	grid-column-end: 4;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .item2 {
@@ -34,7 +35,7 @@
 #frontlogo{
   length: 150px;
   height: 80px;
-  margin-top: 150px;
+  margin-top: 15px;
   margin-right: 0px;
 }
 
@@ -48,7 +49,7 @@
 	grid-column-start: 2;
 	grid-column-end:	4;
   grid-row: 2;
-  margin-top: 150px;
+  margin-top: 15px;
 }
 
 .title{
@@ -56,14 +57,6 @@
   grid-column-end: 5;
 }
 
-.stripe{
-  margin-bottom: 80px;
-  margin-top: 80px;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row: 2;
-  color: rgb(244, 244, 244);
-}
 
 #titlebox{
   grid-column-start: 1;
@@ -73,14 +66,51 @@
 #snakkmmedoss{
   border-left: 2px solid black;
   border-right: 2px solid black;
+  height: 380px;
+  padding-left: 15px;
+  text-align: left;
+}
+
+#folgoss{
+  padding-left: 15px;
+  text-align: left;
+}
+
+#ungdomsrabatt{
+  padding-left: 15px;
+  text-align: left;
 }
 
 #facelogo{
-  height: 60px;
-  length: 60px;
+  height: 80px;
+  length: 80px;
+  padding-left: 25%;
 }
 
-@media only screen and (max-width: 1022px) {
+#stripe{
+  margin-bottom: 300px;
+  margin-top: 50px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row: 2;
+  color: #537188;
+}
+
+.button {
+  background-color: #1D3A73;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #537188;
+}
+
+@media only screen and (max-width: 700px) {
 
 	.grid-container {
 	  display: grid;
