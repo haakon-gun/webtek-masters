@@ -193,7 +193,7 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 1022px) {
+@media only screen and (max-width: 922px) {
   .grid-container {
     position: relative;
     display: grid;
