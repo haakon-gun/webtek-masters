@@ -217,7 +217,6 @@
   	grid-gap: 20px;
   }
 
-<<<<<<< HEAD
 @media only screen and (max-width: 622px) {
   .grid-container {
     position: relative;
@@ -236,6 +235,4 @@
     grid-row-start: 1;
     grid-row-end: 10;
   }
-=======
->>>>>>> 974ae2a363c0dbd1eb3acf26e581a567ec7adb97
 }
