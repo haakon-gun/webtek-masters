@@ -3,11 +3,11 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 230px 480px 500px;
-	width: 900px;
+	grid-template-rows: 150px 480px 470px;
+	width: 700px;
 	height: 100%;
 	left: 50%;
- 	margin-left: -400px;
+ 	margin-left: -340px;
 	grid-gap: 1px;
 }
 
@@ -15,6 +15,11 @@
 .grid-container > div {
   text-align: center;
   font-size: 20px;
+}
+
+#tittel{
+	font-weight: 600;
+	font-size: 55px;
 }
 
 .item1 {
@@ -31,6 +36,8 @@
 
 #txtfront{
 	margin-top: 0px;
+	color: white;
+	font-size: 24px;
 }
 
 #frontlogo{
@@ -40,9 +47,9 @@
 }
 
 #stol{
-  height: 200px;
+  height: 240px;
   margin-left: 40px;
-  margin-top: 50px;
+  margin-top: 90px;
   border-radius: 2px;
 }
 
@@ -86,9 +93,13 @@
   padding-left: 25%;
 }
 
+p{
+	font-size: 16px;
+}
+
 #stripe {
     	position: absolute;
-    	margin-top: 360px;
+    	margin-top: 280px;
     	width: 100%;
 	  	box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,0.45);
     	height: 250px;
@@ -111,7 +122,7 @@
 }
 
 .button:hover {
-  background-color: rgba(29, 58, 115, 0.904);
+  background-color: rgba(29, 63, 115, 0.877);
   box-shadow: inset 0px 0px 6px 0px rgba(0,0,0,0.45);
 }
 
