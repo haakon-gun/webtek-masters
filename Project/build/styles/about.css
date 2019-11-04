@@ -22,7 +22,7 @@
   display: grid;
   grid-template-columns: 50px 1fr 1fr 1fr 50px;
   grid-template-rows: 330px 330px 330px 530px;
-	width: 992px;
+	width: 800px;
   margin: auto;
   margin-top: 300px;
 	grid-gap: 20px;
@@ -188,7 +188,7 @@
 }
 
 .close:hover, .close:focus {
-  color: #000;
+  color: #000000;
   text-decoration: none;
   cursor: pointer;
 }
