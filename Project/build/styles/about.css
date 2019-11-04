@@ -84,12 +84,6 @@
   to {opacity: 1;}
 }
 
-.item1 {
-	grid-column-start: 1;
-	grid-column-end: 6;
-  font-size: 24px;
-  text-align: center;
-}
 
 .item2 {
 	grid-column-start: 4;
@@ -122,9 +116,9 @@
 
 
 /* Modal Content */
-.employeesExperience {
+.employeesExperience-container {
   display: grid;
-  grid-template-columns: 250px 1fr;
+  grid-template-columns: 250px 1fr 1px;
   grid-template-rows: 30px 30px 1px auto;
   background-color: #fefefe;
   margin: auto;
@@ -140,6 +134,12 @@
 #XPId1 {
   grid-column-start: 1;
   grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+#XPId5 {
+  grid-column-start: 3;
+  grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 5;
 }
@@ -204,7 +204,7 @@
     margin-top: 300px;
   	grid-gap: 0;
   }
-  .employeesExperience {
+  .employeesExperience-container {
     display: grid;
     grid-template-columns: 250px 1fr 20px;
     grid-template-rows: 30px 30px 1px auto;
@@ -217,12 +217,12 @@
   }
 
 }
-@media only screen and (max-width: 622px) {
+@media only screen and (max-width: 672px) {
   .grid-container {
     position: relative;
     display: grid;
-    grid-template-columns: 25px 1fr;
-    grid-template-rows: 330px 330px 330px 330px 330px 330px 330px 330px 330px 530px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 330px 330px 330px 330px 330px 330px 330px 330px 530px;
   	width: 100%;
     margin: auto;
     margin-top: 300px;
@@ -230,14 +230,46 @@
   }
 
   #verticalLineAbout {
-    height: 75%;
+    height: 87%;
     margin-top: 50px;
     margin-left: 25px;
   }
 
-  .employeesExperience {
+  .item2 {
+  display:none;
+  }
+  .marginLeft {
+    display: none;
+  }
+
+  .marginRight {
+    display: none;
+  }
+  .border {
+    width: 180px;
+    height: auto;
+    transition: 0.4s;
+    margin: auto;
+  }
+
+  .modal {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    margin-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+  }
+
+  .employeesExperience-container {
     display: grid;
-    grid-template-columns: 95%;
+    grid-template-columns: 95% 20px;
     grid-template-rows: 200px 30px 30px 1px auto;
     background-color: #fefefe;
     margin: auto;
@@ -254,12 +286,19 @@
     grid-row-end: 2;
   }
 
+  #XPId5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 6;
+  }
+
   #horisontalLineExperience{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 5;
-    width: 50%;
+    width: 100%;
     margin-left: 3%;
   }
 
