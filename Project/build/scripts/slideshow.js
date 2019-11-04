@@ -4,9 +4,9 @@ var images = [];
 var time = 3300;
 
 images[0] = 'resources/stol.png';
-images[2] = 'resources/'
-images[1] = "resources/favicon2.png";
-images[3] = 'resources/dntf.png';
+images[2] = 'resources/ibsenbord.jpg';
+images[1] = "resources/stoler.jpg";
+images[3] = 'resources/ibsenrom.jpg';
 
 function changeImg(){
   document.slideshow.src = images[i];
