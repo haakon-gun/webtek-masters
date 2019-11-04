@@ -1,11 +1,10 @@
 
-
 .grid-container {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 219px 508px 255px;
-  background-color: rgba(155, 255, 255, 0.4);
+	grid-template-rows: 250px 650px 500px;
+  /*background-color: rgba(155, 255, 255, 0.4);*/
 	width: 1022px;
 	height: 100%;
 	left: 50%;
@@ -13,20 +12,42 @@
 	grid-gap: 1px;
 }
 
+
 .grid-container > div {
-  background-color: rgba(0, 0, 0, 0.2);
+  /*background-color: rgba(0, 0, 0, 0.2);*/
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .item1 {
 	grid-column-start: 1;
 	grid-column-end: 4;
+  margin-top: 10px;
+}
+
+.item2 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+  grid-row: 2;
+}
+
+#frontlogo{
+  length: 150px;
+  height: 150px;
+}
+
+#slideshow{
+  length: 300px;
+  height: 200px;
+  margin-left: 10px;
+  margin-top: 15px;
 }
 
 .item3{
 	grid-column-start: 2;
 	grid-column-end:	4;
+  grid-row: 2;
+  margin-top: 15px;
 }
 
 .title{
@@ -34,13 +55,58 @@
   grid-column-end: 5;
 }
 
-#titlebox{
-  grid-column-start: 1;
-	grid-column-end: 4;
+#snakkmmedoss{
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  height: 380px;
+  padding-left: 15px;
+  text-align: left;
 }
 
+#folgoss{
+  padding-left: 15px;
+  text-align: left;
+}
 
-@media only screen and (max-width: 1022px) {
+#ungdomsrabatt{
+  padding-left: 15px;
+  text-align: left;
+}
+
+#facelogo{
+  height: 80px;
+  length: 80px;
+  padding-left: 25%;
+}
+
+#stripe {
+    position: absolute;
+    margin-top: 360px;
+    width: 100%;
+	  box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,0.45);
+    height: 250px;
+    color: rgb(244, 244, 244);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-background-color-4);
+}
+
+.button {
+  background-color: #1D3A73;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #537188;
+}
+
+@media only screen and (max-width: 700px) {
 
 	.grid-container {
 	  display: grid;
@@ -58,17 +124,50 @@
 	  text-align: center;
 	  font-size: 30px;
 	}
+
 	.item1 {
 	  grid-column-start: 1;
-	  grid-column-end: 2;
+	  grid-column-end: 4;
+    margin-top: 50px;
 	}
 
+  .item2 {
+  	grid-column-start: 1;
+  	grid-column-end: 2;
+    grid-row: 2;
+  }
+
+  #frontlogo{
+    margin-top: 150px;
+  }
+
 	.item3{
-		grid-column-start: 1;
-	  grid-column-end:	2;
+		grid-column-start: 2;
+	  grid-column-end:	4;
+    grid-row: 2;
+    margin-top: 150px;
 	}
+
+  .title{
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+
+  .stripe{
+    margin-bottom: 80px;
+    margin-top: 80px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 2;
+    color: rgb(244, 244, 244);
+  }
+
   #titlebox{
     grid-column-start: 1;
   	grid-column-end: 4;
 	}
-} 
+
+  #snakkmmedoss{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
