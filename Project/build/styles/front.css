@@ -4,7 +4,7 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 300px 500px 550px;
+	grid-template-rows: 250px 650px 500px;
   /*background-color: rgba(155, 255, 255, 0.4);*/
 	width: 1022px;
 	height: 100%;
@@ -34,15 +34,14 @@
 
 #frontlogo{
   length: 150px;
-  height: 80px;
-  margin-top: 15px;
-  margin-right: 0px;
+  height: 150px;
 }
 
 #slideshow{
-  length: 180px;
-  height: 140px;
-  margin-left: 0px;
+  length: 300px;
+  height: 200px;
+  margin-left: 10px;
+  margin-top: 15px;
 }
 
 .item3{
@@ -55,12 +54,6 @@
 .title{
   grid-column-start: 1;
   grid-column-end: 5;
-}
-
-
-#titlebox{
-  grid-column-start: 1;
-	grid-column-end: 4;
 }
 
 #snakkmmedoss{
@@ -87,13 +80,17 @@
   padding-left: 25%;
 }
 
-#stripe{
-  margin-bottom: 300px;
-  margin-top: 50px;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row: 2;
-  color: #537188;
+#stripe {
+    position: absolute;
+    margin-top: 360px;
+    width: 100%;
+	  box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,0.45);
+    height: 250px;
+    color: rgb(244, 244, 244);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-background-color-4);
 }
 
 .button {
