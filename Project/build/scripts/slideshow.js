@@ -5,6 +5,7 @@ var time = 3300;
 
 images[0] = 'resources/stol.png';
 images[1] = "resources/favicon2.png";
+images[2] = "resources/Signe-lie.png"
 images[3] = 'resources/dntf.png';
 
 function changeImg(){
