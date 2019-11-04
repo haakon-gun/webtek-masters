@@ -31,20 +31,23 @@
 
 #txtfront{
 	margin-top: 0px;
-	font: 15px;
 }
 
 #frontlogo{
-	margin-top: 15px;
-	height: 150px;
+	margin-top: 88px;
+	height: 80px;
 	border-radius: 5px;  
 }
 
 #stol{
   height: 200px;
   margin-left: 40px;
-  margin-top: 35px;
-  border-radius: 5px;
+  margin-top: 50px;
+  border-radius: 2px;
+}
+
+#park{
+	font-size: 15px;
 }
 
 .item3{
@@ -84,16 +87,16 @@
 }
 
 #stripe {
-    position: absolute;
-    margin-top: 360px;
-    width: 100%;
-	  box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,0.45);
-    height: 250px;
-    color: rgb(244, 244, 244);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--accent-background-color-4);
+    	position: absolute;
+    	margin-top: 360px;
+    	width: 100%;
+	  	box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,0.45);
+    	height: 250px;
+    	color: rgb(244, 244, 244);
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+   		background-color: var(--accent-background-color-4);
 }
 
 .button {
@@ -104,19 +107,21 @@
   text-align: center;
   font-size: 16px;
   cursor: pointer;
+  border-radius: 2px;
 }
 
 .button:hover {
-  background-color: #537188;
+  background-color: rgba(29, 58, 115, 0.904);
+  box-shadow: inset 0px 0px 6px 0px rgba(0,0,0,0.45);
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
 
 	.grid-container {
-	  display: grid;
-	  grid-template-columns: 1fr;
-		grid-template-rows: 219px 262px 450px 255px 255px 255px;
-	  background-color: rgba(155, 255, 255, 0.4);
+		position: relative;
+	  	display: grid;
+	  	grid-template-columns: 1fr;
+		grid-template-rows: 300px 300px 300px 300px 300px 300px;
 		width: 100%;
 		height: 100%;
 		left: 0;
@@ -124,21 +129,21 @@
 		grid-gap: 1px;
 	}
 	.grid-container > div {
-	  background-color: rgba(0, 0, 0, 0.2);
 	  text-align: center;
 	  font-size: 30px;
 	}
 
 	.item1 {
-	  grid-column-start: 1;
-	  grid-column-end: 4;
-    margin-top: 50px;
+	  	grid-column-start: 1;
+	  	grid-column-end: 4;
+		margin-top: 50px;
+		grid-row: 1;
 	}
 
   .item2 {
-  	grid-column-start: 1;
-  	grid-column-end: 2;
-    grid-row: 2;
+  		grid-column-start: 1;
+  		grid-column-end: 2;
+    	grid-row: 2;
   }
 
   #frontlogo{
@@ -147,9 +152,9 @@
 
 	.item3{
 		grid-column-start: 2;
-	  grid-column-end:	4;
-    grid-row: 2;
-    margin-top: 150px;
+	  	grid-column-end:	4;
+    	grid-row: 3;
+    	margin-top: 150px;
 	}
 
   .title{
@@ -157,14 +162,18 @@
     grid-column-end: 5;
   }
 
-  .stripe{
-    margin-bottom: 80px;
-    margin-top: 80px;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row: 2;
-    color: rgb(244, 244, 244);
-  }
+  #stripe {
+    	position: absolute;
+    	margin-top: 360px;
+    	width: 100%;
+	  	box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,0.45);
+    	height: 250px;
+    	color: rgb(244, 244, 244);
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+   		background-color: var(--accent-background-color-4);
+}
 
   #titlebox{
     grid-column-start: 1;
