@@ -1,20 +1,8 @@
 
-.grid-container {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr 700px 1fr 1fr;
-  grid-template-rows: 196px 1fr 1fr 1fr 1fr;
-	width: 1022px;
-	height: 1400px;
-	left: 50%;
- 	margin-left: -511px;
-	grid-column-gap: 5px;
-}
-
-.grid-container > div {
-    text-align: center;
-    font-size: 30px;
-    margin-top: 10px;
+.center {
+  width: 700px;
+  margin: auto;
+  padding: 10px;
 }
 
 #titlebox {
@@ -27,59 +15,47 @@
     margin-top: 220px;
     padding: 5px;
     font-size: 16px;
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 1;
 }
 
 #prices {
-    margin-top: 190px;
+    margin-top: 40px;
     text-align: left;
     padding: 5px;
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 5;
+    margin-bottom: 20px;
 }
 
-/* WARNING: <tag> attributes in page-specific CSS */
 table {
   padding: 10px;
   border-collapse: collapse;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.50);
 }
 
-/* WARNING: <tag> attributes in page-specific CSS */
 td, th {
   padding: 7px;
   padding-left: 10px;
 }
 
-/* WARNING: <tag> attributes in page-specific CSS */
 th {
   background-color: #6F97B5;
   color: white;
   text-align: left;
+  padding: 20px;
 }
 
-/* WARNING: <tag> attributes in page-specific CSS */
 tr:nth-child(odd) {
   background-color: #D4E2EC;
 }
 
 
-@media only screen and (max-width: 700px) {
+/* When the screen gets smaller than 750 px: */
+@media only screen and (max-width: 750px) {
 
-  .grid-container {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr 320px 1fr 1fr;
-    grid-template-rows: 196px 1fr 1fr 1fr 1fr;
-  	width: 320px;
-    left: 50%;
-    margin-left: -170px;
+  .center {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
   }
 
   #titlebox {
@@ -88,52 +64,41 @@ tr:nth-child(odd) {
   }
 
   #text {
-      text-align: left;
-      margin-top: 220px;
-      padding: 5px;
-      width: 100%;
-      font-size: 16px;
-      grid-column-start: 3;
-      grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 1;
+    text-align: left;
+    margin-top: 220px;
+    padding: 5px;
+    width: 90%;
+    font-size: 16px;
   }
 
   #prices {
-      text-align: left;
-      margin-top: 225px;
-      grid-column-start: 3;
-      grid-column-end: 3;
-      grid-row-start: 2;
-      grid-row-end: 5;
-      font-size: 14px;
+    margin-top: 40px;
+    text-align: left;
+    padding: 5px;
   }
 
-  /* WARNING: <tag> attributes in page-specific CSS */
   table {
     padding: 10px;
     border-collapse: collapse;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.50);
   }
 
-  /* WARNING: <tag> attributes in page-specific CSS */
   td, th {
     padding: 5px;
     margin: 0px;
     padding-left: 10px;
   }
 
-  /* WARNING: <tag> attributes in page-specific CSS */
   th {
     background-color: #6F97B5;
     color: white;
     text-align: left;
+    padding: 20px;
   }
 
-  /* WARNING: <tag> attributes in page-specific CSS */
   tr:nth-child(odd) {
     background-color: #D4E2EC;
   }
 }
-

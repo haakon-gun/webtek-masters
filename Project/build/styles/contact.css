@@ -7,20 +7,16 @@
     height: 700px;
     left: 50%;
     margin-left: -511px;
+    margin-top: 240px;
 }
 .grid-container > div {
     text-align: center;
     font-size: 30px;
     margin-top: 10px;
 }
-#titlebox{
-	margin-top: 0px;
-    padding: 0px;
-	height: 130px;
-    text-align: center;
-    line-height: 120px;
-    font-size: 40px;
-    color: white;
+#titlebox {
+    position: absolute;
+    height: 130px;
 }
 .contact-text{
     border-bottom: 2px solid black;
@@ -87,6 +83,10 @@ img{
 #tlfnummer{
     font-size: 32px;
 }
+#tlfnummer a{
+    text-decoration: none;
+    color: black;
+}
 #e-post{
     font-size: 16px;;
 }
@@ -95,6 +95,9 @@ img{
 }
 #adresse{
     font-size: 20px;
+}
+#adresse a{
+    color: black;
 }
 #e-post-text{
     font-size: 20px;
@@ -110,20 +113,16 @@ img{
         left: 50%;
         margin-left: -511px;
         margin-bottom: 50px;
+        margin-top: 240px;
     }
     .grid-container > div {
         text-align: center;
         font-size: 30px;
         margin-top: 10px;
     }
-    #titlebox{
-        margin-top: 0px;
-        padding: 0px;
+    #titlebox {
+        position: absolute;
         height: 130px;
-        text-align: center;
-        line-height: 120px;
-        font-size: 40px;
-        color: white;
     }
     .contact-text{
         border-bottom: 2px solid black;
@@ -158,5 +157,12 @@ img{
     }
     p{
         font-size: 16px;
+    }
+    #adresse a{
+        color: black;
+    }
+    #tlfnummer a{
+        text-decoration: none;
+        color: black;
     }
 }
