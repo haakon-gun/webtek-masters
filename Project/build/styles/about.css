@@ -213,6 +213,7 @@
     margin-top: 300px;
   	grid-gap: 0;
   }
+
   #XPId1 {
     grid-column-start: 1;
     grid-column-end: 2;
