@@ -49,8 +49,8 @@ tr:nth-child(odd) {
 }
 
 
-/* When the screen gets smaller than 720 px: */
-@media only screen and (max-width: 720px) {
+/* When the screen gets smaller than 750 px: */
+@media only screen and (max-width: 750px) {
 
   .center {
     width: 90%;
