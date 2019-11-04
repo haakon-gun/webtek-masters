@@ -109,6 +109,7 @@ img{
         grid-template-rows: 10px 1fr 1fr 1fr 1fr;
         left: 50%;
         margin-left: -511px;
+        margin-bottom: 50px;
     }
     .grid-container > div {
         text-align: center;

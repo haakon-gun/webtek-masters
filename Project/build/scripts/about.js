@@ -136,10 +136,8 @@ function createEmployeDiv(employee){
   node.appendChild(border);
   gridContainer.appendChild(node);
 }
-
 function populateEmployeeContent(employee){
   modal.style.display = "block";
-  modal.style.opacity = "1";
   employeesExperienceImg.src = employee.image;
   employeesExperienceName.innerHTML = employee.name;
   employeesExperienceTitle.innerHTML = employee.title;
