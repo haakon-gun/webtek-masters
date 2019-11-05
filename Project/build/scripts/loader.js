@@ -16,7 +16,7 @@ const header = document.querySelector("#header");
 
 async function insertHeaderAndFooter() {
     let dom = null;
-
+//Using a try catch function to load the outer.html. Trys to load the outer.html document to the header.
     try {
         dom = await load("DOM", "outer.html");
     } catch (error) {
