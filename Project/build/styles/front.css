@@ -217,12 +217,10 @@ p{
 
 	#chair{
 		position: relative;
-		
 		margin-left: 3px;
 		margin-right: 3px;
-		/*height: 200px;*/
 		max-height: 200px;
-		max-width: auto;
+		max-width: 320px;
 	}
 
 
