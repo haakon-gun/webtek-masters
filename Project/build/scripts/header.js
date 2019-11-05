@@ -6,7 +6,7 @@ document.write('\
 \
 \     <a class="header-link" href="front.html" title="Forside">\
           <span>\
-              <img id="logo" alt="Forside" src="resources/logo.png">\
+              <img id="headerLogo" alt="Forside" src="resources/logo.png">\
           </span>\
       </a>\
 \
