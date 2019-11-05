@@ -6,22 +6,21 @@
 }
 
 #titlebox {
-  position: absolute;
   height: 130px;
 }
 
 #text {
-    text-align: left;
-    margin-top: 220px;
-    padding: 5px;
-    font-size: 16px;
+  text-align: left;
+  margin-top: 0px;
+  padding: 5px;
+  font-size: 16px;
 }
 
 #prices {
-    margin-top: 40px;
-    text-align: left;
-    padding: 5px;
-    margin-bottom: 20px;
+  margin-top: 40px;
+  text-align: left;
+  padding: 5px;
+  margin-bottom: 20px;
 }
 
 table {
@@ -66,14 +65,14 @@ tr:nth-child(odd) {
 
   #text {
     text-align: left;
-    margin-top: 220px;
+    margin-top: 300px;
     padding: 5px;
     width: 90%;
     font-size: 16px;
   }
 
   #prices {
-    margin-top: 40px;
+    margin-top: 30px;
     text-align: left;
     padding: 5px;
   }

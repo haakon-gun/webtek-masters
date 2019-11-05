@@ -1,29 +1,29 @@
 
 /* Website header */
 #website-header, #website-footer {
-    width: 100%;
-    z-index: 999;
+  width: 100%;
+  z-index: 999;
 }
 
 #website-header {
-    width: 100%;
-    height: 80px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    padding: 0;
-    margin: 0 0 0 0;
-    background-color: #ffffff;
-    box-shadow: 0 0 0.6em rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 0;
+  margin: 0 0 0 0;
+  background-color: #ffffff;
+  box-shadow: 0 0 0.6em rgba(0, 0, 0, 0.2);
 }
 
 #website-header > nav {
-    height: inherit;
+  height: inherit;
 }
 
 #website-header > nav > * {
-    padding: 0 2em 0 2em;
-    margin: 0;
+  padding: 0 2em 0 2em;
+  margin: 0;
 }
 
 #headerLogo{
@@ -40,22 +40,195 @@
 
 /* this is so that the logo don't get a underline when hovering */
 a.header-link-image{
-    -webkit-appearance: none;
-    appearance: none;
-    border: none;
-    height: inherit;
-    background-color: transparent;
-    color: #252424;
-    font-family: "Open Sans", Helvetica, sans-serif;
-    font-size: 1.05em;
-    display: inline-block;
-    vertical-align: middle;
-    text-decoration: none;
+  appearance: none;
+  border: none;
+  height: inherit;
+  background-color: transparent;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
 }
 
 /* styling of the navbar links */
 a.header-link {
-    -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  height: inherit;
+  background-color: transparent;
+  color: #252424;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 1.05em;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+a.header-link > span {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+}
+
+a.header-link > span > * {
+  width: 100%;
+  margin: auto 0 0.9em 0;
+  text-decoration: none;
+  font-size: 1.04em;
+  font-weight: 100;
+}
+
+/* animation under the links */
+a.header-link::after{
+  content: '';
+  display: block;
+  height: 2px;
+  background: #252424;
+  transition: .3s;
+  transform: scale(0);
+  margin-top: -15px;
+}
+
+a.header-link:hover::after{
+  transition: .3s;
+  transform: scale(1);
+}
+
+
+/* fotter */
+#website-footer {
+  background-color: #6f97b5;
+  box-shadow: 0 0 0.6em rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+/* for google maps embeded */
+#map-container {
+  display: flex;
+  height: 200px;
+}
+
+#map {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.website-footer-section {
+  width: auto;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.website-footer-list {
+  display: flex;
+  justify-content: center;
+}
+
+.website-footer-horizontal-stack {
+  margin-left: 1.4em;
+  margin-right: 1.4em;
+}
+
+.footer-bad-class-name > * {
+  color: inherit;
+  font-size: 0.86em;
+}
+
+.website-footer-list > *, .website-footer-list > p {
+  color: inherit;
+  font-size: 0.86em;
+}
+
+.website-footer-heading {
+  font-size: 1em;
+}
+
+.website-footer-list a{
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: inherit;
+  transition: 0.4s;
+}
+
+.website-footer-list a:hover{
+  color: #1D3A73;
+}
+
+
+
+
+
+
+
+
+
+/* When the screen gets smaller than 830px */
+@media only screen and (max-width: 830px) {
+
+  /* So that the picture stays left when the screen shrinks */
+  .h-centered {
+    display: table;
+    margin-left: 0;
+  }
+
+
+  /* Website header */
+  #website-header, #website-footer {
+    width: 100%;
+    z-index: 999;
+  }
+
+  #website-header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0 0 0 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 0.6em rgba(0, 0, 0, 0.2);
+  }
+
+  #website-header > nav {
+    height: inherit;
+  }
+
+  #website-header > nav > * {
+    padding: 0 2em 0 2em;
+    margin: 0;
+  }
+
+  #headerLogo{
+    width: 200px;
+    margin-top: 3px;
+    transition: 0.4s;
+    transform: scale(1.0)
+  }
+
+  #headerLogo:hover{
+    transition: 0.4s;
+    transform: scale(0.97)
+  }
+
+  /* this is so that the logo don't get a underline when hovering */
+  a.header-link-image{
+    appearance: none;
+    border: none;
+    height: inherit;
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+  }
+
+  /* styling of the navbar links */
+  a.header-link {
     appearance: none;
     border: none;
     height: inherit;
@@ -64,26 +237,25 @@ a.header-link {
     font-family: "Open Sans", Helvetica, sans-serif;
     font-size: 1.05em;
     display: inline-block;
-    vertical-align: middle;
     text-decoration: none;
-}
+  }
 
-a.header-link > span {
-    display: flex;
+  a.header-link > span {
+    display: none;
     flex-direction: column;
     height: inherit;
-}
+  }
 
-a.header-link > span > * {
+  a.header-link > span > * {
     width: 100%;
     margin: auto 0 0.9em 0;
     text-decoration: none;
     font-size: 1.04em;
     font-weight: 100;
-}
+  }
 
-/* animation under the links */
-a.header-link::after{
+  /* animation under the links */
+  a.header-link::after{
     content: '';
     display: block;
     height: 2px;
@@ -91,84 +263,75 @@ a.header-link::after{
     transition: .3s;
     transform: scale(0);
     margin-top: -15px;
-}
+  }
 
-a.header-link:hover::after{
+  a.header-link:hover::after{
     transition: .3s;
     transform: scale(1);
-}
+  }
 
 
-/* fotter */
-#website-footer {
+  /* fotter */
+  #website-footer {
     background-color: #6f97b5;
     box-shadow: 0 0 0.6em rgba(0, 0, 0, 0.2);
     color: #ffffff;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
-}
+  }
 
-/* for google maps embeded */
-#map-container {
+  /* for google maps embeded */
+  #map-container {
     display: flex;
     height: 200px;
-}
+  }
 
-#map {
+  #map {
     border: none;
     width: 100%;
     height: 100%;
-}
+  }
 
-.website-footer-section {
+  .website-footer-section {
     width: auto;
     margin-left: 2em;
     margin-right: 2em;
     margin-top: 1em;
     margin-bottom: 1em;
-}
+  }
 
-.website-footer-list {
+  .website-footer-list {
     display: flex;
     justify-content: center;
-}
+  }
 
-.website-footer-horizontal-stack {
+  .website-footer-horizontal-stack {
     margin-left: 1.4em;
     margin-right: 1.4em;
-}
+  }
 
-.footer-bad-class-name > * {
+  .footer-bad-class-name > * {
     color: inherit;
-
     font-size: 0.86em;
-}
+  }
 
-.website-footer-list > *, .website-footer-list > p {
+  .website-footer-list > *, .website-footer-list > p {
     color: inherit;
-
     font-size: 0.86em;
-}
+  }
 
-.website-footer-heading {
+  .website-footer-heading {
     font-size: 1em;
-}
+  }
 
-
-.website-footer-list a {
+  .website-footer-list a{
     color: inherit;
     font-family: inherit;
     font-size: inherit;
     text-decoration: inherit;
     transition: 0.4s;
-    transform: scale(1.0);
-}
+  }
 
-.website-footer-list a:hover {
-    transition: 0.4s;
-    transform: scale(0.97);
-}
-
-@media only screen and (max-width: 750px) {
-
-}
+  .website-footer-list a:hover{
+    color: #1D3A73;
+  }
