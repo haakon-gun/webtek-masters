@@ -7,7 +7,6 @@
     height: 700px;
     left: 50%;
     margin-left: -511px;
-    margin-top: 240px;
 }
 .grid-container > div {
     text-align: center;
@@ -15,7 +14,6 @@
     margin-top: 10px;
 }
 #titlebox {
-    position: absolute;
     height: 130px;
 }
 .contact-text{
@@ -113,7 +111,6 @@ img{
         left: 50%;
         margin-left: -511px;
         margin-bottom: 50px;
-        margin-top: 240px;
     }
     .grid-container > div {
         text-align: center;
@@ -121,7 +118,6 @@ img{
         margin-top: 10px;
     }
     #titlebox {
-        position: absolute;
         height: 130px;
     }
     .contact-text{
