@@ -1,8 +1,8 @@
 
 .grid-container {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  	position: relative;
+  	display: grid;
+  	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 150px 480px 470px;
 	width: 700px;
 	height: 100%;
@@ -13,11 +13,11 @@
 
 
 .grid-container > div {
-  text-align: center;
-  font-size: 20px;
+  	text-align: center;
+  	font-size: 20px;
 }
 
-#tittel{
+#title{
 	font-weight: 600;
 	font-size: 55px;
 }
@@ -25,13 +25,13 @@
 .item1 {
 	grid-column-start: 1;
 	grid-column-end: 4;
-  margin-top: 10px;
+  	margin-top: 10px;
 }
 
 .item2 {
 	grid-column-start: 1;
 	grid-column-end: 2;
-  grid-row: 2;
+  	grid-row: 2;
 }
 
 #txtfront{
@@ -46,11 +46,11 @@
 	border-radius: 5px;  
 }
 
-#stol{
-  height: 240px;
-  margin-left: 40px;
-  margin-top: 90px;
-  border-radius: 2px;
+#chair{
+  	height: 240px;
+  	margin-left: 40px;
+  	margin-top: 90px;
+  	border-radius: 2px;
 }
 
 #park{
@@ -60,37 +60,37 @@
 .item3{
 	grid-column-start: 2;
 	grid-column-end:	4;
-  grid-row: 2;
-  margin-top: 15px;
+  	grid-row: 2;
+  	margin-top: 15px;
 }
 
 .title{
-  grid-column-start: 1;
-  grid-column-end: 5;
+  	grid-column-start: 1;
+  	grid-column-end: 5;
 }
 
-#snakkmmedoss{
-  border-left: 2px solid black;
-  border-right: 2px solid black;
-  height: 380px;
-  padding-left: 15px;
-  text-align: left;
+#contactus{
+  	border-left: 2px solid black;
+  	border-right: 2px solid black;
+  	height: 380px;
+  	padding-left: 15px;
+  	padding-right: 30px;
+  	text-align: left;
 }
 
-#folgoss{
-  padding-left: 15px;
-  text-align: left;
+#followus{
+  	padding-left: 15px;
+  	text-align: left;
 }
 
-#ungdomsrabatt{
-  padding-left: 15px;
-  text-align: left;
+#discount{
+  	padding-left: 15px;
+  	text-align: left;
 }
 
 #facelogo{
-  height: 80px;
-  length: 80px;
-  padding-left: 25%;
+  	height: 80px;
+  	padding-left: 25%;
 }
 
 p{
@@ -98,32 +98,33 @@ p{
 }
 
 #stripe {
-    	position: absolute;
-    	margin-top: 280px;
-    	width: 100%;
-	  	box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,0.45);
-    	height: 250px;
-    	color: rgb(244, 244, 244);
-    	display: flex;
-    	align-items: center;
-    	justify-content: center;
-   		background-color: var(--accent-background-color-4);
+    position: absolute;
+    margin-top: 280px;
+    height: 250px;
 }
 
 .button {
-  background-color: #1D3A73;
-  border: none;
-  color: white;
-  padding: 15px 25px;
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 2px;
+  	background-color: #1D3A73;
+  	border: none;
+  	color: white;
+  	padding: 15px 25px;
+  	text-align: center;
+  	font-size: 16px;
+  	cursor: pointer;
+  	border-radius: 2px;
 }
 
 .button:hover {
-  background-color: rgba(29, 63, 115, 0.877);
-  box-shadow: inset 0px 0px 6px 0px rgba(0,0,0,0.45);
+  	background-color: rgba(29, 63, 115, 0.877);
+  	box-shadow: inset 0px 0px 6px 0px rgba(0,0,0,0.45);
+}
+
+#discount > hr {
+	display: none;
+}
+
+#contactus > hr {
+	display: none;
 }
 
 @media only screen and (max-width: 800px) {
@@ -155,9 +156,9 @@ p{
   		grid-column-start: 1;
   		grid-column-end: 4;
     	grid-row: 2;
-  }
+  	}
   
-	.item3{
+	.item3 {
 		grid-column-start: 1;
 	  	grid-column-end: 4;
     	grid-row: 3;
@@ -166,7 +167,7 @@ p{
 	.item4 {
   		grid-column-start: 1;
   		grid-column-end: 4;
-    	grid-row: 4;
+		grid-row: 4;
 	}
 
 	.item5 {
@@ -181,70 +182,80 @@ p{
 		grid-row: 6;
 	}
 
-  #tittel{
+  	#title{
 		position: relative;
     	grid-column-start: 1;
 		grid-column-end: 5;
 		font-size:38px;
-  }
+  	}
 
-  #facelogo{
+  	#facelogo{
 	  	position: relative;
 	  	text-align: center;
 		padding: 5px;
-  }
+  	}
 
-  #folgoss{
-	  	position: relative;
-	  	text-align: center;
-		padding: 5px;
-    	width: 100%;
-  }
-
-  #ungdomsrabatt{
+  	#followus{
 	  	position: relative;
 	  	text-align: center;
 		padding: 5px;
     	width: 100%;
-  }
+  	}
 
-  #stripe {
+  	#discount{
+	  	position: relative;
+	  	text-align: center;
+		padding: 5px;
+    	width: 100%;
+  	}
+
+  	#stripe {
     	position: absolute;
     	margin-top: 280px;
-    	width: 100%;
-	  	box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,0.45);
-    	height: 250px;
-    	color: rgb(244, 244, 244);
-    	display: flex;
-    	align-items: center;
-    	justify-content: center;
-   		background-color: var(--accent-background-color-4);
-}
+    	height: 450px;
+	}
 
-	#stol{
+	#chair{
 		position: relative;
 		padding-right: 5px;
+		padding-left: 5px;
 		margin-left: 3px;
+		width: 360px;
+		height: 200px;
 	}
 
 
-  #snakkmmedoss{
-    border-left: none;
-	border-right: none;
-	position: relative;
-	text-align: center;
-	padding: 5px;
-	margin: 0 5px;
-	width: 100%;
-}
-#snakkmmedoss > p{
-	font-size: 15px;
-}
+  	#contactus{
+    	border-left: none;
+		border-right: none;
+		position: relative;
+		text-align: center;
+		padding: 5px;
+		margin: 5px;
+		width: 100%;
+	}
 
-#ungdomsrabatt > p{
-	font-size: 15px;
-}
+	#contactus > p{
+		font-size: 15px;
+	}
 
-#folgoss > p{
-	font-size: 15px;
+	#discount > p{
+		font-size: 15px;
+	}
+
+	#followus > p{
+		font-size: 15px;
+	}
+
+	#discount > hr {
+		display: block;
+		margin-top: 30px;
+		width: 250px;
+	}
+
+	#contactus > hr {
+		display: block;
+		margin-top: 30px;
+		width: 250px;
+	}
 }
