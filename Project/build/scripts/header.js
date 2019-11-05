@@ -4,7 +4,7 @@ document.write('\
 <header id="website-header">\
   <nav class="h-centered">\
 \
-\     <a class="header-link" href="front.html" title="Forside">\
+\     <a class="header-link-image" href="front.html" title="Forside">\
           <span>\
               <img id="logo" alt="Forside" src="resources/logo.png">\
           </span>\
