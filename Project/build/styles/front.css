@@ -222,7 +222,7 @@ p{
 		margin-right: 3px;
 		/*height: 200px;*/
 		max-height: 200px;
-		max-width: 95%;
+		max-width: auto;
 	}
 
 
