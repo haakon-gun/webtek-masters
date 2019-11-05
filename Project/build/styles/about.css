@@ -1,5 +1,4 @@
 #titlebox {
-  position: absolute;
   height: 130px;
 }
 
@@ -18,15 +17,15 @@
 }
 
 .grid-container {
-  position: relative;
   display: grid;
   grid-template-columns: 50px 1fr 1fr 1fr 50px;
   grid-template-rows: 330px 330px 330px 530px;
 	width: 800px;
   margin: auto;
-  margin-top: 300px;
+  margin-top: 150px;
 	grid-gap: 20px;
 }
+
 
 .grid-container > div {
   text-align: center;
@@ -91,6 +90,7 @@
   grid-row-start: 2;
   grid-row-end: 3;
 }
+
 
 
 /* The Modal (background) */
@@ -196,13 +196,12 @@
 
 @media only screen and (max-width: 922px) {
   .grid-container {
-    position: relative;
     display: grid;
     grid-template-columns: 50px 1fr 1fr 1fr 50px;
     grid-template-rows: 330px 330px 330px 530px;
   	width: 100%;
     margin: auto;
-    margin-top: 300px;
+    margin-top: 150px;
   	grid-gap: 0;
   }
   .employeesExperience-container {
@@ -220,13 +219,12 @@
 }
 @media only screen and (max-width: 672px) {
   .grid-container {
-    position: relative;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 330px 330px 330px 330px 330px 330px 330px 330px 530px;
   	width: 100%;
+    margin-top: 150px;
     margin: auto;
-    margin-top: 300px;
   	grid-gap: 0;
   }
 
