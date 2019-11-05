@@ -1,8 +1,8 @@
 
-
 /* Website header */
 #website-header, #website-footer {
     width: 100%;
+    z-index: 999;
 }
 
 #website-header {
@@ -13,6 +13,7 @@
     top: 0;
     padding: 0;
     margin: 0 0 0 0;
+    background-color: #ffffff;
     box-shadow: 0 0 0.6em rgba(0, 0, 0, 0.2);
 }
 
@@ -37,7 +38,7 @@
   transform: scale(0.97)
 }
 
-/* So that the logo don't get a underline when hovering */
+/* this is so that the logo don't get a underline when hovering */
 a.header-link-image{
     -webkit-appearance: none;
     appearance: none;
@@ -52,7 +53,7 @@ a.header-link-image{
     text-decoration: none;
 }
 
-/* For the navbar */
+/* styling of the navbar links */
 a.header-link {
     -webkit-appearance: none;
     appearance: none;
@@ -81,7 +82,7 @@ a.header-link > span > * {
     font-weight: 100;
 }
 
-
+/* animation under the links */
 a.header-link::after{
     content: '';
     display: block;
@@ -97,21 +98,19 @@ a.header-link:hover::after{
     transform: scale(1);
 }
 
+
 /* fotter */
 #website-footer {
-    background-color: var(--accent-background-color-4);
+    background-color: #6f97b5;
     box-shadow: 0 0 0.6em rgba(0, 0, 0, 0.2);
-
-    color: rgb(242, 242, 242);
-
+    color: #ffffff;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
 }
 
 #map-container {
     display: flex;
-
-    height: 12em;
+    height: 200px;
 }
 
 #map {
