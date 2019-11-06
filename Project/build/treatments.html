@@ -2,12 +2,14 @@
 <html lang="nb-NO">
     <head>
         <meta charset="utf-8"/>
+        <link rel="stylesheet" href="styles/common.css">
+        <link rel="stylesheet" href="styles/about.css">
+        <link rel="stylesheet" href="styles/outer.css">
         <link rel="stylesheet" type="text/css" href="styles/common.css" media="screen"/>
         <link rel="stylesheet" type="text/css" href="styles/treatments.css" media="screen"/>
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel="stylesheet"/>
 
-        <script type="module" src="scripts/loader.js"></script>
 
         <title>Behandlinger</title>
     </head>
@@ -17,24 +19,17 @@
             Behandlinger
         </div>
 
-        <section id="container">
-            <nav id="navigator">
-                <ul id="navigation-list">
+        <div class="flex-container">
+          <div class="treatmentsList">
+            <ul>
+              <li></li>
+            </ul>
+          </div>
+          <div class="treatmentsContent">2</div>
+        </div>
 
-                </ul>
-            </nav>
-
-            <!-- Maybe an 'iframe' would've been better...-->
-            <!--<article id="content">-->
-                <!-- Neh... Not sure if it's needed, after all -->
-                <!--<div class="block-loader h-centered v-centered"></div>-->
-            <!--</article>-->
-            <iframe id="content">
-
-            </iframe>
-        </section>
-
-        <script type="module" src="scripts/treatments.js"></script>
-
+        <script src="scripts/header.js"></script>
+        <script src="scripts/footer.js"></script>
+        <script src="scripts/about.js"></script>
     </body>
 </html>

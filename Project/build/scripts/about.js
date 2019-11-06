@@ -1,6 +1,6 @@
 
-employees = {
-    employee0: {
+var employees = [
+    {
       name: "Mai Gunnarsli",
       title: "Tannlege",
       image: "resources/mai-kersten-gunnarsli.png",
@@ -14,7 +14,7 @@ employees = {
       "Fra 2001 fulgt Tannlegeforeningens Systematiske Etterutdanning"
       ]
     },
-    employee1: {
+    {
       name: "Kirsten Benedikte Aanesen",
       title: "Tannlege",
       image: "resources/kirsten-b-aanesen.png",
@@ -28,7 +28,7 @@ employees = {
       "Har fulgt og gjennomført alle fagområdene i Tannlegeforeningens Systematiske Etterutdanning (TSE) fra 2001."
       ]
     },
-    employee2: {
+    {
       name: "Kari Nesse",
       title: "Tannlege",
       image: "resources/kari-nesse.png",
@@ -44,7 +44,7 @@ employees = {
       "Fra 2001 fulgt Tannlegeforeningens Systematiske Etterutdannelse."
       ]
     },
-    employee3: {
+    {
       name: "Christine Aanesen",
       title: "Tannlege",
       image: "resources/christine-aanesen.png",
@@ -54,7 +54,7 @@ employees = {
       "Kurs i bleking av tenner."
       ]
     },
-    employee4: {
+    {
       name: "Hanne Hauge Hommedal",
       title: "Tannpleier",
       image: "resources/hanne-hommedal.png",
@@ -65,7 +65,7 @@ employees = {
       "Jobber 1dag i uken på Ibsen Tannlegesenter."
       ]
     },
-    employee5: {
+    {
       name: "Erna Oterholt Johnsen",
       title: "Tannhelsesekretær",
       image: "resources/erna-oterholt.png",
@@ -76,7 +76,7 @@ employees = {
       "Har vært tannhelsesekretær hos tannlege Mai Kersten Gunnarsli siden 1997."
       ]
     },
-    employee6: {
+    {
       name: "Anne Kari Johansen",
       title: "Tannhelsesekretær",
       image: "resources/anne-kari-johansen.png",
@@ -87,7 +87,7 @@ employees = {
       "Jobbet som tannhelsesekretær hos Kirsten Aanesen siden 1993"
       ]
     },
-    employee7: {
+    {
       name: "Marlene Almli",
       title: "Tannhelsesekretær",
       image: "resources/marlene-S-Almli.png",
@@ -97,7 +97,7 @@ employees = {
       "Fra 2005 jobbet som tannhelsesekretær i privat praksis."
       ]
     },
-    employee8: {
+    {
       name: "Signe Lie",
       title: "Tannhelsesekretær",
       image: "resources/Signe-lie.png",
@@ -106,7 +106,7 @@ employees = {
       "Jobbet ved Ibsen Tannlegesenter siden 2016"
       ]
     }
-}
+]
 
 
 gridContainer = document.querySelector(".grid-container");
