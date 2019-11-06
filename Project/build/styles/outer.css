@@ -197,8 +197,8 @@ a.header-link:hover::after{
 
 
 
-/* When the screen gets smaller than 830px */
-@media only screen and (max-width: 830px) {
+/* When the screen gets smaller than 840px */
+@media only screen and (max-width: 840px) {
 
   /* So that the picture stays left when the screen shrinks */
   .h-centered {
