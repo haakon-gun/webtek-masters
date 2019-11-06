@@ -9,16 +9,16 @@ document.write(`
           </span>
       </a>
 
-      <a class="header-link" href="about.html">
+      <a class="header-link" id="link1" href="about.html">
           <span><p>Om oss</p></span>
       </a>
-      <a class="header-link" href="treatments.html">
+      <a class="header-link" id="link2" href="treatments.html">
           <span><p>Behandlinger</p></span>
       </a>
-      <a class="header-link" href="prices.html">
+      <a class="header-link" id="link3" href="prices.html">
           <span><p>Priser</p></span>
       </a>
-      <a class="header-link" href="contact.html">
+      <a class="header-link" id="link4" href="contact.html">
           <span><p>Kontakt</p></span>
       </a>
   </nav>
@@ -44,3 +44,4 @@ function scrollFunction() {
     document.getElementById("link3").style.height = "75%";
     document.getElementById("link4").style.height = "75%";
   }
+}
