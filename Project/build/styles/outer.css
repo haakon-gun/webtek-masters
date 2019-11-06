@@ -6,7 +6,7 @@
 
 #website-header {
   width: 100%;
-  height: 180px;
+  height: 80px;
   position: fixed;
   left: 0;
   top: 0;
@@ -55,7 +55,6 @@
 
 #headerLogo{
   width: 200px;
-  margin-top: 60px;
   transition: 0.4s;
   transform: scale(1.0);
 }
@@ -121,62 +120,47 @@ a.header-link:hover::after{
 }
 
 
-/* fotter */
+/* footer */
 #website-footer {
   background-color: #6f97b5;
   box-shadow: 0 0 0.6em rgba(0, 0, 0, 0.2);
   color: #ffffff;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 /* for google maps embeded */
-#map-container {
+#footer-box-map {
   display: flex;
+  justify-content: center;
   height: 200px;
 }
 
 #map {
   border: none;
-  margin-left: auto;
-  margin-right: auto;
   width: 80%;
   height: 100%;
 }
 
-.website-footer-section {
-  width: auto;
-  margin-left: 2em;
-  margin-right: 2em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.website-footer-list {
+.footer-text {
+  width: 90%;
+  height: 100%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  font-size: 14px;
 }
 
-.website-footer-horizontal-stack {
-  margin-left: 1.4em;
-  margin-right: 1.4em;
+h1 {
+  font-size: 18px;
 }
 
-.footer-bad-class-name > * {
-  color: inherit;
-  font-size: 0.86em;
-}
 
-.website-footer-list > *, .website-footer-list > p {
-  color: inherit;
-  font-size: 0.86em;
-}
-
-.website-footer-heading {
-  font-size: 1em;
-}
-
-.website-footer-list a{
+.footer-text a{
   color: inherit;
   font-family: inherit;
   font-size: inherit;
@@ -184,20 +168,42 @@ a.header-link:hover::after{
   transition: 0.4s;
 }
 
-.website-footer-list a:hover{
+.footer-text a:hover{
   color: #1D3A73;
+}
+
+
+#line1 {
+  min-width: 150px;
+  max-width: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#line2 {
+  min-width: 150px;
+  max-width: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#line3 {
+  min-width: 150px;
+  max-width: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#line4 {
+  min-width: 150px;
+  max-width: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 
 
 
-
-
-
-
-
-/* When the screen gets smaller than 840px */
-@media only screen and (max-width: 840px) {
+/* When the screen gets smaller than 1000px */
+@media only screen and (max-width: 1000px) {
 
   /* So that the picture stays left when the screen shrinks */
   .h-centered {
@@ -284,57 +290,42 @@ a.header-link:hover::after{
     background-color: #6f97b5;
     box-shadow: 0 0 0.6em rgba(0, 0, 0, 0.2);
     color: #ffffff;
-    padding-top: 0.2em;
-    padding-bottom: 0.2em;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
 
   /* for google maps embeded */
-  #map-container {
+  #footer-box-map {
     display: flex;
+    justify-content: center;
     height: 200px;
   }
 
   #map {
     border: none;
-    margin-left: auto;
-    margin-right: auto;
     width: 90%;
     height: 100%;
   }
 
-  .website-footer-section {
-    width: auto;
-    margin-left: 2em;
-    margin-right: 2em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-
-  .website-footer-list {
+  .footer-text {
+    width: 90%;
+    height: 100%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    font-size: 14px;
   }
 
-  .website-footer-horizontal-stack {
-    margin-left: 1.4em;
-    margin-right: 1.4em;
+  h1 {
+    font-size: 18px;
   }
 
-  .footer-bad-class-name > * {
-    color: inherit;
-    font-size: 0.86em;
-  }
 
-  .website-footer-list > *, .website-footer-list > p {
-    color: inherit;
-    font-size: 0.86em;
-  }
-
-  .website-footer-heading {
-    font-size: 1em;
-  }
-
-  .website-footer-list a{
+  .footer-text a{
     color: inherit;
     font-family: inherit;
     font-size: inherit;
@@ -342,7 +333,34 @@ a.header-link:hover::after{
     transition: 0.4s;
   }
 
-  .website-footer-list a:hover{
+  .footer-text a:hover{
     color: #1D3A73;
+  }
+
+
+  #line1 {
+    min-width: 130px;
+    max-width: 150px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  #line2 {
+    min-width: 130px;
+    max-width: 150px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  #line3 {
+    min-width: 130px;
+    max-width: 150px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  #line4 {
+    min-width: 130px;
+    max-width: 150px;
+    padding: 5px;
+    margin-bottom: 10px;
   }
 }
