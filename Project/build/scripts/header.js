@@ -28,7 +28,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-    document.getElementById("website-header").style.height = "80px";
+    document.getElementById("website-header").style.height = "60px";
     document.getElementById("website-header").style.fontSize = "100%";
     document.getElementById("headerLogo").style.marginTop = "3px";
     document.getElementById("link1").style.height = "100%";

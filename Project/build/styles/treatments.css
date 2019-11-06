@@ -1,3 +1,9 @@
-.flex-container {
-  display: flex;
+.treatments-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  width: 800px;
+  margin: auto;
+  margin-top: 150px;
+  grid-gap: 20px;
 }
