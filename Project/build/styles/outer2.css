@@ -16,24 +16,47 @@
   background-color: #ffffff;
   box-shadow: 0 0 0.6em rgba(0, 0, 0, 0.2);
   font-size: 100%;
-  transition: 0.2s;
+  transition: 0.4s;
 }
 
-.h-centered{
-  width: 100%;
+/**/
+#link1 {
+  height: 75%;
+  transition: 0.4s;
 }
+
+#link2 {
+  height: 75%;
+  transition: 0.4s;
+}
+
+#link3 {
+  height: 75%;
+  transition: 0.4s;
+}
+
+#link4 {
+  height: 75%;
+  transition: 0.4s;
+}
+
+
 #website-header > nav {
   height: inherit;
 }
 
 #website-header > nav > * {
   padding: 0 2em 0 2em;
-  margin: 0;
+  margin-top: 0;
+}
+
+#website-header > header-link {
+  padding: 0 2em 0 2em;
 }
 
 #headerLogo{
-  width: 350px;
-  margin-top: 3px;
+  width: 200px;
+  margin-top: 60px;
   transition: 0.4s;
   transform: scale(1.0);
 }
