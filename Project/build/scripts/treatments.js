@@ -1,4 +1,45 @@
-var treatmentTitleList = [
+function populateSite(){
+
+  var div = document.querySelector(".treatmentsContent");
+  var h2 = document.createElement("h2");
+  h2.className = "treatmentsContentTitle"
+  h2.appendChild(document.createTextNode(treatmentArray[0].title));
+
+  div.innerHTML = treatmentArray[0].content;
+  div.insertBefore(h2, div.firstChild);
+  let ul = document.querySelector(".treatmentsList");
+
+  for (let i = 0; i<treatmentArray.length; i++){
+    let li = document.createElement("li");
+    li.innerHTML = treatmentArray[i].title;
+    li.onclick = function() {
+      populateTreatmentContent(treatmentArray[i]);
+      borderActiceListItem(li);
+      ;}
+    ul.appendChild(li);
+  }
+}
+
+function borderActiceListItem(li){
+  var listItems = document.querySelector(".treatmentsList");
+  for(var i = 0; i<listItems.childNodes.length; i++){
+    if(listItems.childNodes[i].style.borderBottom != "none"){
+      listItems.childNodes[i].style.borderBottom = "none";
+    }
+  }
+  li.style.borderBottom = "1px solid #252424";
+}
+
+function populateTreatmentContent(articleContent){
+  var div = document.querySelector(".treatmentsContent");
+  var h2 = document.createElement("h2");
+  h2.className = "treatmentsContentTitle"
+  h2.appendChild(document.createTextNode(articleContent.title));
+  div.innerHTML = articleContent.content;
+  div.insertBefore(h2, div.firstChild);
+}
+
+var treatmentArray = [
   {
   title: "Hva er karies/hull i tannen?",
   content: `
@@ -101,33 +142,19 @@ var treatmentTitleList = [
           </article>`
   },
   {
-  title: "Rotfylling",
+  title: "Rotfylling av tann",
   content: `
       <article>
-        <div class="box-medium rotfylling rot-1">
-            Rotfylling gjør vi når nerven inni en tann er blitt angrepet og syk av bakterier. Årsaken kan være et dypt hull, en sprekk i tannen, sykt tannkjøtt, eller tidligere skade.
-        </div>
-        <!--box-medium-rot-1-->
-        <div class="box-medium rotfylling rot-2">
             <img src="resources/rotfylling-1.png" class="rot" alt="rotfylling">
-        </div>
-        <!--box-medium-rot-2-->
-        <div class="box-medium rotfylling rot-3">
-            Nerven må da renses ut av røttene og erstattes av rotfylling med et naturplastmateriale (guttaperka). Rotfylling er en behandling som kan kreve to eller flere besøk. Man vil vanligvis være godt bedøvd og smertefri under behandlingen. Målet er å hindre at bakterier sprer seg i kjeven og i kroppen. Ved hjelp av rotfylling kan man ofte beholde en tann som ellers måtte trekkes.
-        </div>
-        <!--box-medium-rot-3-->
-        <div class="box-medium rotfylling rot-4">
+
+            <p>Rotfylling gjør vi når nerven inni en tann er blitt angrepet og syk av bakterier. Årsaken kan være et dypt hull, en sprekk i tannen, sykt tannkjøtt, eller tidligere skade.</p>
+
+            <p>Nerven må da renses ut av røttene og erstattes av rotfylling med et naturplastmateriale (guttaperka). Rotfylling er en behandling som kan kreve to eller flere besøk. Man vil vanligvis være godt bedøvd og smertefri under behandlingen. Målet er å hindre at bakterier sprer seg i kjeven og i kroppen. Ved hjelp av rotfylling kan man ofte beholde en tann som ellers måtte trekkes.</p>
+
             <img src="resources/rotfylling-2-og-3.png" class="rot" alt="rotfylling">
-        </div>
-        <!--box-medium-rot-4-->
-        <div class="box-medium rotfylling rot-5">
-            Når tannen er ferdig rotfylt og fri for infeksjon og smerter, må den bygges opp med fyllingsmateriale eller med en krone, som eventuelt må forankres med stift i rotkanalen.
-        </div>
-        <!--box-medium-rot-5-->
-        <div class="box-medium rotfylling rot-6">
             <img src="resources/Rotfylling-4.png" class="rot" alt="rotfylling">
-        </div>
-        <!--box-medium-rot-6-->
+            <p>Når tannen er ferdig rotfylt og fri for infeksjon og smerter, må den bygges opp med fyllingsmateriale eller med en krone, som eventuelt må forankres med stift i rotkanalen.</p>
+
     </article>`
   },
   {
@@ -161,9 +188,7 @@ var treatmentTitleList = [
   title: "Tannimplantater",
   content: `
           <article>
-              <p>
-                  <img src="resources/Implantatfestet-bro.png" class="implbro" alt="implantatfestet-bro">
-              </p>
+              <img src="resources/Implantatfestet-bro.png" class="implbro" alt="implantatfestet-bro">
 
               <p>Det er mulig å erstatte nesten alle tapte tenner med implantat.</p>
 
@@ -184,9 +209,10 @@ var treatmentTitleList = [
               <br>
 
               <img src="resources/Implantat-fortann.png" class="implfortann" alt="implantatfestet-fortann">
-              <img src="resources/Implantat-fortann-2.png" class="impltann" alt="implantatfestet-fortann">
 
               <p>Når behandlingen utføres er det viktig at pasienten er frisk, men også pasienter med kroniske sykdommer under medisinsk behandling kan få utført implantatbehandling. En frisk munnhule hvor tannkjøttproblemer, kariesangrep og andre infeksjoner er under kontroll er viktig for et stabilt og godt langtids resultat. Høy alder er sjelden et problem. Røyking frarådes ved implantatbehandling, da det er større fare for komplikasjoner med bentap.</p>
+
+              <img src="resources/Implantat-fortann-2.png" class="impltann" alt="implantatfestet-fortann">
 
               <br>
 
@@ -242,25 +268,25 @@ var treatmentTitleList = [
 
       <p>er en betennelse i tennenes støttevev. Omlag 10 % av den voksne befolkning utvikler alvorlig periodontitt. Ved periodontitt er det få subjektive symptomer. Enkelte vil likevel kunne oppleve dårlig ånde og blødning fra tannkjøttet. Tannkjøttet vil også være noe ømt og hovent. Senere i sykdomsforløpet vil tenner kunne bli løsere, og eventuelt flytte på seg.</p>
 
-      <br>
-
       <img src="resources/tannkjott-3.jpg" class="tannkjott" alt="gingivitt">
+
+      <br>
 
       <p>Periodontitt er en betennelse i tennenes støttevev. Omlag 10 % av den voksne befolkning utvikler alvorlig periodontitt. Ved periodontitt er det få subjektive symptomer. Enkelte vil likevel kunne oppleve dårlig ånde og blødning fra tannkjøttet. Tannkjøttet vil også være noe ømt og hovent. Senere i sykdomsforløpet vil tenner kunne bli løsere, og eventuelt flytte på seg.</p>
 
       <br>
 
-      <img src="resources/tannkjott-4.jpg" class="tannkjott" alt="tannkjøttbetennelse">
-
       <h2>Behandling av periodontitt</h2>
+
+      <img src="resources/tannkjott-4.jpg" class="tannkjott" alt="tannkjøttbetennelse">
 
       <p>God munnhygiene er en forutsetning for at behandlingen av periodontitt skal bli vellykket. Behandlingen vil derfor innledes med hygieneopplæring for deretter å fjerne belegg og tannstein fra tennenes rotoverflate. Målet er å etterlate glatte rotoverflater slik at det blir lettere å holde tennene rene. I enkelte tilfeller kan det være nødvendig med henvisnings til spesialist og/eller kirurgisk behandling for å få kontroll over periodontitten.</p>
 
       <p>Plakk og tannstein dannes hele tiden. Etter endt behandling vil det derfor være nødvendig med kontroller og vedlikeholdsbehandling av tennene for å holde periodontitten i sjakk. Selv om periodontittbehandlingen utføres korrekt og etter beste evne, kan man ikke utelukke at tenner kan gå tapt på sikt.</p>
 
-      <br>
-
       <img src="resources/tannkjott-5.jpg" class="tannkjott" alt="tannkjøttbetennelse">
+
+      <br>
 
       <p>Hvis periodontitten ikke blir behandlet vil sykdommen i de fleste tilfelle ikke medføre store konsekvenser for tannsettet. Noen, ca 10% av befolkningen vil uten behandling oppleve at tenner løsner og flytter på seg. De kan miste flere tenner i løpet av livet dersom tilstanden ikke behandles, og noen ytterst få vil kunne bli helt tannløse. Blant disse med en mer alvorlig (hurtigforløpende) sykdom vil det være noen som ikke lar seg behandle med suksess, selv av spesialister. Her, som i andre sammenheng, vil tidlig behandling nesten alltid være enklere, rimeligere og gi et bedre og mer varig resultat.</p>
   </article>`
@@ -278,7 +304,7 @@ var treatmentTitleList = [
 
               <br>
 
-              <img src="resources/protese.jpg" class="protese" alt="tannprotese">
+              <img src="resources/protese.png" class="protese" alt="tannprotese">
 
               <br>
 
@@ -324,17 +350,4 @@ var treatmentTitleList = [
           </article>`
   }];
 
-
-let ul = document.querySelector(".treatmentsList");
-
-for (let i = 0; i<treatmentTitleList.length; i++){
-  let li = document.createElement("li");
-  li.innerHTML = treatmentTitleList[i].title;
-  li.onclick = function() {populateTreatmentContent(treatmentTitleList[i].content);}
-  ul.appendChild(li);
-}
-
-function populateTreatmentContent(articleContent){
-  var div = document.querySelector(".treatmentsContent");
-  div.innerHTML = articleContent;
-}
+populateSite();

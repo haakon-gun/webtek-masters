@@ -142,7 +142,7 @@ function populateEmployeeContent(employee){
   employeesExperienceName.innerHTML = employee.name;
   employeesExperienceTitle.innerHTML = employee.title;
   while(employeesExperienceList.firstChild){
-  employeesExperienceList.removeChild(employeesExperienceList.firstChild );
+  employeesExperienceList.removeChild(employeesExperienceList.firstChild);
   }
   for (var i = 0; i<employee["experiences"].length; i++) {
       console.log("hei")
