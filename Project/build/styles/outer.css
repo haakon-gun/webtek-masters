@@ -22,6 +22,7 @@
 #link1 {
   height: 75%;
   transition: 0.4s;
+  margin-top: 30px
 }
 
 #link2 {
@@ -85,7 +86,6 @@ a.header-link {
   font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 1.05em;
   display: inline-block;
-  vertical-align: middle;
   text-decoration: none;
 }
 
