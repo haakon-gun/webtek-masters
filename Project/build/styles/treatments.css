@@ -4,7 +4,7 @@
   grid-template-rows: auto;
   margin: auto;
   width: 970px;
-  margin-top: 100px;
+  margin-top: 30px;
   grid-gap: 20px;
   margin-bottom: 100px;
 }
@@ -31,9 +31,152 @@
 .treatmentsContent > article > img{
   max-height: 285px;
   margin-left: 5px;
-  float:right;
+  float: right;
 }
 .treatmentsContentTitle{
   text-align: center;
   margin-bottom: 60px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .treatments-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: auto;
+    width: 90%;
+    min-width: 200px;
+    margin-top: 50px;
+    grid-gap: 20px;
+    margin-bottom: 100px;
+  }
+
+  .treatmentsList{
+    list-style-type: none;
+    height: 280px;
+    margin-top: 0;
+    border-right: none;
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: #252424;
+    text-align: center;
+  }
+
+  .treatmentsList > li{
+    padding-right: 40px;
+    margin-bottom: 10px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    cursor: pointer;
+  }
+
+  .treatmentsList > li > p:hover{
+    text-decoration: underline;
+    color:red;
+  }
+
+  .treatmentsContent > article > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    margin-left: 5px;
+  }
+
+  #wideImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    margin-left: 5px;
+    width: 100%;
+  }
+
+  .treatmentsContent{
+    margin: auto;
+    width: 90%;
+  }
+
+  .treatmentsContentTitle{
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .treatments-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: auto;
+    width: 90%;
+    min-width: 200px;
+    margin-top: 50px;
+    grid-gap: 20px;
+    margin-bottom: 100px;
+  }
+
+  .treatmentsList{
+    list-style-type: none;
+    height: 280px;
+    margin-top: 0;
+    border-right: none;
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: #252424;
+    text-align: center;
+  }
+
+  .treatmentsList > li{
+    padding-right: 40px;
+    margin-bottom: 10px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    cursor: pointer;
+  }
+
+  .treatmentsList > li > p:hover{
+    text-decoration: underline;
+    color:red;
+  }
+
+  .treatmentsContent > article > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    margin-left: 5px;
+    width: 250px;
+    float: none;
+  }
+
+  #wideImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    margin-left: 5px;
+    width: 100%;
+  }
+
+  .treatmentsContent{
+    margin: auto;
+    width: 90%;
+  }
+
+  .treatmentsContentTitle{
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
 }

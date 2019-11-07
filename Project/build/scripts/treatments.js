@@ -27,7 +27,7 @@ function borderActiceListItem(li){
       listItems.childNodes[i].style.borderBottom = "none";
     }
   }
-  li.style.borderBottom = "1px solid #252424";
+  /* li.style.borderBottom = "1px solid #252424"; */
 }
 
 function populateTreatmentContent(articleContent){
@@ -53,7 +53,7 @@ var treatmentArray = [
 
               <p>Man graderer hullene inn i fem grader der grad 1 er starten på hullet og 5 er hull helt inn til nerven av tannen. Grad 1-2 er det mange kaller for «begynnende hull» og er et hull i emaljen av tannen. Emaljen er 1-2mm tykk. Er hullet lokalisert her kan man stoppe hullet ved å være flink med munnhygiene som tannpuss og tanntråd. Ved grad 3-5 har hullet gått inn til dentin eller tannbenet under emaljen og man må borre bort hullet (den ødelagte delen av tannen) for å stoppe det.</p>
 
-              <img src="resources/karies.png" class="karies" alt="karies">
+              <img src="resources/karies.png" id="wideImage" class="karies" alt="karies">
 
               <p>Etter man har borret er det et hulrom i tannen. Ut ifra hvor mye tann som er igjen etter dette kan man erstatte tapt del av tann med enten en fylling, en krone eller innlegg. Oftest bruker man ulike fyllingsmaterialer til å fylle igjen tannen slik at den blir hel igjen.</p>
 
