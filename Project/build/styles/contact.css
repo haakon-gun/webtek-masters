@@ -73,7 +73,7 @@
     grid-row-end: 6;
     border-bottom: none;
 }
-img{
+.icons > img {
     width: 80px;
     float: left;
     margin-top: 15px;
