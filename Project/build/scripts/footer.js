@@ -23,7 +23,7 @@ document.write(`
 
         <div id="line4">
             <a href="https://www.tannlegeforeningen.no">
-                <img id="logo" alt="Den norske tannlegeforeningen" src="resources/dntf.png">
+                <img alt="Den norske tannlegeforeningen" src="resources/dntf.png">
                 <h1 class="website-footer-heading">Den norske tannlegeforeningen</h1>
             </a>
         </div>

@@ -31,7 +31,7 @@ function scrollFunction() {
     document.getElementById("website-header").style.height = "60px";
     document.getElementById("website-header").style.fontSize = "100%";
     document.getElementById("headerLogo").style.width = "150px";
-    document.getElementById("headerLogo").style.marginTop = "3px";
+    document.getElementById("headerLogo").style.marginTop = "0px";
     document.getElementById("link1").style.height = "100%";
     document.getElementById("link2").style.height = "100%";
     document.getElementById("link3").style.height = "100%";

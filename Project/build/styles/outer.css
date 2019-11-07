@@ -22,6 +22,7 @@
 #link1 {
   height: 75%;
   transition: 0.4s;
+  margin-top: 30px
 }
 
 #link2 {
@@ -57,6 +58,7 @@
   width: 200px;
   transition: 0.4s;
   transform: scale(1.0);
+  margin-top: 3px;
 }
 
 #headerLogo:hover{
@@ -85,7 +87,6 @@ a.header-link {
   font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 1.05em;
   display: inline-block;
-  vertical-align: middle;
   text-decoration: none;
 }
 
@@ -144,14 +145,14 @@ a.header-link:hover::after{
 }
 
 .footer-text {
-  width: 90%;
+  width: 95%;
   height: 100%;
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; // so when the screen shrinks the content stacks under each other
   font-size: 14px;
 }
 
@@ -309,14 +310,14 @@ h1 {
   }
 
   .footer-text {
-    width: 90%;
+    width: 95%;
     height: 100%;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; // so when the screen shrinks the content stacks under each other
     font-size: 14px;
   }
 
@@ -337,30 +338,29 @@ h1 {
     color: #1D3A73;
   }
 
-
   #line1 {
-    min-width: 130px;
-    max-width: 150px;
-    padding: 5px;
+    min-width: 100px;
+    max-width: 200px;
+    padding: 10px;
     margin-bottom: 10px;
   }
   #line2 {
-    min-width: 130px;
-    max-width: 150px;
-    padding: 5px;
+    min-width: 100px;
+    max-width: 200px;
+    padding: 10px;
     margin-bottom: 10px;
   }
 
   #line3 {
-    min-width: 130px;
-    max-width: 150px;
-    padding: 5px;
+    min-width: 150px;
+    max-width: 200px;
+    padding: 10px;
     margin-bottom: 10px;
   }
   #line4 {
-    min-width: 130px;
-    max-width: 150px;
-    padding: 5px;
+    min-width: 150px;
+    max-width: 200px;
+    padding: 10px;
     margin-bottom: 10px;
   }
 }
