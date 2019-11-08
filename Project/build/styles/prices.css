@@ -1,4 +1,4 @@
-
+/* The div class that centers all the content */
 .center {
   width: 700px;
   margin: auto;
@@ -43,6 +43,7 @@ th {
   padding-left: 10px;
 }
 
+/* the backround color of every odd row in the table gets the same blue backround color */
 tr:nth-child(odd) {
   background-color: #D4E2EC;
 }
