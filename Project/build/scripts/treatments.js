@@ -24,11 +24,11 @@ function populateSite(){
 function borderActiceListItem(li){
   var listItems = document.querySelector(".treatmentsList");
   for(var i = 0; i<listItems.childNodes.length; i++){
-    if(listItems.childNodes[i].style.fontWeight != "300"){
-      listItems.childNodes[i].style.fontWeight = "300";
+    if(listItems.childNodes[i].style.fontWeight != "400"){
+      listItems.childNodes[i].style.fontWeight = "400";
     }
   }
-  li.style.fontWeight = "400";
+  li.style.fontWeight = "600";
 }
 
 function populateTreatmentContent(articleContent){

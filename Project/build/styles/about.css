@@ -307,8 +307,8 @@
     grid-template-columns: 1fr;
     grid-template-rows: 330px 330px 330px 330px 330px 330px 330px 330px 530px;
   	width: 100%;
-    margin-top: 150px;
     margin: auto;
+    margin-top: 100px;
   	grid-gap: 0;
   }
 

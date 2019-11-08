@@ -1,7 +1,7 @@
 /* Website header */
 #website-header, #website-footer {
   width: 100%;
-  z-index: 999;
+  z-index: 1;
 }
 
 #website-header {
