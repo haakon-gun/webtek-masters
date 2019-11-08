@@ -10,7 +10,7 @@
 }
 .grid-container > div {
     text-align: center;
-    font-size: 30px;
+    font-size: 100%;
     margin-top: 10px;
 }
 #titlebox {
@@ -78,50 +78,29 @@
     float: left;
     margin-top: 15px;
 }
-#tlfnummer{
-    font-size: 32px;
-}
 #tlfnummer a{
     text-decoration: none;
     color: black;
 }
-#e-post{
-    font-size: 16px;;
-}
-#telefontider{
-    font-size: 20px;
+#tlftider{
+    font-size: 1.25em;
 }
 #adresse{
-    font-size: 20px;
+    font-size: 1.25em;
 }
 #adresse a{
     color: black;
 }
 #e-post-text{
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 /* Mobil */
 @media only screen and (max-width: 600px) {
     .grid-container {
-        position: relative;
-        display: grid;
         grid-template-columns: 1fr 1fr 320px 1fr 1fr;
         grid-template-rows: 10px 1fr 1fr 1fr 1fr;
-        left: 50%;
-        margin-left: -511px;
         margin-bottom: 50px;
-    }
-    .grid-container > div {
-        text-align: center;
-        font-size: 30px;
-        margin-top: 10px;
-    }
-    #titlebox {
-        height: 130px;
-    }
-    .contact-text{
-        border-bottom: 2px solid black;
     }
     .icons{
         display: none;
@@ -149,16 +128,5 @@
         grid-column-end: 4;
         grid-row-start: 5;
         grid-row-end: 6;
-        border-bottom: none;
-    }
-    p{
-        font-size: 16px;
-    }
-    #adresse a{
-        color: black;
-    }
-    #tlfnummer a{
-        text-decoration: none;
-        color: black;
     }
 }
