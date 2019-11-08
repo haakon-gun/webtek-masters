@@ -156,10 +156,6 @@ a.header-link:hover::after{
   font-size: 14px;
 }
 
-h1 {
-  font-size: 18px;
-}
-
 
 .footer-text a{
   color: inherit;
@@ -366,10 +362,6 @@ h1 {
     justify-content: center;
     flex-wrap: wrap; // so when the screen shrinks the content stacks under each other
     font-size: 14px;
-  }
-
-  h1 {
-    font-size: 18px;
   }
 
   .footer-text a{
