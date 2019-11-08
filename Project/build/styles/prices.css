@@ -1,27 +1,4 @@
-/* The div class that centers all the content */
-.center {
-  width: 700px;
-  margin: auto;
-  padding: 10px;
-}
-
-#titlebox {
-  height: 130px;
-}
-
-#text {
-  text-align: left;
-  margin-top: 0px;
-  padding: 5px;
-}
-
-#prices {
-  margin-top: 40px;
-  text-align: left;
-  padding: 5px;
-  margin-bottom: 100px;
-}
-
+/* Common css for both media queries */
 table {
   padding: 10px;
   border-collapse: collapse;
@@ -29,48 +6,63 @@ table {
   overflow: hidden;
   box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.50);
 }
-
-td, th {
-  padding: 7px;
-  padding-left: 10px;
-}
-
+/* Styling of the heading in the table */
 th {
   background-color: #6F97B5;
   color: white;
   text-align: left;
   padding: 20px;
-  padding-left: 10px;
 }
-
 /* the backround color of every odd row in the table gets the same blue backround color */
 tr:nth-child(odd) {
   background-color: #D4E2EC;
 }
 
 
-/* When the screen gets smaller than 750 px: */
-@media only screen and (max-width: 750px) {
+/* When the screen is bigger than 750 px in width */
+@media only screen and (min-width: 750px) {
+  /* The div class that centers all the content */
+  .center {
+    width: 700px;
+    margin: auto;
+    padding: 10px;
+  }
+  /* for the text about youth discount */
+  #text {
+    text-align: left;
+    margin-top: 0px;
+    padding: 5px;
+  }
+  /* for the div that surrounds the table */
+  #prices {
+    margin-top: 40px;
+    text-align: left;
+    padding: 5px;
+    margin-bottom: 100px;
+  }
 
+  td, th {
+    padding: 7px;
+    padding-left: 10px;
+  }
+}
+
+/* When the screen gets smaller than 750 px in width  */
+@media only screen and (max-width: 750px) {
+  /* The div class that centers all the content */
   .center {
     width: 90%;
     margin: auto;
     padding: 10px;
   }
-
-  #titlebox {
-    position: absolute;
-    height: 130px;
-  }
-
+  /* for the text about youth discount */
   #text {
     text-align: left;
-    margin-top: 300px;
     padding: 5px;
     width: 90%;
     font-size: 16px;
   }
-
+  /* for the div that surrounds the table */
   #prices {
     margin-top: 30px;
     text-align: left;
@@ -78,28 +70,9 @@ tr:nth-child(odd) {
     margin-bottom: 100px;
   }
 
-  table {
-    padding: 10px;
-    border-collapse: collapse;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.50);
-  }
-
   td, th {
     padding: 5px;
     margin: 0px;
     padding-left: 10px;
-  }
-
-  th {
-    background-color: #6F97B5;
-    color: white;
-    text-align: left;
-    padding: 20px;
-  }
-
-  tr:nth-child(odd) {
-    background-color: #D4E2EC;
   }
 }
