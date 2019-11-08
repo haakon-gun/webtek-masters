@@ -1,3 +1,47 @@
+/* WIP FOOTER? 
+function populateFooter(){
+    var footer = document.createElement("div");
+        footer.id = "website-footer";
+
+            var map = document.createElement("div");
+            map.id = "footer-box-map"
+                var iframe = document.createElement("iframe");
+                iframe.id ="map"
+                iframe.setAttribute("src", "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJWdJJ6SwhR0YRa2D-z285A2E&key=AIzaSyBITdjEW51MyztEZQGDNFcxuz1YZP_KUlk");
+                iframe.setAttribute("allowfullscreen", "");
+
+            var footerText = document.createElement("div");
+            footerText.className = "footer-text"
+            for(i=0; i<5; i++) {
+                var lines = document.createElement("div");
+                lines.id = "line" + i;
+                    var h = document.createElement("H1")
+                    var t = document.createTextNode("Adresse");
+                    h.appendChild(t);
+                    line1.appendChild(h);
+
+                    var p = document.createElement("P");
+                    var tp = document.createTextNode("Henrik Ibsens gate 6: 3. etasje. 3724 Skien");
+                    p.appendChild(tp);
+                    line1.appendChild(p);
+                    var a = document.createElement("a");
+                    a.setAttribute("href", "tel:+4735520469");
+                    a.innerHTML("Telefon: 35 52 04 69");
+                    line1.appendChild(a);
+
+
+                
+            }
+
+
+
+    document.body.appendChild(footer)
+}
+populateFooter()
+
+*/
+
+
 document.write(`
 <div id="website-footer">
     <div id="footer-box-map">
