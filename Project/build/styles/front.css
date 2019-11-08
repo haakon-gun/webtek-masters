@@ -1,11 +1,7 @@
 
 .grid-container {
   	display: grid;
-  	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 250px 480px 470px;
-	width: 700px;
 	height: 100%;
-	margin: auto;
 	grid-gap: 1px;
 }
 
@@ -14,20 +10,16 @@
   	text-align: center;
 }
 
-#title{
+#title{ 
 	font-weight: 600;
-	font-size: 3.438em;
 }
 
 .item1 {
 	grid-column-start: 1;
 	grid-column-end: 4;
-  	margin-top: 110px;
 }
 
 .item2 {
-	grid-column-start: 1;
-	grid-column-end: 2;
   	grid-row: 2;
 }
 
@@ -45,62 +37,24 @@
 	border-radius: 3px;
 }
 
-#chair{
-  	height: 258px;
-  	margin-left: 40px;
-  	margin-top: 73px;
-  	border-radius: 2px;
+#facelogo{
+  	height: 80px;
+	margin-left: 25%;
 }
 
 #park{
 	font-size: 0.938em;
 }
 
-.item3{
-	grid-column-start: 2;
-	grid-column-end:	4;
-  	grid-row: 2;
-  	margin-top: 15px;
-}
 
 .title{
   	grid-column-start: 1;
   	grid-column-end: 5;
 }
 
-#contactus{
-  	border-left: 2px solid black;
-  	border-right: 2px solid black;
-  	height: 380px;
-  	padding-left: 15px;
-  	padding-right: 30px;
-  	text-align: left;
-}
-
-#followus{
-  	padding-left: 15px;
-  	text-align: left;
-}
-
-#discount{
-  	padding-left: 15px;
-  	text-align: left;
-}
-
-#facelogo{
-  	height: 80px;
-	margin-left: 25%;
-}
-
-/*p{
-	font-size: 16px;
-}*/
-
 #stripe {
-  position: absolute;
-  margin-top: 380px;
-	height: 250px;
-	z-index: -1;
+  	position: absolute;
+  	margin-top: 380px;
 }
 
 .button {
@@ -127,13 +81,75 @@
 	display: none;
 }
 
+@media only screen and (min-width: 801px) {
+	 .grid-container{
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 250px 480px 470px;
+		width: 700px;
+		margin: auto;
+	 }
+
+	 #title{ 
+		font-size: 3.438em;
+	}
+
+	 .item1 {
+  		margin-top: 110px;
+	}
+
+	.item2 {
+		grid-column-start: 1;
+		grid-column-end: 2;
+	}
+
+	.item3{
+		grid-column-start: 2;
+		grid-column-end:	4;
+  		grid-row: 2;
+  		margin-top: 15px;
+	}
+
+
+	#followus{
+  		padding-left: 15px;
+  		text-align: left;
+	}
+
+	#discount{
+  		padding-left: 15px;
+  		text-align: left;
+	}
+
+	#contactus{
+  		border-left: 2px solid black;
+  		border-right: 2px solid black;
+  		height: 380px;
+  		padding-left: 15px;
+  		padding-right: 30px;
+  		text-align: left;
+	}
+
+	#chair{
+  		height: 258px;
+  		margin-left: 40px;
+  		margin-top: 73px;
+  		border-radius: 2px;
+	}
+
+	#stripe {
+		height: 250px;
+		z-index: -1;
+	}
+
+}
+
 @media only screen and (max-width: 800px) {
 
 	.grid-container {
 		position: relative;
 	  	display: grid;
 	  	grid-template-columns: 1fr;
-		grid-template-rows: 250px 250px 370px 190px 320px 350px;
+		grid-template-rows: 250px 350px 270px 190px 320px 350px;
 		width: 100%;
 		height: 100%;
 		left: 0;
@@ -145,8 +161,6 @@
 	}
 
 	.item1 {
-	  	grid-column-start: 1;
-	  	grid-column-end: 4;
 		margin-top: 50px;
 		grid-row: 1;
 	}
@@ -154,7 +168,6 @@
   	.item2 {
   		grid-column-start: 1;
   		grid-column-end: 4;
-    	grid-row: 2;
   	}
 
 	.item3 {
@@ -184,9 +197,7 @@
   	#title{
 		margin-top: 100px;
 		position: relative;
-    	grid-column-start: 1;
-		grid-column-end: 5;
-		font-size:38px;
+		font-size: 2em;
   	}
 
   	#facelogo{
@@ -210,15 +221,12 @@
   	}
 
   	#stripe {
-    	position: absolute;
-    	margin-top: 380px;
 		height: 450px;
 		width: 100%;
 	}
 
 	#chair{
 		position: relative;
-		margin-top: 100px;
 		margin-left: 1px;
 		margin-right: 1px;
 		max-height: 200px;
@@ -227,8 +235,6 @@
 
 
   	#contactus{
-    	border-left: none;
-		border-right: none;
 		position: relative;
 		text-align: center;
 		padding: 5px;
