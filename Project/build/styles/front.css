@@ -39,7 +39,7 @@
 #frontlogo{
 	margin-top: 88px;
 	height: 80px;
-	border-radius: 5px;  
+	border-radius: 5px;
 }
 
 #chair{
@@ -86,7 +86,7 @@
 
 #facelogo{
   	height: 80px;
-	margin-left: 25%;  
+	margin-left: 25%;
 }
 
 /*p{
@@ -94,8 +94,8 @@
 }*/
 
 #stripe {
-    position: absolute;
-    margin-top: 380px;
+  position: absolute;
+  margin-top: 380px;
 	height: 250px;
 	z-index: -1;
 }
@@ -154,7 +154,7 @@
   		grid-column-end: 4;
     	grid-row: 2;
   	}
-  
+
 	.item3 {
 		grid-column-start: 1;
 	  	grid-column-end: 4;
