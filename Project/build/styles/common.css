@@ -66,7 +66,7 @@ p{
 .page-header-box {
     width: 100%;
 	  box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.15);
-    background-image:linear-gradient(to right, #6f97b5 ,white);
+    background-image:linear-gradient(to right, #6f97b5 ,#A0C3DD);
     margin-top: 6em;
 
     height: 230px;
