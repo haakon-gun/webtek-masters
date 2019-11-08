@@ -25,12 +25,29 @@ body {
     font-size: 100%;
 }
 
-h1 { /* TODO: nothing */ }
-h2 { /* TODO: nothing */ }
-h3 { /* TODO: nothing */ }
-h4 { /* TODO: nothing */ }
-h5 { /* TODO: nothing */ }
+/*h1 {
+    font-size: 3.438em;
+    font-weight: 600;
+}*/
+
+h2 { 
+    font-size: 2em;/*thomas, tlf nr.*/
+ }
+
+h3 { 
+    font-size: 1.5em;/*pero tannlege i skien, trym priser overskrift*/
+ }
+h4 { 
+    font-size: 1.25em; /*front, "snakk med oss"-tittel*/
+ }
+h5 { 
+    font-size: 1em;
+ }
 h6 { /* TODO: nothing */ }
+
+p{
+    font-size: 1em;
+}
 
 
 /* Fint om denne får ligge i fred. Bruk den gjerne. */
