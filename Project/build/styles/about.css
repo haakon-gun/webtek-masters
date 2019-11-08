@@ -10,22 +10,11 @@
   text-align: center;
 }
 
-#verticalLineAbout {
-  height: 75%;
-  margin-top: 50px;
-  margin-left: 30px;
+.name {
+  font-size: 0.7em;
+  font-weight: 300;
+  margin: 0;
 }
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 50px 1fr 1fr 1fr 50px;
-  grid-template-rows: 330px 330px 330px 530px;
-	width: 800px;
-  margin: auto;
-  margin-top: 150px;
-	grid-gap: 20px;
-}
-
 
 .grid-container > div {
   text-align: center;
@@ -43,27 +32,6 @@
   transform:scale(1.05);
 }
 
-.marginLeft {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 5;
-}
-
-.marginRight {
-  grid-column-start: 5;
-  grid-column-end: 6;
-  grid-row-start: 1;
-  grid-row-end: 5;
-}
-
-
-.name {
-  font-size: 0.7em;
-  font-weight: 300;
-  margin: 0;
-}
-
 .title {
   font-size: 0.5em;
   font-weight: 300;
@@ -78,80 +46,9 @@
   border-width: 1px;
 }
 
-@keyframes fadeIn {
+@keyframes fadeIn2 {
   from {transform: 0;}
   to {opacity: 1;}
-}
-
-
-.item2 {
-	grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  background-color: rgba(0, 0, 0, 0.3);
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-}
-
-@keyframes fadeIn {
-  from {transform: scale(0.8)}
-  to {transform: scale(1)}
-}
-
-
-/* Modal Content */
-.employeesExperience-container {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-  animation-duration: 0.4s;
-  display: grid;
-  grid-template-columns: 250px 1fr 1px;
-  grid-template-rows: 30px 30px 1px auto;
-  background-color: #fefefe;
-  margin: auto;
-  margin-top: 250px;
-  box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.50);
-  border-radius: 4px;
-  width: 970px;
-}
-
-.employeesExperience > div {
-}
-
-#XPId1 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 5;
-}
-#XPId5 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 5;
-}
-
-
-#horisontalLineExperience{
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  width: 50%;
-  margin-left: 3%;
 }
 
 #employeesExperienceName {
@@ -169,15 +66,6 @@
   font-size: 1em;
 }
 
-#employeesExperienceImg{
-  position: relative;
-  border-style: solid;
-  border-radius: 2px;
-  border-width: 1px;
-  border-color: #252424;
-  width: 100%;
-}
-
 /* The Close Button */
 .close {
   margin-top: 0;
@@ -193,7 +81,130 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 922px) {
+@keyframes fadeIn {
+  from {transform: scale(0.8)}
+  to {transform: scale(1)}
+}
+
+
+@media only screen and (min-width: 900px) {
+  #verticalLineAbout {
+    height: 75%;
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 50px;
+    grid-template-rows: 330px 330px 330px 530px;
+  	width: 800px;
+    margin: auto;
+    margin-top: 150px;
+  	grid-gap: 20px;
+  }
+
+
+  .marginLeft {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+  .marginRight {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+
+  .item2 {
+  	grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  /* The Modal (background) */
+  .modal {
+    -webkit-animation-name: fadeIn2;
+    animation-name: fadeIn2;
+    animation-duration: 0.4s;
+    display: none; /* Hidden by default */
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+  }
+
+
+  /* Modal Content */
+  .employeesExperience-container {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+    display: grid;
+    grid-template-columns: 250px 1fr 1px;
+    grid-template-rows: 30px 30px 1px auto;
+    background-color: #fefefe;
+    margin: auto;
+    margin-top: 250px;
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.50);
+    padding: 20px;
+    border-radius: 4px;
+    width: 970px;
+  }
+
+
+  #XPId1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+  #XPId5 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+
+  #horisontalLineExperience{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 50%;
+    margin-left: 3%;
+  }
+
+  #employeesExperienceImg{
+    position: relative;
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: #252424;
+    width: 100%;
+  }
+}
+
+
+
+@media only screen and (max-width: 900px) {
+
+  #verticalLineAbout {
+    height: 75%;
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+
   .grid-container {
     display: grid;
     grid-template-columns: 50px 1fr 1fr 1fr 50px;
@@ -203,16 +214,90 @@
     margin-top: 150px;
   	grid-gap: 0;
   }
+  .marginLeft {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+  .marginRight {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+
+  .item2 {
+  	grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  /* The Modal (background) */
+  .modal {
+    -webkit-animation-name: fadeIn2;
+    animation-name: fadeIn2;
+    animation-duration: 0.4s;
+    display: none; /* Hidden by default */
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+  }
+
   .employeesExperience-container {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
     display: grid;
     grid-template-columns: 250px 1fr 20px;
     grid-template-rows: 30px 30px 1px auto;
     background-color: #fefefe;
     margin: auto;
+    margin-top: 250px;
     box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.50);
     padding: 20px;
     border-radius: 4px;
     width: 90%;
+  }
+
+  #XPId1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+  #XPId5 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+
+  #horisontalLineExperience{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 50%;
+    margin-left: 3%;
+  }
+
+  #employeesExperienceImg{
+    position: relative;
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: #252424;
+    width: 100%;
   }
 
 }
@@ -251,8 +336,8 @@
   }
 
   .modal {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn2;
+    animation-name: fadeIn2;
     animation-duration: 0.4s;
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -266,11 +351,15 @@
   }
 
   .employeesExperience-container {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
     display: grid;
     grid-template-columns: 95% 20px;
     grid-template-rows: 200px 30px 30px 1px auto;
     background-color: #fefefe;
     margin: auto;
+    margin-top: 100px;
     box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.50);
     padding: 20px;
     border-radius: 4px;

@@ -11,6 +11,7 @@ function populateSite(){
 
   for (let i = 0; i<treatmentArray.length; i++){
     let li = document.createElement("li");
+    li.className = "treatmentItems"
     li.innerHTML = treatmentArray[i].title;
     li.onclick = function() {
       populateTreatmentContent(treatmentArray[i]);
@@ -23,11 +24,11 @@ function populateSite(){
 function borderActiceListItem(li){
   var listItems = document.querySelector(".treatmentsList");
   for(var i = 0; i<listItems.childNodes.length; i++){
-    if(listItems.childNodes[i].style.borderBottom != "none"){
-      listItems.childNodes[i].style.borderBottom = "none";
+    if(listItems.childNodes[i].style.fontWeight != "300"){
+      listItems.childNodes[i].style.fontWeight = "300";
     }
   }
-  /* li.style.borderBottom = "1px solid #252424"; */
+  li.style.fontWeight = "400";
 }
 
 function populateTreatmentContent(articleContent){

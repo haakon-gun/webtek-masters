@@ -23,9 +23,25 @@
   margin-bottom: 10px;
   display: inline-block;
   cursor: pointer;
+  transition: 0.4s;
 }
 
-.treatmentsList > li > p:hover{
+.treatmentsList > li:active{
+  font-weight: 400;
+}
+
+.treatmentsList > li::after{
+  content: '';
+  display: block;
+  height: 2px;
+  background: #252424;
+  transition: .3s;
+  transform: scale(0);
+}
+
+.treatmentsList > li:hover::after{
+  transition: .3s;
+  transform: scale(1);
 }
 
 .treatmentsContent > article > img{
