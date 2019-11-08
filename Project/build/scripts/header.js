@@ -21,6 +21,18 @@ document.write(`
       <a class="header-link" id="link4" href="contact.html">
           <span><p>Kontakt</p></span>
       </a>
+
+      <span id="hamburgerMenu" onclick="openNav()">&#9776</span>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="about.html">Om oss</a>
+          <a href="treatments.html">Behandlinger</a>
+          <a href="prices.html">Priser</a>
+          <a href="contact.html">Kontakt</a>
+        </div>
+      </div>
+
   </nav>
 </header>`);
 
@@ -36,6 +48,7 @@ function scrollFunction() {
     document.getElementById("link2").style.height = "100%";
     document.getElementById("link3").style.height = "100%";
     document.getElementById("link4").style.height = "100%";
+    document.getElementById("hamburgerMenu").style.marginTop = "10px";
   } else {
     document.getElementById("website-header").style.width = "100%";
     document.getElementById("website-header").style.height = "80px";
@@ -44,5 +57,14 @@ function scrollFunction() {
     document.getElementById("link2").style.height = "75%";
     document.getElementById("link3").style.height = "75%";
     document.getElementById("link4").style.height = "75%";
+    document.getElementById("hamburgerMenu").style.marginTop = "20px";
   }
+}
+
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
 }
