@@ -12,12 +12,11 @@
 
 .grid-container > div {
   	text-align: center;
-  	font-size: 20px;
 }
 
 #title{
 	font-weight: 600;
-	font-size: 55px;
+	font-size: 3.438em;
 }
 
 .item1 {
@@ -35,7 +34,6 @@
 #txtfront{
 	margin-top: 0px;
 	color: white;
-	font-size: 24px;
 }
 
 #frontlogo{
@@ -45,14 +43,14 @@
 }
 
 #chair{
-  	height: 240px;
+  	height: 258px;
   	margin-left: 40px;
-  	margin-top: 90px;
+  	margin-top: 73px;
   	border-radius: 2px;
 }
 
 #park{
-	font-size: 15px;
+	font-size: 0.938em;
 }
 
 .item3{
@@ -91,9 +89,9 @@
 	margin-left: 25%;  
 }
 
-p{
+/*p{
 	font-size: 16px;
-}
+}*/
 
 #stripe {
     position: absolute;
@@ -108,14 +106,14 @@ p{
   	color: white;
   	padding: 15px 25px;
   	text-align: center;
-  	font-size: 16px;
+  	font-size: 1em;
   	cursor: pointer;
   	border-radius: 2px;
 }
 
 .button:hover {
   	background-color: rgba(29, 63, 115, 0.877);
-  	box-shadow: inset 0px 0px 6px 0px rgba(0,0,0,0.45);
+	box-shadow: inset 0px 0px 6px 0px rgba(0,0,0,0.45);
 }
 
 #discount > hr {
@@ -140,8 +138,8 @@ p{
 		grid-gap: 1px;
 	}
 	.grid-container > div {
-	  text-align: center;
-	  font-size: 20px;
+	  	text-align: center;
+	  	font-size: 20px;
 	}
 
 	.item1 {
@@ -212,7 +210,8 @@ p{
   	#stripe {
     	position: absolute;
     	margin-top: 380px;
-    	height: 450px;
+		height: 450px;
+		width: 100%;
 	}
 
 	#chair{
