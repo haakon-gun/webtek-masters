@@ -67,7 +67,6 @@ function populateheaderDiv(){
     }
     aTags[i].appendChild(spanTags[i]);
     nav.appendChild(aTags[i]);
-    //burgerMenu
   }
 
   //burgerMenu

@@ -66,7 +66,7 @@
                     h5.innerText = "Den norske tannlegeforeningen";
                     line4.appendChild(h5);
 
-                
+
             }
             footerText.appendChild(line4);
             footerText.appendChild(line3);
@@ -78,6 +78,29 @@
 }
 populateFooter() */
 
+
+function createfooter(){
+  var footerDiv = document.createElement("div");
+  footerDiv.id = "website-footer";
+
+  ///
+
+  var footerTextDiv = document.createElement("div");
+
+
+  var footerDivs = [];
+  var h4Texts = ["Adresse", "Åpningstider", "Grenland Tannlegevakt", "Den norske tannlegeforeningen"];
+  var h4s = []
+
+
+  for(var i = 0; i<4; i++){
+    var footerDivs[i] = document.createElement(div);
+    div.id = "line" + i;
+  }
+
+  
+
+}
 
 document.write(`
 <div id="website-footer">
@@ -97,7 +120,7 @@ document.write(`
             <p>08:00–13:00, fredag</p>
         </div>
         <div id="line3">
-            <h4>Grenland tannlegevakt</h1>
+            <h4>Grenland tannlegevakt</h4>
             <p>Helger og helligdager: 10:00–17:00</p>
             <a href="tel:+4790913377">Telefon: 90 91 33 77</a>
         </div>
