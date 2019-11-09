@@ -6,13 +6,6 @@ table {
   overflow: hidden;
   box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.50);
 }
-/* Styling of the heading in the table */
-th {
-  background-color: #6F97B5;
-  color: white;
-  text-align: left;
-  padding: 20px;
-}
 /* the backround color of every odd row in the table gets the same blue backround color */
 tr:nth-child(odd) {
   background-color: #D4E2EC;
@@ -45,6 +38,13 @@ tr:nth-child(odd) {
     padding: 7px;
     padding-left: 10px;
   }
+
+  th {
+    background-color: #6F97B5;
+    color: white;
+    text-align: left;
+    padding: 15px;
+  }
 }
 
 /* When the screen gets smaller than 750 px in width  */
@@ -74,5 +74,12 @@ tr:nth-child(odd) {
     padding: 5px;
     margin: 0px;
     padding-left: 10px;
+  }
+
+  th {
+    background-color: #6F97B5;
+    color: white;
+    text-align: left;
+    padding: 15px;
   }
 }
