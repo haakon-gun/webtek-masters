@@ -1,107 +1,64 @@
-/*function populateFooter(){
-    var footer = document.createElement("div");
-        footer.id = "website-footer";
+/*
+function createFooter(){
+    var footerDiv = document.createElement("div");
+    footerDiv.id = "website-footer";
 
-            var map = document.createElement("div");
-            map.id = "footer-box-map"
-                var iframe = document.createElement("iframe");
-                iframe.id ="map"
-                iframe.setAttribute("src", "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJWdJJ6SwhR0YRa2D-z285A2E&key=AIzaSyBITdjEW51MyztEZQGDNFcxuz1YZP_KUlk");
-                iframe.setAttribute("allowfullscreen", "");
-                map.appendChild(iframe);
+    var map = document.createElement("div");
+    map.id = "footer-box-map"
+    var iframe = document.createElement("iframe");
+    iframe.id ="map"
+    iframe.setAttribute("src", "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJWdJJ6SwhR0YRa2D-z285A2E&key=AIzaSyBITdjEW51MyztEZQGDNFcxuz1YZP_KUlk");
+    iframe.setAttribute("allowfullscreen", "");
+    map.appendChild(iframe);
 
-            var footerText = document.createElement("div");
-            footerText.className = "footer-text"
-            for(i=1; i<5; i++) {
-                var lines = document.createElement("div");
-                lines.id = "line" + i; //Får ikke til å define line osv
-                    var h = document.createElement("H1");
-                    var t = document.createTextNode("Adresse");
-                    h.appendChild(t);
-                    line1.appendChild(h);
-                    var p = document.createElement("P");
-                    var tp = document.createTextNode("Henrik Ibsens gate 6: 3. etasje. 3724 Skien");
-                    p.appendChild(tp);
-                    line1.appendChild(p);
-                    var a = document.createElement("a");
-                    a.setAttribute("href", "tel:+4735520469");
-                    a.innerHTML("Telefon: 35 52 04 69");
-                    line1.appendChild(a);
-                    //Line2
-                    var h2 = document.createElement("H4");
-                    var t2 = document.createTextNode("Åpningstider");
-                    h2.appendChild(t2);
-                    line2.appendChild(h2);
-                    var p2 = document.createElement("P");
-                    var tp2 = document.createTextNode("08:00–15:00, mandag til torsdag");
-                    p2.appendChild(tp2);
-                    line2.appendChild(p2);
-                    var p3 = document.createElement("P");
-                    var tp3 = document.createTextNode("08:00–13:00, fredag");
-                    p3.appendChild(tp3);
-                    line2.appendChild(p3);
-                    //Line3
-                    var h3 = document.createElement("H4");
-                    var t3 = document.createTextNode("Grenland tannlegevakt");
-                    h3.appendChild(t3);
-                    line3.appendChild(h3);
-                    var p4 = document.createElement("P");
-                    var tp4 = document.createTextNode("Helger og helligdager: 10:00–17:00");
-                    p4.appendChild(tp4);
-                    line3.appendChild(p4);
-                    var a2 = document.createElement("a");
-                    a2.setAttribute("href", "tel:+4790913377");
-                    a2.innerHTML("Telefon: 90 91 33 77");
-                    line3.appendChild(a2);
-                    //Line4
-                    var a3 = document.createElement("a");
-                    a3.setAttribute("href", "https://www.tannlegeforeningen.no");
-                    line4.appendChild(a3);
-                    var img = document.createElement("IMG");
-                    img.setAttribute("src", "resources/dntf.png");
-                    img.setAttribute("alt", "Den norske tannlegeforeningen");
-                    line4.appendChild(img);
-                    var h5 = document.createElement("H4");
-                    h5.className = "website-footer-heading";
-                    h5.innerText = "Den norske tannlegeforeningen";
-                    line4.appendChild(h5);
+    var footerTextDiv = document.createElement("div");
+    var footerDivs = [];
+    var h4Texts = ["Adresse", "Åpningstider", "Grenland Tannlegevakt", "Den norske tannlegeforeningen"];
+    var h4s = []
+    var ps = []
+    var pText = ["Henrik Ibsens gate 6: 3. etasje. 3724 Skien", "08:00–15:00, mandag til torsdag", "Helger og helligdager: 10:00–17:00"]
 
 
-            }
-            footerText.appendChild(line4);
-            footerText.appendChild(line3);
-            footerText.appendChild(line2);
-            footerText.appendChild(line1);
-            footer.appendChild(footerText);
-            footer.appendChild(map);
-     document.body.appendChild(footer)
+    for(var i = 1; i<5; i++){
+        footerDivs[i] = document.createElement("div");
+        footerDivs.id = "line" + i;
+        h4s[i] = document.createElement("H4");
+        h4s[i].innerText = h4Texts[i];
+        ps[i<3] = document.createElement("P");
+        ps[i].innerText = pTexts[i];
+        }
+        if(i==1){
+            var a = document.createElement("a");
+            a.setAttribute("href", "tel:+4735520469");
+            a.innerHTML("Telefon: 35 52 04 69");
+            line[i].appendChild(a);
+        }
+        else if(i==2){
+            var p = document.createElement("P");
+            var pt = document.createTextNode("08:00–13:00, fredag");
+            p.appendChild(pt);
+        }
+        else if(i==3){
+            var a2 = document.createElement("a");
+            a2.setAttribute("href", "tel:+4790913377");
+            a2.innerHTML("Telefon: 90 91 33 77");
+            line[i].appendChild(a2);
+        }
+        else{
+            h4s[4].className = "website-footer-heading";
+            var img = document.createElement("img");
+            img.alt = "Den norske tannlegeforeningen"
+            img.src ="resources/dntf.png";
+        }
+        footerTextDiv.appendChild(footerDivs[i]);
+        footerDiv.appendChild(footerTextDiv);
+
+
+    }
+    
 }
-populateFooter() */
-
-
-function createfooter(){
-  var footerDiv = document.createElement("div");
-  footerDiv.id = "website-footer";
-
-  ///
-
-  var footerTextDiv = document.createElement("div");
-
-
-  var footerDivs = [];
-  var h4Texts = ["Adresse", "Åpningstider", "Grenland Tannlegevakt", "Den norske tannlegeforeningen"];
-  var h4s = []
-
-
-  for(var i = 0; i<4; i++){
-    var footerDivs[i] = document.createElement(div);
-    div.id = "line" + i;
-  }
-
-  
-
-}
-
+createFooter()
+*/
 document.write(`
 <div id="website-footer">
     <div id="footer-box-map">
@@ -134,3 +91,4 @@ document.write(`
     </div>
 </div>
 `);
+
