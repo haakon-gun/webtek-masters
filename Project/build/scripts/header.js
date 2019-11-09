@@ -1,40 +1,92 @@
 
-document.write(`
-<header id="website-header">
-  <nav class="h-centered">
 
-     <a class="header-link-image" href="front.html" title="Forside">
-          <span>
-              <img id="headerLogo" alt="Forside" src="resources/logo.png">
-          </span>
-      </a>
 
-      <a class="header-link" id="link1" href="about.html">
-          <span><p>Om oss</p></span>
-      </a>
-      <a class="header-link" id="link2" href="treatments.html">
-          <span><p>Behandlinger</p></span>
-      </a>
-      <a class="header-link" id="link3" href="prices.html">
-          <span><p>Priser</p></span>
-      </a>
-      <a class="header-link" id="link4" href="contact.html">
-          <span><p>Kontakt</p></span>
-      </a>
+function populateheaderDiv(){
 
-      <span id="hamburgerMenu" onclick="openNav()">&#9776</span>
-      <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-          <a href="about.html">Om oss</a>
-          <a href="treatments.html">Behandlinger</a>
-          <a href="prices.html">Priser</a>
-          <a href="contact.html">Kontakt</a>
-        </div>
-      </div>
+  //Creating some elements and arrays for the header.
+  var header = document.createElement("header");
+  header.id = "website-header";
+  var nav = document.createElement("nav");
+  nav.className = "h-centered";
+  var aTags = [];
+  var spanTags = [];
+  var pTags = [];
+  var hrefs =["about.html", "treatments.html", "prices.html", "contact.html"];
+  var texts = ["Om oss", "Behandlinger", "Priser", "Kontakt"];
 
-  </nav>
-</header>`);
+  //Constants for the burger getElementById
+  var aTags2 = [];
+  var span = document.createElement("span");
+  span.id = "hamburgerMenu";
+  span.onclick = function() {openNav();};
+  span.appendChild(document.createTextNode('\u2630'));
+  var div = document.createElement("div");
+  div.id = "myNav";
+  div.className = "overlay";
+  var divOverlay = document.createElement("div");
+  divOverlay.className = "overlay-content";
+
+
+  for(var i = 0; i<5; i++){
+    aTags[i] = document.createElement("a");
+    spanTags[i] = document.createElement("span");
+
+    //burger menu
+    aTags2[i] = document.createElement("a");
+
+    //1 time.
+    if(i==0){
+      aTags[i].className = "header-link-image";
+      aTags[i].href = "front.html";
+      aTags[i].title = "Forside";
+      var img = document.createElement("img");
+      img.id ="headerLogo"
+      img.alt = "Logo"
+      img.src ="resources/logo.png";
+      spanTags[i].appendChild(img);
+
+      //burger meny
+      aTags2[i].href = "javascript:void(0)";
+      aTags2[i].className = "closebtn";
+      aTags2[i].onclick = function() {closeNav();};
+      aTags2[i].appendChild(document.createTextNode('\u00D7'));
+      div.appendChild(aTags2[i]);
+      //run 4 times.
+    }else{
+      aTags[i].className = "header-link";
+      aTags[i].id = "link"+i;
+      aTags[i].href = hrefs[i-1];
+      pTags[i-1] = document.createElement("p");
+      pTags[i-1].appendChild(document.createTextNode(texts[i-1]));
+      spanTags[i].appendChild(pTags[i-1]);
+
+      //burgerMeny
+      aTags2[i].href = hrefs[i-1];
+      aTags2[i].appendChild(document.createTextNode(texts[i-1]));
+      divOverlay.appendChild(aTags2[i]);
+    }
+    aTags[i].appendChild(spanTags[i]);
+    nav.appendChild(aTags[i]);
+    //burgerMenu
+  }
+
+  //burgerMenu
+  div.appendChild(divOverlay);
+  nav.appendChild(span);
+  nav.appendChild(div);
+
+  header.appendChild(nav);
+
+  var body = document.getElementById("body");
+  body.insertBefore(header, body.firstChild);
+
+
+}
+
+
+populateheaderDiv();
+
+
 
 window.onscroll = function() {scrollFunction()};
 
