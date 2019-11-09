@@ -1,10 +1,10 @@
 
+/*common css for both media queries*/
 .grid-container {
   	display: grid;
 	height: 100%;
 	grid-gap: 1px;
 }
-
 
 .grid-container > div {
   	text-align: center;
@@ -37,6 +37,7 @@
 	border-radius: 3px;
 }
 
+/*facebook logo size is universal*/
 #facelogo{
   height: 80px;
 	margin-left: 25%;
@@ -46,12 +47,12 @@
 	font-size: 0.938em;
 }
 
-
+/*positioning of title*/
 .title{
   	grid-column-start: 1;
   	grid-column-end: 5;
 }
-
+/*stripe positioning*/
 #stripe {
   	position: absolute;
   	margin-top: 380px;
@@ -72,7 +73,7 @@
   background-color: rgba(29, 63, 115, 0.877);
 	box-shadow: inset 0px 0px 6px 0px rgba(0,0,0,0.45);
 }
-
+/*create the lines to hide them in bigger windows*/
 #discount > hr {
 	display: none;
 }
@@ -82,22 +83,27 @@
 }
 
 @media only screen and (min-width: 800px) {
-	 .grid-container{
+	 
+	/*grid rows for this size*/
+	.grid-container{
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 250px 480px 470px;
 		width: 700px;
 		margin: auto;
 	 }
 
+	 /*title positioning*/
 	 #title{
 		font-size: 3.438em;
-    text-align: center;
+		text-align: center;
 	}
 
+		/*the right margins for this size*/
 	 .item1 {
   		margin-top: 110px;
 	}
 
+	/*item classes put in the right place*/
 	.item2 {
 		grid-column-start: 1;
 		grid-column-end: 2;
@@ -110,17 +116,21 @@
   		margin-top: 15px;
 	}
 
-
+	/*make this section better looking*/
 	#followus{
   		padding-left: 15px;
   		text-align: left;
 	}
 
+
+	/*makes a bit more space*/
 	#discount{
   		padding-left: 15px;
   		text-align: left;
 	}
 
+
+	/*creates the lines on the side of this section*/
 #contactus{
   		border-left: 2px solid black;
   		border-right: 2px solid black;
@@ -130,6 +140,8 @@
   		text-align: left;
 	}
 
+
+	/*ålaces the picture right for the landing site*/
 	#chair{
   		height: 258px;
   		margin-left: 40px;
@@ -137,6 +149,8 @@
   		border-radius: 2px;
 	}
 
+
+	/*right size for landing site*/
 	#stripe {
 		height: 250px;
 		z-index: -1;
@@ -145,20 +159,26 @@
 
 @media only screen and (max-width: 800px) {
 
+
+	/*right rows for this size*/
 	.grid-container {
 		position: relative;
-	  display: grid;
-	  grid-template-columns: 1fr;
+		display: grid;
+	  	grid-template-columns: 1fr;
 		grid-template-rows: 250px 350px 270px 190px 320px 350px;
 		width: 100%;
 		height: 100%;
 		margin: 0;
 		grid-gap: 1px;
 	}
+
+	/*a smoother font size for this size of window*/
 	.grid-container > div {
 	  	font-size: 1.25em;
 	}
 
+
+	/*places the item classes in the right place*/
 	.item1 {
 		margin-top: 50px;
 		grid-row: 1;
@@ -193,39 +213,57 @@
 		grid-row: 6;
 	}
 
+
+	/*a little adjustment to the title*/
   	#title{
 		margin-top: 100px;
 		position: relative;
-    width: 95%;
+    	width: 95%;
 		font-size: 2em;
-    text-align: center;
+    	text-align: center;
   	}
 
+
+	/*looks cleaner*/
   	#facelogo{
 	  	position: relative;
 	  	text-align: center;
-		  margin: 5px;
+		margin: 5px;
   	}
 
+
+	/*to make the three sections look better*/
   	#followus{
 	  	position: relative;
 	  	text-align: center;
-		  padding: 5px;
+		padding: 5px;
     	width: 100%;
   	}
 
-  #discount{
+  	#discount{
 	  	position: relative;
 	  	text-align: center;
 		  padding: 5px;
     	width: 100%;
-  	}
+	  }
+	  
+	#contactus{
+		position: relative;
+		text-align: center;
+		padding: 5px;
+		margin: 5px;
+		width: 100%;
+	}
 
+
+	/*right size for the stripe*/
   #stripe {
 		height: 450px;
 		width: 100%;
 	}
 
+
+	/*make the front picture look better*/
 	#chair{
 		position: relative;
 		margin-left: 1px;
@@ -235,14 +273,7 @@
 	}
 
 
-  #contactus{
-		position: relative;
-		text-align: center;
-		padding: 5px;
-		margin: 5px;
-		width: 100%;
-	}
-
+	/*makes the sections look better*/
 	#contactus > p{
 		font-size: 15px;
 	}
@@ -255,6 +286,8 @@
 		font-size: 15px;
 	}
 
+
+	/*hides the horizontal lines*/
 	#discount > hr {
 		display: block;
 		margin-top: 30px;
