@@ -10,8 +10,8 @@
   	text-align: center;
 }
 
-#title{ 
-	font-weight: 600;
+#title{
+	font-weight: 300;
 }
 
 .item1 {
@@ -89,7 +89,7 @@
 		margin: auto;
 	 }
 
-	 #title{ 
+	 #title{
 		font-size: 3.438em;
 	}
 
