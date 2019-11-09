@@ -136,7 +136,8 @@
     animation-duration: 0.4s;
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -225,7 +226,6 @@
     grid-row-start: 1;
     grid-row-end: 5;
   }
-
 
   .item2 {
   	grid-column-start: 4;
@@ -357,7 +357,7 @@
   }
 
 
-  /* Modal Content */
+  /* Modal Content + animation*/
   .employeesExperience-container {
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
