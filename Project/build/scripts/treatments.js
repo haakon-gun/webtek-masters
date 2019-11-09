@@ -1,3 +1,5 @@
+
+//beacuse their is so many articles we choose to populate the whole page in js.
 function populateSite(){
 
   var div = document.querySelector(".treatmentsContent");
@@ -9,6 +11,7 @@ function populateSite(){
   div.insertBefore(h2, div.firstChild);
   let ul = document.querySelector(".treatmentsList");
 
+//creates the list of all the articles.
   for (let i = 0; i<treatmentArray.length; i++){
     let li = document.createElement("li");
     li.className = "treatmentItems"
@@ -21,6 +24,7 @@ function populateSite(){
   }
 }
 
+//When a list item is selected it makes the fontWeight 600 and set all other elements in the list to fontWeight 400.
 function borderActiceListItem(li){
   var listItems = document.querySelector(".treatmentsList");
   for(var i = 0; i<listItems.childNodes.length; i++){
@@ -31,6 +35,7 @@ function borderActiceListItem(li){
   li.style.fontWeight = "600";
 }
 
+//Does what it says and is readable.
 function populateTreatmentContent(articleContent){
   var div = document.querySelector(".treatmentsContent");
   var h2 = document.createElement("h2");
@@ -40,6 +45,7 @@ function populateTreatmentContent(articleContent){
   div.insertBefore(h2, div.firstChild);
 }
 
+//This object will later be implemented with jquery and written in json.
 var treatmentArray = [
   {
   title: "Hva er karies/hull i tannen?",

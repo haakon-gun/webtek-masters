@@ -38,7 +38,7 @@
 }
 
 #facelogo{
-  	height: 80px;
+  height: 80px;
 	margin-left: 25%;
 }
 
@@ -69,7 +69,7 @@
 }
 
 .button:hover {
-  	background-color: rgba(29, 63, 115, 0.877);
+  background-color: rgba(29, 63, 115, 0.877);
 	box-shadow: inset 0px 0px 6px 0px rgba(0,0,0,0.45);
 }
 
@@ -81,7 +81,7 @@
 	display: none;
 }
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 800px) {
 	 .grid-container{
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 250px 480px 470px;
@@ -91,6 +91,7 @@
 
 	 #title{
 		font-size: 3.438em;
+    text-align: center;
 	}
 
 	 .item1 {
@@ -120,7 +121,7 @@
   		text-align: left;
 	}
 
-	#contactus{
+#contactus{
   		border-left: 2px solid black;
   		border-right: 2px solid black;
   		height: 380px;
@@ -140,20 +141,18 @@
 		height: 250px;
 		z-index: -1;
 	}
-
 }
 
 @media only screen and (max-width: 800px) {
 
 	.grid-container {
 		position: relative;
-	  	display: grid;
-	  	grid-template-columns: 1fr;
+	  display: grid;
+	  grid-template-columns: 1fr;
 		grid-template-rows: 250px 350px 270px 190px 320px 350px;
 		width: 100%;
 		height: 100%;
-		left: 0;
-	 	margin-left: 0;
+		margin: 0;
 		grid-gap: 1px;
 	}
 	.grid-container > div {
@@ -197,30 +196,32 @@
   	#title{
 		margin-top: 100px;
 		position: relative;
+    width: 95%;
 		font-size: 2em;
+    text-align: center;
   	}
 
   	#facelogo{
 	  	position: relative;
 	  	text-align: center;
-		margin: 5px;
+		  margin: 5px;
   	}
 
   	#followus{
 	  	position: relative;
 	  	text-align: center;
-		padding: 5px;
+		  padding: 5px;
     	width: 100%;
   	}
 
-  	#discount{
+  #discount{
 	  	position: relative;
 	  	text-align: center;
-		padding: 5px;
+		  padding: 5px;
     	width: 100%;
   	}
 
-  	#stripe {
+  #stripe {
 		height: 450px;
 		width: 100%;
 	}
@@ -234,7 +235,7 @@
 	}
 
 
-  	#contactus{
+  #contactus{
 		position: relative;
 		text-align: center;
 		padding: 5px;

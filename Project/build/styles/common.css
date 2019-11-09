@@ -78,7 +78,7 @@ p{
 
 #headertitle{
   text-align: center;
-  width: 600px;
+  width: 90%;
   font-size: 4em;
   font-weight: 300;
   text-shadow: 0px 0px 4px rgba(0,0,0,0.2);
@@ -127,4 +127,13 @@ p{
 
 .horisontalLine{
   border-top: 1px solid #252424;
+}
+
+@media only screen and (max-width: 672px) {
+  #headertitle{
+    text-align: center;
+    width: 90%;
+    font-size: 3em;
+    font-weight: 300;
+    text-shadow: 0px 0px 4px rgba(0,0,0,0.2);
 }

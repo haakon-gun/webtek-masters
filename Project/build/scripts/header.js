@@ -86,7 +86,7 @@ populateheader();
 
 
 window.onscroll = function() {scrollFunction()};
-
+//get triggered when you scrool and changes the headers heigth if you scroll.
 function scrollFunction() {
   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
     document.getElementById("website-header").style.height = "60px";
@@ -109,11 +109,11 @@ function scrollFunction() {
     document.getElementById("hamburgerMenu").style.marginTop = "20px";
   }
 }
-
+//opens burger nav bar.
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
 }
-
+//closes the burger nav bar.
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }

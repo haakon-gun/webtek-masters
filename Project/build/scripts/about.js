@@ -1,4 +1,4 @@
-
+//Because could not use jquery i choose to create a js object istead of a json document.
 var employees = [
     {
       name: "Mai Gunnarsli",
@@ -111,10 +111,14 @@ var employees = [
 
 gridContainer = document.querySelector(".grid-container");
 
+//runs createEmployeDiv as many times as their are employyess.
 for (employee in employees) {
   createEmployeDiv(employees[employee]);
 }
 
+
+//Constructing and appending 1 employees image, title and name.
+//pretty straigth forward DOM manipulation.
 function createEmployeDiv(employee){
   let node = document.createElement("div");
   node.className = "employees";
@@ -136,6 +140,8 @@ function createEmployeDiv(employee){
   node.appendChild(border);
   gridContainer.appendChild(node);
 }
+
+//This function populate the modal with a list, image title and namee.
 function populateEmployeeContent(employee){
   modal.style.display = "block";
   employeesExperienceImg.src = employee.image;
@@ -144,6 +150,7 @@ function populateEmployeeContent(employee){
   while(employeesExperienceList.firstChild){
   employeesExperienceList.removeChild(employeesExperienceList.firstChild);
   }
+  //creating a list elements that it gets from the employee object above.
   for (var i = 0; i<employee["experiences"].length; i++) {
       console.log("hei")
       let li = document.createElement("li");
