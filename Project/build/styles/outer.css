@@ -1,3 +1,17 @@
+
+/*Make the mobile version better looking when shifting over to landscape mode.*/
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+
+
+@media only screen and (min-width: 800px) {
 /* Website header */
 #website-header, #website-footer {
   width: 100%;
@@ -22,7 +36,7 @@
 #link1 {
   height: 75%;
   transition: 0.4s;
-  margin-top: 30px
+  margin-top: 30px;
 }
 
 #link2 {
@@ -244,10 +258,10 @@ a.header-link:hover::after{
   font-size: 30px;
   cursor: pointer;
 }
-
+}
 
 /* When the screen gets smaller than 1000px */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
 
   /* So that the picture stays left when the screen shrinks */
   .h-centered {
@@ -259,7 +273,7 @@ a.header-link:hover::after{
   /* Website header */
   #website-header, #website-footer {
     width: 100%;
-    z-index: 999;
+    z-index: 1;
   }
 
   #website-header {

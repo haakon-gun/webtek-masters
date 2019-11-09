@@ -1,7 +1,7 @@
 
 
-
-function populateheaderDiv(){
+//Creates the header and the header burger menu.
+function populateheader(){
 
   //Creating some elements and arrays for the header.
   var header = document.createElement("header");
@@ -26,7 +26,7 @@ function populateheaderDiv(){
   var divOverlay = document.createElement("div");
   divOverlay.className = "overlay-content";
 
-
+//Creates the headers divTags, spanTags, aTags and populate them with the right content, ID, class, hrefs etc
   for(var i = 0; i<5; i++){
     aTags[i] = document.createElement("a");
     spanTags[i] = document.createElement("span");
@@ -34,7 +34,7 @@ function populateheaderDiv(){
     //burger menu
     aTags2[i] = document.createElement("a");
 
-    //1 time.
+    //run 1 time.
     if(i==0){
       aTags[i].className = "header-link-image";
       aTags[i].href = "front.html";
@@ -60,7 +60,7 @@ function populateheaderDiv(){
       pTags[i-1].appendChild(document.createTextNode(texts[i-1]));
       spanTags[i].appendChild(pTags[i-1]);
 
-      //burgerMeny
+      //burgerMenu
       aTags2[i].href = hrefs[i-1];
       aTags2[i].appendChild(document.createTextNode(texts[i-1]));
       divOverlay.appendChild(aTags2[i]);
@@ -78,17 +78,15 @@ function populateheaderDiv(){
 
   var body = document.getElementById("body");
   body.insertBefore(header, body.firstChild);
-
-
 }
 
 
-populateheaderDiv();
+populateheader();
 
 
 
 window.onscroll = function() {scrollFunction()};
-
+//get triggered when you scrool and changes the headers heigth if you scroll.
 function scrollFunction() {
   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
     document.getElementById("website-header").style.height = "60px";
@@ -111,11 +109,11 @@ function scrollFunction() {
     document.getElementById("hamburgerMenu").style.marginTop = "20px";
   }
 }
-
+//opens burger nav bar.
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
 }
-
+//closes the burger nav bar.
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }

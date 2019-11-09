@@ -1,3 +1,4 @@
+
 #headertitle {
   font-size: 2.3em;
   font-weight: 300;
@@ -16,6 +17,7 @@
   font-size: 2em;
 }
 
+/*border around employee and employee titles*/
 .border {
   width: 180px;
   height: auto;
@@ -33,6 +35,7 @@
   margin: 0;
 }
 
+/*employee image*/
 .img {
   width: 150px;
   margin: 0;
@@ -41,6 +44,7 @@
   border-width: 1px;
 }
 
+/*The popup modal animation*/
 @keyframes fadeIn2 {
   from {transform: 0;}
   to {opacity: 1;}
@@ -54,6 +58,7 @@
 
 #employeesExperienceTitle {
   margin-top: 0;
+  margin-bottom: 0;
   margin-left: 20px;
 }
 
@@ -82,229 +87,21 @@
 }
 
 
-@media only screen and (min-width: 900px) {
-  #verticalLineAbout {
-    height: 75%;
-    margin-top: 50px;
-    margin-left: 30px;
-  }
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: 50px 1fr 1fr 1fr 50px;
-    grid-template-rows: 330px 330px 330px 530px;
-  	width: 800px;
-    margin: auto;
-    margin-top: 150px;
-  	grid-gap: 20px;
-  }
-
-
-  .marginLeft {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 5;
-  }
-
-  .marginRight {
-    grid-column-start: 5;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 5;
-  }
-
-
-  .item2 {
-  	grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-
-  /* The Modal (background) */
-  .modal {
-    -webkit-animation-name: fadeIn2;
-    animation-name: fadeIn2;
-    animation-duration: 0.4s;
-    display: none; /* Hidden by default */
-    background-color: rgba(0, 0, 0, 0.3);
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-  }
-
-
-  /* Modal Content */
-  .employeesExperience-container {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-    animation-duration: 0.4s;
-    display: grid;
-    grid-template-columns: 250px 1fr 1px;
-    grid-template-rows: 30px 30px 1px auto;
-    background-color: #fefefe;
-    margin: auto;
-    margin-top: 250px;
-    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.50);
-    padding: 20px;
-    border-radius: 4px;
-    width: 970px;
-  }
-
-
-  #XPId1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 5;
-  }
-  #XPId5 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 5;
-  }
-
-
-  #horisontalLineExperience{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    width: 50%;
-    margin-left: 3%;
-  }
-
-  #employeesExperienceImg{
-    position: relative;
-    border-style: solid;
-    border-radius: 2px;
-    border-width: 1px;
-    border-color: #252424;
-    width: 100%;
-  }
-}
-
-
-
-@media only screen and (max-width: 900px) {
-
-  #verticalLineAbout {
-    height: 75%;
-    margin-top: 50px;
-    margin-left: 30px;
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: 50px 1fr 1fr 1fr 50px;
-    grid-template-rows: 330px 330px 330px 530px;
-  	width: 100%;
-    margin: auto;
-    margin-top: 150px;
-  	grid-gap: 0;
-  }
-  .marginLeft {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 5;
-  }
-
-  .marginRight {
-    grid-column-start: 5;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 5;
-  }
-
-
-  .item2 {
-  	grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-
-  /* The Modal (background) */
-  .modal {
-    -webkit-animation-name: fadeIn2;
-    animation-name: fadeIn2;
-    animation-duration: 0.4s;
-    display: none; /* Hidden by default */
-    background-color: rgba(0, 0, 0, 0.3);
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-  }
-
-  .employeesExperience-container {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-    animation-duration: 0.4s;
-    display: grid;
-    grid-template-columns: 250px 1fr 20px;
-    grid-template-rows: 30px 30px 1px auto;
-    background-color: #fefefe;
-    margin: auto;
-    margin-top: 250px;
-    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.50);
-    padding: 20px;
-    border-radius: 4px;
+@media only screen and (max-width: 672px) {
+    #headertitle {
+    font-size: 1.5em;
     width: 90%;
   }
-
-  #XPId1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 5;
-  }
-  #XPId5 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 5;
-  }
-
-
-  #horisontalLineExperience{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    width: 50%;
-    margin-left: 3%;
-  }
-
-  #employeesExperienceImg{
-    position: relative;
-    border-style: solid;
-    border-radius: 2px;
-    border-width: 1px;
-    border-color: #252424;
-    width: 100%;
-  }
-
-}
-@media only screen and (max-width: 672px) {
+/*Using grid to place all items*/
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 330px 330px 330px 330px 330px 330px 330px 330px 530px;
+    grid-template-rows: auto auto auto auto auto auto auto auto 530px;
   	width: 100%;
     margin: auto;
     margin-top: 100px;
-  	grid-gap: 0;
+  	grid-row-gap: 50px;
   }
 
   #verticalLineAbout {
@@ -312,7 +109,7 @@
     margin-top: 50px;
     margin-left: 25px;
   }
-
+/*is used in the bigger media query as a emty box. This make me seperate dentists from assistent*/
   .item2 {
   display:none;
   }
@@ -323,6 +120,8 @@
   .marginRight {
     display: none;
   }
+
+  /*the transistion is their to make the employe to scale bigger when hovering*/
   .border {
     width: 180px;
     height: auto;
@@ -330,21 +129,22 @@
     margin: auto;
   }
 
+/*the modal is a popup image that displays when an employee is clicked*/
   .modal {
     -webkit-animation-name: fadeIn2;
     animation-name: fadeIn2;
     animation-duration: 0.4s;
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    overflow:auto;
   }
-
+/*A container that places all the information on the modal.*/
   .employeesExperience-container {
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
@@ -395,4 +195,215 @@
     height: 100%;
   }
 
+}
+
+@media only screen and (min-width: 672px) {
+
+  #verticalLineAbout {
+    height: 75%;
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+/*changes the rows and cols to fit better on a smaler screen*/
+  .grid-container {
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 50px;
+    grid-template-rows: auto auto auto auto 530px;
+  	width: 100%;
+    margin: auto;
+    grid-row-gap: 50px;
+  }
+  .marginLeft {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+  .marginRight {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+  .item2 {
+  	grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  /* The Modal (background) */
+  .modal {
+    -webkit-animation-name: fadeIn2;
+    animation-name: fadeIn2;
+    animation-duration: 0.4s;
+    display: none; /* Hidden by default */
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+  }
+
+  .employeesExperience-container {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+    display: grid;
+    grid-template-columns: 250px 1fr 20px;
+    grid-template-rows: auto 30px 1px auto;
+    background-color: #fefefe;
+    margin: auto;
+    margin-top: 250px;
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.50);
+    padding: 20px;
+    border-radius: 4px;
+    width: 90%;
+  }
+
+  #XPId1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+  #XPId5 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+
+  #horisontalLineExperience{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 50%;
+    margin-left: 3%;
+  }
+
+  #employeesExperienceImg{
+    position: relative;
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: #252424;
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 900px) {
+  #verticalLineAbout {
+    height: 75%;
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 50px;
+    grid-template-rows: auto auto auto 530px;
+    width:850px;
+    margin: auto;
+    margin-top: 150px;
+  	grid-row-gap: 50px;
+  }
+
+
+  .marginLeft {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+  .marginRight {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+
+  .item2 {
+  	grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  /* The Modal (background) */
+  .modal {
+    -webkit-animation-name: fadeIn2;
+    animation-name: fadeIn2;
+    animation-duration: 0.4s;
+    display: none; /* Hidden by default */
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+  }
+
+
+  /* Modal Content + animation*/
+  .employeesExperience-container {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+    display: grid;
+    grid-template-columns: 250px 1fr 1px;
+    grid-template-rows: auto auto auto auto;
+    background-color: #fefefe;
+    margin: auto;
+    margin-top: 250px;
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.50);
+    padding: 20px;
+    border-radius: 4px;
+    width: 90%
+  }
+
+
+  #XPId1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+  #XPId5 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+
+  #horisontalLineExperience{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 50%;
+    margin-left: 3%;
+  }
+
+  #employeesExperienceImg{
+    position: relative;
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: #252424;
+    width: 100%;
+  }
 }
