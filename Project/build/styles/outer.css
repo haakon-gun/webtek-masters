@@ -403,6 +403,7 @@ a.header-link:hover::after{
   }
 
   /* This is for the hamburger menu */
+  /* inspiration for the code https://www.w3schools.com/howto/howto_js_sidenav.asp */
   .overlay {
     display: block;
     height: 100%;
