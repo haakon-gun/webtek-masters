@@ -166,17 +166,3 @@ span.onclick = function() {
 modal.onclick = function() {
   modal.style.display = "none";
 }
-
-/*
-// Import error?
-// HTML: <script type="module" src="scripts/about.js"></script>
-
-
-try {
-    load("JSON", "../dev/employees.json", (json) => {
-        console.log(json);
-    });
-} catch (error) {
-    console.warn(error);
-}
-*/
