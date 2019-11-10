@@ -127,6 +127,7 @@ function createEmployeDiv(employee){
   border.onclick = function() {populateEmployeeContent(employee);}
   let img = document.createElement("img");
   img.src = employee.image;
+  img.alt = employee.name + " image";
   img.className = "img";
   let name = document.createElement("p");
   name.className = "name";
@@ -145,6 +146,7 @@ function createEmployeDiv(employee){
 function populateEmployeeContent(employee){
   modal.style.display = "block";
   employeesExperienceImg.src = employee.image;
+  employeesExperienceImg.alt = employee.name + "image";
   employeesExperienceName.innerHTML = employee.name;
   employeesExperienceTitle.innerHTML = employee.title;
   while(employeesExperienceList.firstChild){
