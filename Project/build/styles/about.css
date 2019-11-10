@@ -207,6 +207,7 @@
     grid-template-rows: auto auto auto auto 530px;
   	width: 100%;
     margin: auto;
+    margin-top: 150px;
     grid-row-gap: 50px;
   }
   .marginLeft {
@@ -305,9 +306,9 @@
 
   .grid-container {
     display: grid;
-    grid-template-columns: 50px 1fr 1fr 1fr 50px;
+    grid-template-columns: 50px 1fr 1fr 1fr;
     grid-template-rows: auto auto auto 530px;
-    width:850px;
+    width:750px;
     margin: auto;
     margin-top: 150px;
   	grid-row-gap: 50px;
@@ -322,10 +323,7 @@
   }
 
   .marginRight {
-    grid-column-start: 5;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 5;
+    display: none;
   }
 
 
