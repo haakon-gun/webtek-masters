@@ -14,7 +14,7 @@ function createFooter(){
     var footerTextDiv = document.createElement("div");
     footerTextDiv.className = "footer-text"
     var footerDivs = [];
-    var h4Texts = ["Adresse", "Åpningstider", "Grenland Tannlegevakt", "", "Den norske tannlegeforeningen",];
+    var h4Texts = ["Adresse", "Åpningstider", "Grenland Tannlegevakt", "Den norske tannlegeforeningen",];
     var h4s = [];
     var ps = [];
     var pText = ["Henrik Ibsens gate 6: 3. etasje. 3724 Skien", "08:00–15:00, mandag til torsdag", "Helger og helligdager: 10:00–17:00", ""]
@@ -37,7 +37,6 @@ function createFooter(){
             var p = document.createElement("P");
             var pt = document.createTextNode("08:00–13:00, fredag");
             p.appendChild(pt);
-            footerDivs[i].appendChild(p);
         }
         else if(i==3){
             var a2 = document.createElement("a");
@@ -51,7 +50,11 @@ function createFooter(){
             img.alt = "Den norske tannlegeforeningen"
             img.src ="resources/dntf.png";
             img.setAttribute("target","_blank")
-            footerDivs[i].appendChild(img);
+            var a3 = document.createElement("a")
+            a3.setAttribute("href", "https://www.tannlegeforeningen.no")
+            a3.appendChild(img)
+            a3.appendChild(h4s[i])
+            footerDivs[i].appendChild(a3);
         }
         footerDivs[i].appendChild(h4s[i]);
         footerDivs[i].appendChild(ps[i<3]);
