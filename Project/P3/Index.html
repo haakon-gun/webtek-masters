@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8"/>
+		<title>Ibsen Tannlegesenter</title>
+
+		<link rel="icon" type="image/png" sizes="96x96" href="img/favicon2.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<div class="box"></div>
+		<p class="navn">
+			<br>
+			Group 25: Thomas Nyrem Eilifsen,
+			Haakon Gunnarsli,
+			Per Olav Stryken Haug and
+			Trym Wensberg Kulseng.
+			<br>
+			Date: 11. November 2019
+		</p>
+		<hr class="line">
+		<img id="logo" src="img/logo.png" alt="logo">
+		<section>
+			<h2>Our Client</h2>
+			<ul>
+				<li>Client name: Ibsen tannlegesenter AS</li>
+				<li>Website name: Ibsen tannlegesenter</li>
+				<li>Contact person: Mai Gunnarsli</li>
+				<li>Link to our website: <a href="http://folk.ntnu.no/haakgu/build/front.html" target="_blank">http://folk.ntnu.no/haakgu/build/front.html</a></li>
+			</ul>
+		</section>
+			<hr>
+			<section>
+			<h2>Design Changes</h2>
+			<p>
+				We made a plan in p2 for the website design, but while working with the site we made some design changes we think is
+				better for the overall impression. The four javascript elements is also changed a bit. We are going to explain the
+				different changes we made more thoroughly on every file further down, but right below is some common changes to all the
+				sites.
+			</p>
+			<p>	
+				As we started to get finished with our site we understood that the site was a bit sterile and needed to add something to
+				give it some personality and life. The personality bit was difficult because we are waiting for some pictures from our
+				client, but we added some animations on clickable content and color grading on our header stripe. We think that with
+				some huge high resolution images as background on the desktop version will help make the site i bit less empty.
+			</p>
+			<p>
+				We had in mind that when the user lands on the site, they should at least see that there is more content to the site, so
+				they scroll down to see everything. We made it so that this also works on mobile, or any other device the user might
+				have. This “trick” has been implemented on all the other sites.
+			</p>
+			<p>
+				Another common change we have done to the site is the “titlebox” right under the heading, where in P2 we decided that it
+				should be a bit further down than the heading, but we decided eventually that is should be right under the heading and
+				at a height of 230 px instead of 130p, and the font size is increased a bit from P2 to make the headings more readable
+				and “eye-catching”.
+			</p>
+			<p>
+				We are aware of the meta error that won’t validate, but this is because of the scripts we have.
+			</p>
+			</section>
+			<hr>
+			<section>
+			<h2>Changes to front.html(landing page)</h2>
+			<p>
+				We’ve done some changes to this site, such as the picture is a little smaller, because we simply felt it was more
+				aesthetic. The stripe is a little thinner, and we made the horizontal line equal to the line in the logo in the middle
+				of the page. The gap between the stripe and the sections with text, “ungdomsrabatt”, “snakk med oss” and “følg oss”, is
+				a little thicker than in p2, again because we felt it looked more clean. We also planned to have a javascript
+				application where we use slideshow, but this was removed, and the explanation for why we did this is mentioned below in
+				changes to slide_show.js.
+			</p>
+			</section>
+			<hr>
+			<section>
+			<h2>Changes to about.html(about us)</h2>
+			<p>
+				In p2 we made two stripes with headings on this page, but we changed it down to one stripe with heading to make it more
+				clean and more familiar to all the other sites, which will make the user more known to the other sites.
+			</p>
+			</section>
+			<hr>
+			<section>
+			<h2>Changes to treatments.html(treatments)</h2>
+			<p>
+				The only changes we have done to the treatments site is that the margin-top of the content a bit further down, this is
+				done to make it more clean looking.. Secondly is when the user uses a mobile device with a smaller screen, the images in
+				the different treatments will be on the left, instead of the right. that it uses in full scale on a pc or a larger
+				screen. This is done so that the text will not shrink as much on the left side so that it only shows a few words.
+			</p>
+			</section>
+			<hr>
+			<section>
+			<h2>Changes to prices.html(pricing)</h2>
+			<p>
+				Here we made a new table with a complete overhaul in another more aesthetic and similar design, so that the new design
+				was more correct to the rest of the site. The table also has a bit more spacing so that it is much more comfortable to
+				look at, as we want a simple and clean way to display the clinics prices. We also added some new text to the site to
+				inform about the “ungdomsrabatt”/youth discount. This was done to emphasize the user about the youth discount. We also
+				added a new line under the text mentioned above to make a separation between them. The horizontal line is reused in many
+				of the other pages, with the same design.
+			</p>
+			</section>
+			<hr>
+			<section>
+			<h2>Changes to contact.html(contact us)</h2>
+			<p>
+				Firstly we have made a new heading box (stripe) above the contact info with the heading “Timebestilling”/Appointment
+				booking. This was done to make it more similar to all the other sites and also to make it 100% clear to the user what
+				this page does.
+				The sub headings in the contact section have also been made more bold to make it stand out more clearly. The email
+				section in the bottom has now an icon and a mini heading, so that all the sections has the same layout and design.
+			</p>
+			</section>
+			<hr>
+			<section>
+			<h2>Changes to the CSS</h2>
+			<ul>
+				<li>Instead of using px as the font size format we went for em because it’s more scalable to different screen sizes.</li>
+				<li>The font sizes has been renewed:
+					<ul>
+						<li>h1 = 72 px -> 4em</li>
+						<li>h2 = 36 px -> 2em</li>
+						<li>h3 = 24 px -> 1.5 em</li>
+						<li>p = 14-24px -> 0.88-1.5em</li>
+					</ul>
+				</li>
+				<li>We needed a new color and went for #1d3a73. This color is used in the contact button in front.html and used when
+				hovering over links.</li>
+				<li>For the horizontal line used under many headings, we said that is should be the same blue color as in the footer, but we
+				think it was more clean with a black color (#252424). This was also used in the vertical line in about.html.</li>
+			</ul>
+			</section>
+			<hr>
+			<section>
+			<h2>Changes to header_animation.js(now header.js)</h2>
+			<p>
+				This is pretty much the same, but when the screen size shrinks in width it will be an “hamburger” menu icon that will
+				pop up in the top right corner, and when the user clicks on the icon an overlay menu will fade in from the right with
+				the different menu links. This was done because we thought it was much easier and user friendly, and it’s basically the
+				industry standard. This script is added to every html document, this is the header for all sites. This is a script so we
+				saved a lot of code in every document.
+			</p>
+			</section>
+			<hr>
+			<section>
+			<h2>Changes to move_to_top.js(removed)</h2>
+			<p>
+				We decided to completely remove this javascript application. We felt that this was not necessary on the pages because
+				there is not enough content for this to be helpful, and we thought it will only be a distraction for the user when
+				he/she sees an icon slowly fade in the bottom right corner of the screen. This can also make the user move their eyes
+				away from the content, which is something we don’t want. Since we had to have a minimum of four javascript applications,
+				we made some new ones to replace this one, and these are mentioned below.
+			</p>
+			</section>
+			<hr>
+			<section>
+			<h2>Changes to slide_show.js(removed)</h2>
+			<p>
+				The planned javascript application slideshow where the front image loops through different images after a set of time
+				was eventually cancelled. This was done because the client (Ibsen tannlegesenter) didn't have a lot of images in the
+				same size format for us to utilise, so after conversations with the client we mutually decided that this might be
+				implemented at a later date if the client wants to. In the end we figured that it improved the site by not having the
+				application, as it could have been seen as messy or old-fashioned by many.
+			</p>
+			</section>
+			<hr>
+			<section>
+			<h2>Changes to expand.js(now about.js)</h2>
+			<p>
+				The biggest change on this one is the new name “about.js”. Everything else worked out the way we originally planned, and
+				wanted.
+			</p>
+			</section>
+			<hr>
+			<section>
+			<h2>Added footer.js</h2>
+			<p>
+				As with the header script, we decided that we needed a footer.js script that builds up the footer of each site when we
+				link the script to the html file. This is simply, as with header.js, done so that everybody can use the same code, and
+				by doing it this way we make it easier to be functional for every site.
+			</p>
+			</section>
+			<hr>
+			<section>
+			<h2>Added treatments.js</h2>
+			<p>
+				This javascript simply populates the site treatments.html. In this case it was cleaner to make a huge javascript object
+				with all the information needed for each treatment article. The site will later use frameworks that was not allowed in
+				this project to implement the articles with json code instead. Almost every article is formatted with some general css,
+				but it looked ok, and will be changed later anyways.
+			</p>
+			</section>
+			<hr>
+			<section>
+			<h2>Modularity Requirement</h2>
+			<p>
+				For the modularity requirements we felt that most of our potensial repeatedly code was done with javascript such as
+				header.js, footer.js, about.js and treatments.js. For the styling in CSS we have tried to keep it to a minimal and just
+				the code that we need is implemented in main.css. main.css is where we store all of our css styling, so it’s easier to
+				change it later.
+			</p>
+			</section>
+			<hr>
+			<section>
+			<h2>Final organizational scheme</h2>
+			<p>
+				List of Files and Folders:
+				<ul>
+					<li>front.html</li>
+					<li>about.html</li>
+					<li>treatments.html</li>
+					<li>prices.html</li>
+					<li>contact.html</li>
+					<li>styles
+						<ul>
+							<li>main.css</li>
+						</ul>
+					</li>
+					<li>scripts</li>
+						<ul>
+							<li>header.js</li>
+							<li>footer.js</li>
+							<li>about.js</li>
+							<li>treatments.js</li>
+						</ul>
+					</li>
+					<li>resources
+						<ul>
+							<li>employees.json(for about.html)</li>
+							<li>anne-kari-johansen.png</li>
+							<li>ansatte.png</li>
+							<li>bro.png</li>
+							<li>christine-aanesen.png</li>
+							<li>delprotese.png</li>
+							<li>dntf.png</li>
+							<li>erna-oterholdt.png</li>
+							<li>facebook-icon.png</li>
+							<li>fasett-1.png</li>
+							<li>fasett-2.png</li>
+							<li>favicon.png</li>
+							<li>favicon2.png</li>
+							<li>hanne-hommedal.png</li>
+							<li>ibsenbord.png</li>
+							<li>ibsenlogo3.png</li>
+							<li>ibsenrom.png</li>
+							<li>implantatfestet-bro.png</li>
+							<li>implantatfestet.protese.png</li>
+							<li>implantat-forhandlere.png</li>
+							<li>implantat-fortann.png</li>
+							<li>implantat-fortann-2.png</li>
+							<li>karies.png</li>
+							<li>kari-nesse.png</li>
+							<li>kirsten-b-aanesen.png</li>
+							<li>KontaktBesokIkon.png</li>
+							<li>krone.png</li>
+							<li>logo_x128.png</li>
+							<li>mai-kersten-gunnarsli.png</li>
+							<li>mail.png</li>
+							<li>marlene-S-Almli.png</li>
+							<li>opningstiderIkon.png</li>
+							<li>protese.png</li>
+							<li>rotfylling-1.png</li>
+							<li>rotfylling-2-og-3.png</li>
+							<li>rotfylling-4.png</li>
+							<li>Signel-Lie.png</li>
+							<li>snorkelskinne.png</li>
+							<li>stol.png</li>
+							<li>stol2.png</li>
+							<li>stol3.png</li>
+							<li>stoler.png</li>
+							<li>tannkjott-1.png</li>
+							<li>tannkjott-2.png</li>
+							<li>tannkjott-3.png</li>
+							<li>tannkjott-4.png</li>
+							<li>tannkjott-5.png</li>
+							<li>telefonIkon.png</li>
+							<li>underkjeve.png</li>
+						</ul>
+					</li>
+				</ul>
+			</p>
+			</section>
+			<hr>
+			<section>
+			<h2>Final work divison</h2>
+			<p>
+				This is just an overview, and doesn’t necessarily tell the exact truth. As a team we have cooperated a lot, and assisted
+				each other if a task has taken too much time, or was hard.
+			</p>
+			</section>
+			<br>
+			<table id="plan">
+				<tr>
+					<th>Filename</th>
+					<th>Work done</th>
+					<th>Author(s)</th>
+				</tr>
+				<tr>
+					<td>front.html</td>
+					<td>the homepage</td>
+					<td>Per Olav</td>
+				</tr>
+				<tr>
+					<td>about.html</td>
+					<td>information about the employees</td>
+					<td>Haakon</td>
+				</tr>
+				<tr>
+					<td>treatments.html</td>
+					<td>information about the different treatments</td>
+					<td>Haakon</td>
+				</tr>
+				<tr>
+					<td>prices.html</td>
+					<td>information about the prices</td>
+					<td>Trym</td>
+				</tr>
+				<tr>
+					<td>contact.html</td>
+					<td>information about the conract information</td>
+					<td>Thomas</td>
+				</tr>
+				<tr>
+					<td>header.js</td>
+					<td>appends the header to all the other html files, header animation and hamburgerer menu</td>
+					<td>All</td>
+				</tr>
+				<tr>
+					<td>footer.js</td>
+					<td>appends the footer to all the other html files</td>
+					<td>Thomas</td>
+				</tr>
+				<tr>
+					<td>about.js</td>
+					<td>appends the information about the different employees to the about.html page.</td>
+					<td>Haakon</td>
+				</tr>
+				<tr>
+					<td>treatments.js</td>
+					<td>appends the information about the different treatments to treatment.js</td>
+					<td>Haakon</td>
+				</tr>
+				<tr>
+					<td>main.css</td>
+					<td>all common css to the html files and merge it to one file</td>
+					<td>Per Olav</td>
+				</tr>
+				<tr>
+					<td>footer and header styling</td>
+					<td>all the css for header and footer</td>
+					<td>All</td>
+				</tr>
+				<tr>
+					<td>front styling</td>
+					<td>all the css for the homepage</td>
+					<td>Per Olav</td>
+				</tr>
+				<tr>
+					<td>about styling</td>
+					<td>all the css for the about us page</td>
+					<td>Haakon</td>
+				</tr>
+				<tr>
+					<td>treatments styling</td>
+					<td>all the css for the treatments page</td>
+					<td>Haakon</td>
+				</tr>
+				<tr>
+					<td>price styling</td>
+					<td>all the css for the prices page</td>
+					<td>Trym</td>
+				</tr>
+				<tr>
+					<td>contact styling</td>
+					<td>all the css for the contact page</td>
+					<td>Thomas</td>
+				</tr>
+			</table>
+	</body>
+</html>
