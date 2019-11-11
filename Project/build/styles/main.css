@@ -115,7 +115,7 @@ p{
 }
 
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 810px) {
 /* Website header */
 #website-header, #website-footer {
   width: 100%;
@@ -365,7 +365,7 @@ a.header-link:hover::after{
 }
 
 /* When the screen gets smaller than 1000px */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 810px) {
 
   /* So that the picture stays left when the screen shrinks */
   .h-centered {
