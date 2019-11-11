@@ -25,10 +25,10 @@ function createFooter(){
         footerDivs[i].id = "line" + i;
         h4s[i] = document.createElement("H4");
         h4s[i].innerText = h4Texts[i-1];
-        ps[i<3] = document.createElement("P");
-        ps[i<3].innerText = pText[i];
+        ps[i] = document.createElement("P");
+        ps[i].innerText = pText[i-1];
         footerDivs[i].appendChild(h4s[i]);
-        footerDivs[i].appendChild(ps[i<3]);
+        footerDivs[i].appendChild(ps[i]);
         if(i==1){
             var a = document.createElement("a");
             a.setAttribute("href", "tel:+4735520469");
@@ -39,6 +39,7 @@ function createFooter(){
             var p = document.createElement("P");
             var pt = document.createTextNode("08:00–13:00, fredag");
             p.appendChild(pt);
+            footerDivs[i].appendChild(p);
         }
         else if(i==3){
             var a2 = document.createElement("a");
