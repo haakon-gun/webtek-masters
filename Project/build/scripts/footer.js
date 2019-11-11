@@ -10,7 +10,7 @@ function createFooter(){
     iframe.setAttribute("allowfullscreen", "");
     map.appendChild(iframe);
     footerDiv.appendChild(map);
-    
+
     var footerTextDiv = document.createElement("div");
     footerTextDiv.className = "footer-text"
     var footerDivs = [];
@@ -27,6 +27,8 @@ function createFooter(){
         h4s[i].innerText = h4Texts[i-1];
         ps[i<3] = document.createElement("P");
         ps[i<3].innerText = pText[i];
+        footerDivs[i].appendChild(h4s[i]);
+        footerDivs[i].appendChild(ps[i<3]);
         if(i==1){
             var a = document.createElement("a");
             a.setAttribute("href", "tel:+4735520469");
@@ -56,8 +58,6 @@ function createFooter(){
             a3.appendChild(h4s[i])
             footerDivs[i].appendChild(a3);
         }
-        footerDivs[i].appendChild(h4s[i]);
-        footerDivs[i].appendChild(ps[i<3]);
         footerTextDiv.appendChild(footerDivs[i]);
         footerDiv.appendChild(footerTextDiv);
     }
@@ -100,4 +100,3 @@ document.write(`
 </div>
 `);
 */
-
