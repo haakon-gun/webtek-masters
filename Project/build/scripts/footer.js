@@ -14,7 +14,7 @@ function createFooter(){
     var footerTextDiv = document.createElement("div");
     footerTextDiv.className = "footer-text"
     var footerDivs = [];
-    var h4Texts = ["Adresse", "Åpningstider", "Grenland Tannlegevakt", "Den norske tannlegeforeningen", "",];
+    var h4Texts = ["Adresse", "Åpningstider", "Grenland Tannlegevakt", "", "Den norske tannlegeforeningen",];
     var h4s = [];
     var ps = [];
     var pText = ["Henrik Ibsens gate 6: 3. etasje. 3724 Skien", "08:00–15:00, mandag til torsdag", "Helger og helligdager: 10:00–17:00", ""]
@@ -24,7 +24,7 @@ function createFooter(){
         footerDivs[i] = document.createElement("div");
         footerDivs[i].id = "line" + i;
         h4s[i] = document.createElement("H4");
-        h4s[i].innerText = h4Texts[i];
+        h4s[i].innerText = h4Texts[i-1];
         ps[i<3] = document.createElement("P");
         ps[i<3].innerText = pText[i];
         if(i==1){
@@ -32,7 +32,6 @@ function createFooter(){
             a.setAttribute("href", "tel:+4735520469");
             a.innerText = "Telefon: 35 52 04 69";
             footerDivs[i].appendChild(a);
-            console.log("Hei")
         }
         else if(i==2){
             var p = document.createElement("P");
@@ -54,12 +53,11 @@ function createFooter(){
             img.setAttribute("target","_blank")
             footerDivs[i].appendChild(img);
         }
-        footerTextDiv.appendChild(h4s[i]);
-        footerTextDiv.appendChild(ps[i<3]);
+        footerDivs[i].appendChild(h4s[i]);
+        footerDivs[i].appendChild(ps[i<3]);
         footerTextDiv.appendChild(footerDivs[i]);
         footerDiv.appendChild(footerTextDiv);
     }
-
     var body = document.getElementById("body");
     body.appendChild(footerDiv);
 
