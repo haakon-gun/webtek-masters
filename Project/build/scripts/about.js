@@ -109,7 +109,7 @@ var employees = [
 ]
 
 
-gridContainer = document.querySelector(".grid-container");
+gridContainer = document.querySelector(".grid-container-about");
 
 //runs createEmployeDiv as many times as their are employyess.
 for (employee in employees) {
