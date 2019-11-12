@@ -75,3 +75,21 @@ hr.line {
 img{
     width: 100%;
 }
+table{
+    border-collapse: collapse;
+    width:100%;
+}
+
+table, th, td {
+    border: 1px solid #252424;
+    padding: 8px;
+}
+#plan th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #6F97B5;
+  color: white;
+}
+
+#plan tr:nth-child(even){background-color: #f2f2f2;}
