@@ -1,0 +1,474 @@
+/*outer*/
+/*Make the mobile version better looking when shifting over to landscape mode.*/
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+
+
+@media only screen and (min-width: 800px) {
+/* Website header */
+#website-header, #website-footer {
+  width: 100%;
+  z-index: 1;
+}
+
+#website-header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 0;
+  margin: 0 0 0 0;
+  background-color: #ffffff;
+  box-shadow: 0 0 0.6em rgba(0, 0, 0, 0.2);
+  font-size: 100%;
+  transition: 0.4s;
+}
+
+/**/
+#link1 {
+  height: 75%;
+  transition: 0.4s;
+  margin-top: 30px;
+}
+
+#link2 {
+  height: 75%;
+  transition: 0.4s;
+}
+
+#link3 {
+  height: 75%;
+  transition: 0.4s;
+}
+
+#link4 {
+  height: 75%;
+  transition: 0.4s;
+}
+
+
+#website-header > nav {
+  height: inherit;
+}
+
+#website-header > nav > * {
+  padding: 0 2em 0 2em;
+  margin-top: 0;
+}
+
+#website-header > header-link {
+  padding: 0 2em 0 2em;
+}
+
+#headerLogo{
+  width: 200px;
+  transition: 0.4s;
+  transform: scale(1.0);
+  margin-top: 3px;
+}
+
+#headerLogo:hover{
+  transition: 0.4s;
+  transform: scale(0.97)
+}
+
+/* this is so that the logo don't get a underline when hovering */
+a.header-link-image{
+  appearance: none;
+  border: none;
+  height: inherit;
+  background-color: transparent;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+/* styling of the navbar links */
+a.header-link {
+  appearance: none;
+  border: none;
+  height: inherit;
+  background-color: transparent;
+  color: #252424;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 1.05em;
+  display: inline-block;
+  text-decoration: none;
+}
+
+a.header-link > span {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+}
+
+a.header-link > span > * {
+  width: 100%;
+  margin: auto 0 0.9em 0;
+  text-decoration: none;
+  font-size: 1.04em;
+  font-weight: 100;
+}
+
+/* animation under the links */
+a.header-link::after{
+  content: '';
+  display: block;
+  height: 2px;
+  background: #252424;
+  transition: .3s;
+  transform: scale(0);
+  margin-top: -15px;
+}
+
+a.header-link:hover::after{
+  transition: .3s;
+  transform: scale(1);
+}
+
+
+/* footer */
+#website-footer {
+  background-color: #6f97b5;
+  box-shadow: 0 0 0.6em rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+/* for google maps embeded */
+#footer-box-map {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+}
+
+#map {
+  border: none;
+  width: 80%;
+  height: 100%;
+}
+
+.footer-text {
+  width: 95%;
+  height: 100%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* so when the screen shrinks the content stacks under each other */
+  font-size: 14px;
+}
+
+
+.footer-text a{
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: inherit;
+  transition: 0.4s;
+}
+
+.footer-text a:hover{
+  color: #1D3A73;
+}
+
+
+#line1 {
+  min-width: 150px;
+  max-width: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#line2 {
+  min-width: 150px;
+  max-width: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#line3 {
+  min-width: 150px;
+  max-width: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#line4 {
+  min-width: 150px;
+  max-width: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Hamburger menu (will not display here) */
+.overlay {
+  display: none;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* so that the hamburger menu don't display */
+.h-centered > #hamburgerMenu {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+}
+
+/* When the screen gets smaller than 1000px */
+@media only screen and (max-width: 800px) {
+
+  /* So that the picture stays left when the screen shrinks */
+  .h-centered {
+    display: table;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  /* Website header */
+  #website-header, #website-footer {
+    width: 100%;
+    z-index: 1;
+  }
+
+  #website-header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0 0 0 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 0.6em rgba(0, 0, 0, 0.2);
+  }
+
+  #website-header > nav {
+    height: inherit;
+  }
+
+  #website-header > nav > * {
+    padding: 0 2em 0 2em;
+    margin: 0;
+  }
+
+  #headerLogo{
+    width: 200px;
+    margin-top: 3px;
+    transition: 0.4s;
+    transform: scale(1.0)
+  }
+
+  #headerLogo:hover{
+    transition: 0.4s;
+    transform: scale(0.97)
+  }
+
+  /* this is so that the logo don't get a underline when hovering */
+  a.header-link-image{
+    appearance: none;
+    border: none;
+    height: inherit;
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+  }
+
+  /* styling of the navbar links */
+  a.header-link {
+    display: none;
+  }
+
+  a.header-link > span {
+    display: none;
+  }
+
+  a.header-link > span > * {
+    display: none;
+  }
+
+  /* animation under the links */
+  a.header-link::after{
+    display: none;
+  }
+
+  a.header-link:hover::after{
+    display: none;
+  }
+
+  /* footer */
+  #website-footer {
+    background-color: #6f97b5;
+    box-shadow: 0 0 0.6em rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  /* for google maps embeded */
+  #footer-box-map {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+  }
+
+  #map {
+    border: none;
+    width: 90%;
+    height: 100%;
+  }
+
+  .footer-text {
+    width: 95%;
+    height: 100%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* so when the screen shrinks the content stacks under each other */
+    font-size: 14px;
+  }
+
+  .footer-text a{
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: inherit;
+    transition: 0.4s;
+  }
+
+  .footer-text a:hover{
+    color: #1D3A73;
+  }
+
+  /* IDs for the footer */
+  #line1 {
+    min-width: 100px;
+    max-width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  #line2 {
+    min-width: 100px;
+    max-width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  #line3 {
+    min-width: 150px;
+    max-width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  #line4 {
+    min-width: 150px;
+    max-width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* This is for the hamburger menu */
+  /* inspiration for the code https://www.w3schools.com/howto/howto_js_sidenav.asp */
+  .overlay {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -64px;
+    background-color: #6f97b5;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: -25px;
+  }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover, .overlay a:focus {
+    color: #1d3a73;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: -5px;
+    right: 85px;
+    font-size: 60px;
+  }
+
+  .h-centered > #hamburgerMenu {
+    padding-left: 0px;
+    padding-right: 29px;;
+    margin-top: 20px;
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    float: right;
+    transition: 0.4s;
+  }
+
+}
